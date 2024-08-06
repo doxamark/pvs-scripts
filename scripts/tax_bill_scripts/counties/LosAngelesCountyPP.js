@@ -4,11 +4,29 @@ import path from 'path';
 
 class LosAngelesCountyPPScript extends BaseScript {
   async performScraping() {
-    await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
+    await this.page.goto(this.accountLookupString);
+    await new Promise(resolve => setTimeout(resolve, 2000));
     console.log(`Navigated to: ${this.page.url()}`);
+    
+    await this.page.waitForSelector('button.g-recaptcha');
+    const buttons = await this.page.$$('button.g-recaptcha');
+    let targetButton = null;
 
-    await this.page.waitForSelector('button#next');
-    await this.page.click('button#next');
+    for (const button of buttons) {
+      const buttonTextContent = await this.page.evaluate(el => el.innerText, button);
+      console.log(buttonTextContent.trim() )
+      if (buttonTextContent.trim() === 'Submit') {
+        targetButton = button;
+        break;
+      }
+    }
+
+    if (targetButton) {
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      await targetButton.click({ clickCount: 1 });
+      await targetButton.click({ clickCount: 1 });
+      console.log("Clicked button")
+    }
 
     // Wait for and click the link with the specific text
     await this.page.waitForSelector('a[href="unsecure/index.php"] div.options span');
