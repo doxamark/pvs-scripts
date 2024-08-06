@@ -28,13 +28,6 @@
       "DocumentName": ""
     },
     {
-      "county": "SANTA CLARA",
-      "AccountLookupString": "https://payments.sccgov.org/propertytax/Unsecured",
-      "Account": "098876-0003-0",
-      "CollectorID": "30P",
-      "DocumentName": ""
-    },
-    {
       "county": "SAN JOAQUIN",
       "AccountLookupString": "https://common3.mptsweb.com/MBC/sanjoaquin/tax/search#",
       "Account": "096-140-620-000",
