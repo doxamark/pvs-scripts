@@ -45,9 +45,27 @@ class AlamedaCountyPPScript extends BaseScript {
 
     await this.page.click('input[name="searchByAccountNum"]');
 
-    // if error there is pplerrortext with text that has No Bills Found. Please check your account number.
+    // Wait for either the error message or the bill view to be visible
+    await Promise.race([
+      this.page.waitForSelector('.pplviewbill', { visible: true }),
+      this.page.waitForSelector('.pplerrortext', { visible: true })
+    ]);
 
-    await this.page.waitForSelector('.pplviewbill', { visible: true });
+    // Check if the error message is present and contains the specific text
+    const errorMessages = await this.page.$$('.pplerrortext');
+    let noBillFound = false;
+    for (let element of errorMessages) {
+      const text = await this.page.evaluate(el => el.textContent, element);
+      if (text.includes('No Bills Found. Please check your account number.')) {
+        noBillFound = true;
+        break;
+      }
+    }
+
+    if (noBillFound) {
+      console.log('No Bills Found. Please check your account number.', this.account);
+      return;
+    }
 
     const viewBillLink = await this.page.$eval('.pplviewbill', el => el.href);
     const viewBillElement = await this.page.$('.pplviewbill');
