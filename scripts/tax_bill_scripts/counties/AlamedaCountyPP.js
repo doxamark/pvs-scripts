@@ -7,7 +7,7 @@ class AlamedaCountyPPScript extends BaseScript {
     this.account = this.account.replaceAll('-', '').replaceAll("'", '')
 
     if (this.account.length < 19) {
-      console.log("Bad Account Lookup")
+      console.error(`Bad Account Lookup ${this.account}`)
       return;
     }
 
@@ -63,7 +63,7 @@ class AlamedaCountyPPScript extends BaseScript {
     }
 
     if (noBillFound) {
-      console.log('No Bills Found. Please check your account number.', this.account);
+      console.error('No Bills Found. Please check your account number.', this.account);
       return;
     }
 
