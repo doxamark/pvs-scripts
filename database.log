@@ -1,0 +1,68 @@
+2024-07-24T18:08:14.152Z error: An error occurred: [odbc] Error connecting to the database
+2024-07-24T18:08:14.154Z error: An error occurred: [odbc] Error connecting to the database
+2024-07-24T18:11:14.916Z error: An error occurred: [odbc] Error connecting to the database
+2024-07-24T18:11:14.918Z error: An error occurred: [odbc] Error connecting to the database
+2024-07-24T18:22:19.972Z error: An error occurred: [odbc] Error connecting to the database
+2024-07-24T18:22:19.974Z error: An error occurred: [odbc] Error connecting to the database
+2024-07-24T19:40:42.648Z info: Connection established successfully.
+2024-07-24T19:40:42.652Z error: An error occurred: [odbc] Error executing the sql statement
+2024-07-24T19:41:05.023Z info: Connection established successfully.
+2024-07-24T19:41:05.026Z error: An error occurred: [odbc] Error executing the sql statement
+2024-07-24T19:41:22.866Z info: Connection established successfully.
+2024-07-24T19:41:22.872Z error: An error occurred: [odbc] Error executing the sql statement
+2024-07-24T19:43:00.522Z info: Connection established successfully.
+2024-07-24T19:44:26.818Z info: Connection established successfully.
+2024-07-24T19:44:26.822Z error: An error occurred: [odbc] Error executing the sql statement
+2024-07-24T19:44:39.553Z info: Connection established successfully.
+2024-07-24T19:44:39.556Z error: An error occurred: [odbc] Error executing the sql statement
+2024-07-25T13:50:47.087Z info: Connection established successfully.
+2024-07-26T16:52:40.956Z info: Connection established successfully.
+2024-08-07T15:42:29.543Z info: Connection established successfully.
+2024-08-07T15:44:42.263Z info: Connection established successfully.
+2024-08-07T15:44:42.267Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T15:45:30.293Z info: Connection established successfully.
+2024-08-07T15:45:46.762Z info: Connection established successfully.
+2024-08-07T15:45:46.765Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T15:47:18.531Z info: Connection established successfully.
+2024-08-07T15:47:18.534Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T15:47:26.964Z info: Connection established successfully.
+2024-08-07T15:47:26.968Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T15:52:01.899Z info: Connection established successfully.
+2024-08-07T15:52:01.904Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T15:52:22.430Z info: Connection established successfully.
+2024-08-07T15:52:22.437Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T15:52:36.733Z info: Connection established successfully.
+2024-08-07T15:52:36.736Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T15:57:58.178Z info: Connection established successfully.
+2024-08-07T15:57:58.181Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T15:58:27.951Z info: Connection established successfully.
+2024-08-07T15:59:48.161Z info: Connection established successfully.
+2024-08-07T15:59:48.163Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T15:59:56.083Z info: Connection established successfully.
+2024-08-07T15:59:56.085Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T16:00:11.270Z info: Connection established successfully.
+2024-08-07T16:00:11.273Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T16:03:24.622Z info: Connection established successfully.
+2024-08-07T16:03:24.625Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T16:34:09.034Z info: Connection established successfully.
+2024-08-07T16:34:09.037Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T16:34:24.978Z info: Connection established successfully.
+2024-08-07T16:34:24.981Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T16:35:43.294Z info: Connection established successfully.
+2024-08-07T16:35:57.300Z info: Connection established successfully.
+2024-08-07T16:36:14.611Z info: Connection established successfully.
+2024-08-07T16:37:20.268Z info: Connection established successfully.
+2024-08-07T16:37:20.271Z error: An error occurred: [odbc] Error executing the sql statement
+2024-08-07T16:37:32.581Z info: Connection established successfully.
+2024-08-07T16:45:20.649Z info: Connection established successfully.
+2024-08-07T17:01:31.470Z info: Connection established successfully.
+2024-08-07T17:14:33.236Z info: Connection established successfully.
+2024-08-07T19:40:41.472Z info: Connection established successfully.
+2024-08-07T19:42:21.515Z info: Connection established successfully.
+2024-08-07T19:47:27.918Z info: Connection established successfully.
+2024-08-07T19:50:30.604Z info: Connection established successfully.
+2024-08-07T19:53:45.244Z info: Connection established successfully.
+2024-08-07T19:55:46.603Z info: Connection established successfully.
+2024-08-07T20:25:52.262Z info: Connection established successfully.
+2024-08-07T21:16:34.958Z info: Connection established successfully.
+2024-08-07T21:24:24.923Z info: Connection established successfully.

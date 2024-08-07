@@ -2,6 +2,7 @@ import DatabaseManager from '../core/DatabaseManager.js';
 import ScriptFactory from '../core/ScriptFactory.js';
 import fs from 'fs';
 import { format } from 'date-fns';
+import path from 'path';
 
 // Get the current date and time
 const dateTime = format(new Date(), 'yyyy-MM-dd_HH-mm-ss');
@@ -9,7 +10,6 @@ const dateTime = format(new Date(), 'yyyy-MM-dd_HH-mm-ss');
 // Define log file paths within the logs directory
 const logsDir = path.join('logs');
 const logFile = path.join(logsDir, `log_${dateTime}.log`);
-const errorFile = path.join(logsDir, `error_${dateTime}.log`);
 
 // Create the logs directory if it doesn't exist
 if (!fs.existsSync(logsDir)) {
@@ -20,14 +20,14 @@ if (!fs.existsSync(logsDir)) {
 console.log = (...messages) => {
   const timestamp = new Date().toISOString();
   const logMessage = messages.join(' ');
-  fs.appendFileSync(logFile, `${timestamp} - LOG: ${logMessage}\n`);
+  fs.appendFileSync(logFile, `${timestamp} - INFO: ${logMessage}\n`);
 };
 
 // Override console.error to write to an error file with a timestamp
 console.error = (...messages) => {
   const timestamp = new Date().toISOString();
   const errorMessage = messages.join(' ');
-  fs.appendFileSync(errorFile, `${timestamp} - ERROR: ${errorMessage}\n`);
+  fs.appendFileSync(logFile, `${timestamp} - ERROR: ${errorMessage}\n`);
 };
 
 (async () => {
@@ -54,7 +54,6 @@ console.error = (...messages) => {
     const collectorID = record.CollectorID;  // Extract collector ID
     const type = record.REPP;
     const mapID = `${collectorID}${type}`;
-    console.log(mapID, record.AccountLookup);
     // Get the script class for the given collector ID from the factory
     const ScriptClass = await factory.getScriptClass(mapID);
 
@@ -71,12 +70,12 @@ console.error = (...messages) => {
           return;
         }
 
-        const insertQuery = record.InsertString;
-        try {
-          await dbManager.insert(insertQuery);
-        } catch (error) {
-          console.error(`Failed to insert data: ${error.message}`);
-        }
+        // const insertQuery = record.InsertString;
+        // try {
+        //   await dbManager.insert(insertQuery);
+        // } catch (error) {
+        //   console.error(`Failed to insert data: ${error.message}`);
+        // }
 
       } catch (error) {
         console.error(`Failed to run script for collector ID ${collectorID}: ${error.message}`);

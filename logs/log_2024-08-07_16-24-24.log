@@ -1,0 +1,342 @@
+2024-08-07T21:24:26.134Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-001-21-00-00
+2024-08-07T21:24:26.135Z - INFO: 0123657600001210000
+2024-08-07T21:24:27.213Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:28.649Z - INFO: PDF saved: outputs/AlamedaCountyPP/0123657600001210000/0123657600001210000-2024.pdf
+2024-08-07T21:24:29.125Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-005-23-00-00
+2024-08-07T21:24:29.125Z - INFO: 0123657600005230000
+2024-08-07T21:24:30.150Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:31.685Z - INFO: PDF saved: outputs/AlamedaCountyPP/0123657600005230000/0123657600005230000-2024.pdf
+2024-08-07T21:24:32.149Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-19-00-00-
+2024-08-07T21:24:32.150Z - INFO: 0123657600000190000
+2024-08-07T21:24:33.249Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:34.779Z - INFO: PDF saved: outputs/AlamedaCountyPP/0123657600000190000/0123657600000190000-2024.pdf
+2024-08-07T21:24:35.237Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-22-00-00
+2024-08-07T21:24:35.238Z - INFO: 0123657600000220000
+2024-08-07T21:24:36.273Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:37.662Z - INFO: PDF saved: outputs/AlamedaCountyPP/0123657600000220000/0123657600000220000-2024.pdf
+2024-08-07T21:24:38.172Z - INFO: Scraping data for Alameda County with account_lookup '411274-1
+2024-08-07T21:24:38.173Z - ERROR: Bad Account Lookup 4112741
+2024-08-07T21:24:39.133Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-19-00-00-
+2024-08-07T21:24:39.133Z - INFO: 0123657600000190000
+2024-08-07T21:24:40.152Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:41.565Z - INFO: PDF saved: outputs/AlamedaCountyPP/0123657600000190000/0123657600000190000-2024.pdf
+2024-08-07T21:24:42.022Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-002-21-00-00
+2024-08-07T21:24:42.022Z - INFO: 0030142500002210000
+2024-08-07T21:24:43.046Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:44.444Z - INFO: PDF saved: outputs/AlamedaCountyPP/0030142500002210000/0030142500002210000-2024.pdf
+2024-08-07T21:24:44.920Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-003-21-00-00
+2024-08-07T21:24:44.921Z - INFO: 0030142500003210000
+2024-08-07T21:24:46.170Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:47.621Z - INFO: PDF saved: outputs/AlamedaCountyPP/0030142500003210000/0030142500003210000-2024.pdf
+2024-08-07T21:24:48.070Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-003-22-00-00
+2024-08-07T21:24:48.071Z - INFO: 0030142500003220000
+2024-08-07T21:24:49.088Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:50.476Z - INFO: PDF saved: outputs/AlamedaCountyPP/0030142500003220000/0030142500003220000-2024.pdf
+2024-08-07T21:24:50.954Z - INFO: Scraping data for Alameda County with account_lookup '00-368705-00-001-21-00-00
+2024-08-07T21:24:50.955Z - INFO: 0036870500001210000
+2024-08-07T21:24:51.957Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:53.504Z - INFO: PDF saved: outputs/AlamedaCountyPP/0036870500001210000/0036870500001210000-2024.pdf
+2024-08-07T21:24:54.511Z - INFO: Scraping data for Alameda County with account_lookup '00-368700-00-001-21-00-00
+2024-08-07T21:24:54.511Z - INFO: 0036870000001210000
+2024-08-07T21:24:55.527Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:56.932Z - INFO: PDF saved: outputs/AlamedaCountyPP/0036870000001210000/0036870000001210000-2024.pdf
+2024-08-07T21:24:57.406Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-001-21-00-00
+2024-08-07T21:24:57.407Z - INFO: 0030142500001210000
+2024-08-07T21:24:58.397Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:24:59.999Z - INFO: PDF saved: outputs/AlamedaCountyPP/0030142500001210000/0030142500001210000-2024.pdf
+2024-08-07T21:25:00.464Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-000-21-00-00
+2024-08-07T21:25:00.464Z - INFO: 0030142500000210000
+2024-08-07T21:25:01.500Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:02.904Z - INFO: PDF saved: outputs/AlamedaCountyPP/0030142500000210000/0030142500000210000-2024.pdf
+2024-08-07T21:25:03.392Z - INFO: Scraping data for Alameda County with account_lookup '00-00419-00-007-21-00-00
+2024-08-07T21:25:03.392Z - ERROR: Bad Account Lookup 000041900007210000
+2024-08-07T21:25:03.878Z - INFO: Scraping data for Alameda County with account_lookup '00-395377-00-001-21-00-00
+2024-08-07T21:25:03.878Z - INFO: 0039537700001210000
+2024-08-07T21:25:05.937Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:07.338Z - INFO: PDF saved: outputs/AlamedaCountyPP/0039537700001210000/0039537700001210000-2024.pdf
+2024-08-07T21:25:07.839Z - INFO: Scraping data for Alameda County with account_lookup '00-322322-00-000-20-00-00
+2024-08-07T21:25:07.839Z - INFO: 0032232200000200000
+2024-08-07T21:25:08.864Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:10.241Z - INFO: PDF saved: outputs/AlamedaCountyPP/0032232200000200000/0032232200000200000-2024.pdf
+2024-08-07T21:25:11.191Z - INFO: Scraping data for Alameda County with account_lookup '00-026434-00-000-22-00-00
+2024-08-07T21:25:11.191Z - INFO: 0002643400000220000
+2024-08-07T21:25:12.283Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:13.635Z - INFO: PDF saved: outputs/AlamedaCountyPP/0002643400000220000/0002643400000220000-2024.pdf
+2024-08-07T21:25:14.175Z - INFO: Scraping data for Alameda County with account_lookup '00-349301-00-000-22-00-00
+2024-08-07T21:25:14.176Z - INFO: 0034930100000220000
+2024-08-07T21:25:15.187Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:16.578Z - INFO: PDF saved: outputs/AlamedaCountyPP/0034930100000220000/0034930100000220000-2024.pdf
+2024-08-07T21:25:17.001Z - INFO: Scraping data for Alameda County with account_lookup '00-330119-00-000-21-00-00
+2024-08-07T21:25:17.001Z - INFO: 0033011900000210000
+2024-08-07T21:25:18.106Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:19.449Z - INFO: PDF saved: outputs/AlamedaCountyPP/0033011900000210000/0033011900000210000-2024.pdf
+2024-08-07T21:25:20.382Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-002-21-00-00
+2024-08-07T21:25:20.382Z - INFO: 0233011900002210000
+2024-08-07T21:25:21.398Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:22.751Z - INFO: PDF saved: outputs/AlamedaCountyPP/0233011900002210000/0233011900002210000-2024.pdf
+2024-08-07T21:25:23.204Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-003-21-00-00
+2024-08-07T21:25:23.205Z - INFO: 0233011900003210000
+2024-08-07T21:25:24.296Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:25.667Z - INFO: PDF saved: outputs/AlamedaCountyPP/0233011900003210000/0233011900003210000-2024.pdf
+2024-08-07T21:25:26.106Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-004-21-00-00
+2024-08-07T21:25:26.106Z - INFO: 0233011900004210000
+2024-08-07T21:25:27.124Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:28.506Z - INFO: PDF saved: outputs/AlamedaCountyPP/0233011900004210000/0233011900004210000-2024.pdf
+2024-08-07T21:25:28.908Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-003-21-19-00
+2024-08-07T21:25:28.908Z - INFO: 0233011900003211900
+2024-08-07T21:25:30.109Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:31.593Z - INFO: PDF saved: outputs/AlamedaCountyPP/0233011900003211900/0233011900003211900-2024.pdf
+2024-08-07T21:25:32.026Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-005-22-00-00
+2024-08-07T21:25:32.026Z - INFO: 0233011900005220000
+2024-08-07T21:25:33.034Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:34.385Z - INFO: PDF saved: outputs/AlamedaCountyPP/0233011900005220000/0233011900005220000-2024.pdf
+2024-08-07T21:25:34.803Z - INFO: Scraping data for Alameda County with account_lookup '02-33808-00-120-15-00-00
+2024-08-07T21:25:34.803Z - ERROR: Bad Account Lookup 023380800120150000
+2024-08-07T21:25:35.220Z - INFO: Scraping data for Alameda County with account_lookup '00-359462-00-002-21-00-00
+2024-08-07T21:25:35.220Z - INFO: 0035946200002210000
+2024-08-07T21:25:36.307Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:37.736Z - INFO: PDF saved: outputs/AlamedaCountyPP/0035946200002210000/0035946200002210000-2024.pdf
+2024-08-07T21:25:38.148Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-021-21-00-00
+2024-08-07T21:25:38.148Z - INFO: 0000576300021210000
+2024-08-07T21:25:39.386Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:39.714Z - ERROR: No Bills Found. Please check your account number. 0000576300021210000
+2024-08-07T21:25:40.673Z - INFO: Scraping data for Alameda County with account_lookup '366137-1
+2024-08-07T21:25:40.673Z - ERROR: Bad Account Lookup 3661371
+2024-08-07T21:25:41.204Z - INFO: Scraping data for Alameda County with account_lookup '00-367971-00-002-21-00-00
+2024-08-07T21:25:41.204Z - INFO: 0036797100002210000
+2024-08-07T21:25:42.279Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:44.415Z - INFO: PDF saved: outputs/AlamedaCountyPP/0036797100002210000/0036797100002210000-2024.pdf
+2024-08-07T21:25:44.864Z - INFO: Scraping data for Alameda County with account_lookup '00-389506-00-001-23-00-00
+2024-08-07T21:25:44.864Z - INFO: 0038950600001230000
+2024-08-07T21:25:45.881Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:47.290Z - INFO: PDF saved: outputs/AlamedaCountyPP/0038950600001230000/0038950600001230000-2024.pdf
+2024-08-07T21:25:47.696Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:25:47.697Z - INFO: 0000576300016210000
+2024-08-07T21:25:48.711Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:50.107Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:25:50.553Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-07T21:25:50.553Z - INFO: 0000576300014210000
+2024-08-07T21:25:51.627Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:53.052Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300014210000/0000576300014210000-2024.pdf
+2024-08-07T21:25:53.480Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-07T21:25:53.480Z - INFO: 0000576300014210000
+2024-08-07T21:25:54.559Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:55.967Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300014210000/0000576300014210000-2024.pdf
+2024-08-07T21:25:56.569Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:25:56.569Z - INFO: 0000576300016210000
+2024-08-07T21:25:57.651Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:25:59.024Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:25:59.483Z - INFO: Scraping data for Alameda County with account_lookup '00-353789-00-000-21-00-00
+2024-08-07T21:25:59.483Z - INFO: 0035378900000210000
+2024-08-07T21:26:00.663Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:02.062Z - INFO: PDF saved: outputs/AlamedaCountyPP/0035378900000210000/0035378900000210000-2024.pdf
+2024-08-07T21:26:02.471Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:26:02.471Z - INFO: 0000576300016210000
+2024-08-07T21:26:03.563Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:04.969Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:26:05.905Z - INFO: Scraping data for Alameda County with account_lookup '00-013252-00-004-21-00-00
+2024-08-07T21:26:05.906Z - INFO: 0001325200004210000
+2024-08-07T21:26:07.087Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:08.648Z - INFO: PDF saved: outputs/AlamedaCountyPP/0001325200004210000/0001325200004210000-2024.pdf
+2024-08-07T21:26:09.046Z - INFO: Scraping data for Alameda County with account_lookup '00-013252-00-000-21-00-00
+2024-08-07T21:26:09.046Z - INFO: 0001325200000210000
+2024-08-07T21:26:10.239Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:11.630Z - INFO: PDF saved: outputs/AlamedaCountyPP/0001325200000210000/0001325200000210000-2024.pdf
+2024-08-07T21:26:12.067Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:26:12.068Z - INFO: 0000576300016210000
+2024-08-07T21:26:13.110Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:14.507Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:26:14.937Z - INFO: Scraping data for Alameda County with account_lookup '00-013252-00-002-21-00-00
+2024-08-07T21:26:14.937Z - INFO: 0001325200002210000
+2024-08-07T21:26:15.953Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:17.305Z - INFO: PDF saved: outputs/AlamedaCountyPP/0001325200002210000/0001325200002210000-2024.pdf
+2024-08-07T21:26:17.770Z - INFO: Scraping data for Alameda County with account_lookup '00-013252-00-003-21-00-00
+2024-08-07T21:26:17.770Z - INFO: 0001325200003210000
+2024-08-07T21:26:18.798Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:20.171Z - INFO: PDF saved: outputs/AlamedaCountyPP/0001325200003210000/0001325200003210000-2024.pdf
+2024-08-07T21:26:20.585Z - INFO: Scraping data for Alameda County with account_lookup '00-323003-00-000-21-00-00
+2024-08-07T21:26:20.585Z - INFO: 0032300300000210000
+2024-08-07T21:26:21.612Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:22.955Z - INFO: PDF saved: outputs/AlamedaCountyPP/0032300300000210000/0032300300000210000-2024.pdf
+2024-08-07T21:26:23.923Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-006-21-00-00
+2024-08-07T21:26:23.924Z - INFO: 0000576300006210000
+2024-08-07T21:26:24.938Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:26.319Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300006210000/0000576300006210000-2024.pdf
+2024-08-07T21:26:26.762Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-013-21-00-00
+2024-08-07T21:26:26.763Z - INFO: 0000576300013210000
+2024-08-07T21:26:27.936Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:29.300Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300013210000/0000576300013210000-2024.pdf
+2024-08-07T21:26:29.729Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-005-21-00-00
+2024-08-07T21:26:29.729Z - INFO: 0000576300005210000
+2024-08-07T21:26:30.761Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:32.124Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300005210000/0000576300005210000-2024.pdf
+2024-08-07T21:26:32.555Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-002-21-00-00
+2024-08-07T21:26:32.555Z - INFO: 0000576300002210000
+2024-08-07T21:26:34.091Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:35.441Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300002210000/0000576300002210000-2024.pdf
+2024-08-07T21:26:35.860Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-012-21-00-00
+2024-08-07T21:26:35.860Z - INFO: 0000576300012210000
+2024-08-07T21:26:36.913Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:38.303Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300012210000/0000576300012210000-2024.pdf
+2024-08-07T21:26:39.277Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:26:39.277Z - INFO: 0000576300016210000
+2024-08-07T21:26:40.328Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:41.702Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:26:42.132Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-07T21:26:42.132Z - INFO: 0000576300014210000
+2024-08-07T21:26:43.133Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:44.678Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300014210000/0000576300014210000-2024.pdf
+2024-08-07T21:26:45.623Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-015-21-00-00
+2024-08-07T21:26:45.623Z - INFO: 0000576300015210000
+2024-08-07T21:26:46.626Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:47.971Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300015210000/0000576300015210000-2024.pdf
+2024-08-07T21:26:48.373Z - INFO: Scraping data for Alameda County with account_lookup '00-329594-00-000-21-00-00
+2024-08-07T21:26:48.373Z - INFO: 0032959400000210000
+2024-08-07T21:26:49.418Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:50.769Z - INFO: PDF saved: outputs/AlamedaCountyPP/0032959400000210000/0032959400000210000-2024.pdf
+2024-08-07T21:26:51.203Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:26:51.203Z - INFO: 0000576300016210000
+2024-08-07T21:26:52.215Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:53.601Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:26:53.997Z - INFO: Scraping data for Alameda County with account_lookup '00-389506-00-001-21-00-00
+2024-08-07T21:26:53.998Z - INFO: 0038950600001210000
+2024-08-07T21:26:55.081Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:26:56.420Z - INFO: PDF saved: outputs/AlamedaCountyPP/0038950600001210000/0038950600001210000-2024.pdf
+2024-08-07T21:26:56.844Z - INFO: Scraping data for Alameda County with account_lookup '00-389506-00-001-21-00-00
+2024-08-07T21:26:56.844Z - INFO: 0038950600001210000
+2024-08-07T21:26:59.356Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:00.715Z - INFO: PDF saved: outputs/AlamedaCountyPP/0038950600001210000/0038950600001210000-2024.pdf
+2024-08-07T21:27:01.121Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:27:01.122Z - INFO: 0000576300016210000
+2024-08-07T21:27:02.321Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:03.737Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:27:04.142Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-005-21-00-00
+2024-08-07T21:27:04.143Z - INFO: 0000576300005210000
+2024-08-07T21:27:05.138Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:06.509Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300005210000/0000576300005210000-2024.pdf
+2024-08-07T21:27:06.934Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-07T21:27:06.934Z - INFO: 0000576300014210000
+2024-08-07T21:27:08.033Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:09.413Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300014210000/0000576300014210000-2024.pdf
+2024-08-07T21:27:09.816Z - INFO: Scraping data for Alameda County with account_lookup '00-341800-00-000-21-00-00
+2024-08-07T21:27:09.816Z - INFO: 0034180000000210000
+2024-08-07T21:27:10.901Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:12.268Z - INFO: PDF saved: outputs/AlamedaCountyPP/0034180000000210000/0034180000000210000-2024.pdf
+2024-08-07T21:27:12.693Z - INFO: Scraping data for Alameda County with account_lookup '00-343117-00-000-21-00-00
+2024-08-07T21:27:12.693Z - INFO: 0034311700000210000
+2024-08-07T21:27:13.698Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:15.047Z - INFO: PDF saved: outputs/AlamedaCountyPP/0034311700000210000/0034311700000210000-2024.pdf
+2024-08-07T21:27:15.444Z - INFO: Scraping data for Alameda County with account_lookup '00-343117-00-000-21-00-00
+2024-08-07T21:27:15.445Z - INFO: 0034311700000210000
+2024-08-07T21:27:16.541Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:17.965Z - INFO: PDF saved: outputs/AlamedaCountyPP/0034311700000210000/0034311700000210000-2024.pdf
+2024-08-07T21:27:18.909Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:27:18.909Z - INFO: 0000576300016210000
+2024-08-07T21:27:19.916Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:21.333Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:27:21.761Z - INFO: Scraping data for Alameda County with account_lookup '00-395483-00-001-20-00-00
+2024-08-07T21:27:21.761Z - INFO: 0039548300001200000
+2024-08-07T21:27:22.795Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:24.267Z - INFO: PDF saved: outputs/AlamedaCountyPP/0039548300001200000/0039548300001200000-2024.pdf
+2024-08-07T21:27:24.676Z - INFO: Scraping data for Alameda County with account_lookup '00-395480-00-001-21-00-00
+2024-08-07T21:27:24.676Z - INFO: 0039548000001210000
+2024-08-07T21:27:25.716Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:27.103Z - INFO: PDF saved: outputs/AlamedaCountyPP/0039548000001210000/0039548000001210000-2024.pdf
+2024-08-07T21:27:27.501Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:27:27.501Z - INFO: 0000576300016210000
+2024-08-07T21:27:28.575Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:29.954Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:27:30.391Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-07T21:27:30.391Z - INFO: 0000576300016210000
+2024-08-07T21:27:31.421Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:32.804Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300016210000/0000576300016210000-2024.pdf
+2024-08-07T21:27:33.236Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-07T21:27:33.236Z - INFO: 0000576300014210000
+2024-08-07T21:27:34.317Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:35.902Z - INFO: PDF saved: outputs/AlamedaCountyPP/0000576300014210000/0000576300014210000-2024.pdf
+2024-08-07T21:27:36.301Z - INFO: Scraping data for Alameda County with account_lookup '00-395438-00-001-21-00-00
+2024-08-07T21:27:36.301Z - INFO: 0039543800001210000
+2024-08-07T21:27:37.386Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:38.873Z - INFO: PDF saved: outputs/AlamedaCountyPP/0039543800001210000/0039543800001210000-2024.pdf
+2024-08-07T21:27:39.273Z - INFO: Scraping data for Alameda County with account_lookup '00-399502-00-001-22-00-00
+2024-08-07T21:27:39.274Z - INFO: 0039950200001220000
+2024-08-07T21:27:40.387Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:41.781Z - INFO: PDF saved: outputs/AlamedaCountyPP/0039950200001220000/0039950200001220000-2024.pdf
+2024-08-07T21:27:42.186Z - INFO: Scraping data for Alameda County with account_lookup '00-395325-16
+2024-08-07T21:27:42.186Z - ERROR: Bad Account Lookup 0039532516
+2024-08-07T21:27:42.590Z - INFO: Scraping data for Alameda County with account_lookup '00-395325-15
+2024-08-07T21:27:42.590Z - ERROR: Bad Account Lookup 0039532515
+2024-08-07T21:27:43.533Z - INFO: Scraping data for Alameda County with account_lookup '395325-7
+2024-08-07T21:27:43.534Z - ERROR: Bad Account Lookup 3953257
+2024-08-07T21:27:43.926Z - INFO: Scraping data for Alameda County with account_lookup '395325-5
+2024-08-07T21:27:43.927Z - ERROR: Bad Account Lookup 3953255
+2024-08-07T21:27:44.333Z - INFO: Scraping data for Alameda County with account_lookup '395325-17
+2024-08-07T21:27:44.333Z - ERROR: Bad Account Lookup 39532517
+2024-08-07T21:27:44.741Z - INFO: Scraping data for Alameda County with account_lookup '395325-3
+2024-08-07T21:27:44.741Z - ERROR: Bad Account Lookup 3953253
+2024-08-07T21:27:45.171Z - INFO: Scraping data for Alameda County with account_lookup '395325-2
+2024-08-07T21:27:45.171Z - ERROR: Bad Account Lookup 3953252
+2024-08-07T21:27:46.119Z - INFO: Scraping data for Alameda County with account_lookup '00-395325-00-007-21-00-00
+2024-08-07T21:27:46.119Z - INFO: 0039532500007210000
+2024-08-07T21:27:47.205Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:48.602Z - INFO: PDF saved: outputs/AlamedaCountyPP/0039532500007210000/0039532500007210000-2024.pdf
+2024-08-07T21:27:49.544Z - INFO: Scraping data for Alameda County with account_lookup '395325-6
+2024-08-07T21:27:49.544Z - ERROR: Bad Account Lookup 3953256
+2024-08-07T21:27:49.965Z - INFO: Scraping data for Alameda County with account_lookup '395325-1
+2024-08-07T21:27:49.965Z - ERROR: Bad Account Lookup 3953251
+2024-08-07T21:27:50.392Z - INFO: Scraping data for Alameda County with account_lookup '395325-4
+2024-08-07T21:27:50.393Z - ERROR: Bad Account Lookup 3953254
+2024-08-07T21:27:50.800Z - INFO: Scraping data for Alameda County with account_lookup '395325-9
+2024-08-07T21:27:50.800Z - ERROR: Bad Account Lookup 3953259
+2024-08-07T21:27:51.200Z - INFO: Scraping data for Alameda County with account_lookup '395325-8
+2024-08-07T21:27:51.200Z - ERROR: Bad Account Lookup 3953258
+2024-08-07T21:27:51.628Z - INFO: Scraping data for Alameda County with account_lookup '00395325-14
+2024-08-07T21:27:51.628Z - ERROR: Bad Account Lookup 0039532514
+2024-08-07T21:27:52.049Z - INFO: Scraping data for Alameda County with account_lookup '395325-4
+2024-08-07T21:27:52.050Z - ERROR: Bad Account Lookup 3953254
+2024-08-07T21:27:52.453Z - INFO: Scraping data for Alameda County with account_lookup '395325-10
+2024-08-07T21:27:52.453Z - ERROR: Bad Account Lookup 39532510
+2024-08-07T21:27:52.880Z - INFO: Scraping data for Alameda County with account_lookup '395325-13
+2024-08-07T21:27:52.880Z - ERROR: Bad Account Lookup 39532513
+2024-08-07T21:27:53.814Z - INFO: Scraping data for Alameda County with account_lookup '395325-12
+2024-08-07T21:27:53.814Z - ERROR: Bad Account Lookup 39532512
+2024-08-07T21:27:54.218Z - INFO: Scraping data for Alameda County with account_lookup '395325-11
+2024-08-07T21:27:54.218Z - ERROR: Bad Account Lookup 39532511
+2024-08-07T21:27:55.169Z - INFO: Scraping data for Alameda County with account_lookup '00-362749-00-001-23-00-00
+2024-08-07T21:27:55.169Z - INFO: 0036274900001230000
+2024-08-07T21:27:56.197Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:27:57.551Z - INFO: PDF saved: outputs/AlamedaCountyPP/0036274900001230000/0036274900001230000-2024.pdf
+2024-08-07T21:27:57.947Z - INFO: Scraping data for Alameda County with account_lookup '02-362749-00-005-23-00-00
+2024-08-07T21:27:57.948Z - INFO: 0236274900005230000
+2024-08-07T21:27:59.032Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:28:00.366Z - INFO: PDF saved: outputs/AlamedaCountyPP/0236274900005230000/0236274900005230000-2024.pdf
+2024-08-07T21:28:00.780Z - INFO: Scraping data for Alameda County with account_lookup '02-362749-00-003-23-00-00
+2024-08-07T21:28:00.780Z - INFO: 0236274900003230000
+2024-08-07T21:28:01.807Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:28:03.156Z - INFO: PDF saved: outputs/AlamedaCountyPP/0236274900003230000/0236274900003230000-2024.pdf
+2024-08-07T21:28:05.520Z - INFO: Scraping data for Alameda County with account_lookup '00-362749-00-007-23-00-00
+2024-08-07T21:28:05.520Z - INFO: 0036274900007230000
+2024-08-07T21:28:06.514Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:28:08.000Z - INFO: PDF saved: outputs/AlamedaCountyPP/0036274900007230000/0036274900007230000-2024.pdf
+2024-08-07T21:28:08.515Z - INFO: Scraping data for Alameda County with account_lookup '00-362749-00-002-23-00-00
+2024-08-07T21:28:08.516Z - INFO: 0036274900002230000
+2024-08-07T21:28:09.526Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:28:10.937Z - INFO: PDF saved: outputs/AlamedaCountyPP/0036274900002230000/0036274900002230000-2024.pdf
+2024-08-07T21:28:11.458Z - INFO: Scraping data for Alameda County with account_lookup '003202530000000
+2024-08-07T21:28:11.459Z - ERROR: Bad Account Lookup 003202530000000
+2024-08-07T21:28:12.482Z - INFO: Scraping data for Alameda County with account_lookup '0040949700001230000
+2024-08-07T21:28:12.483Z - INFO: 0040949700001230000
+2024-08-07T21:28:13.666Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-07T21:28:15.029Z - INFO: PDF saved: outputs/AlamedaCountyPP/0040949700001230000/0040949700001230000-2024.pdf
+2024-08-07T21:28:15.501Z - INFO: Scraping data for Alameda County with account_lookup '003007900000000
+2024-08-07T21:28:15.501Z - ERROR: Bad Account Lookup 003007900000000
+2024-08-07T21:28:15.972Z - INFO: Scraping data for Alameda County with account_lookup '003284360000200
+2024-08-07T21:28:15.973Z - ERROR: Bad Account Lookup 003284360000200
+2024-08-07T21:28:16.982Z - INFO: Scraping data for Alameda County with account_lookup '004018800000100
+2024-08-07T21:28:16.983Z - ERROR: Bad Account Lookup 004018800000100
+2024-08-07T21:28:17.452Z - INFO: Scraping data for Alameda County with account_lookup '003284360000100
+2024-08-07T21:28:17.453Z - ERROR: Bad Account Lookup 003284360000100
+2024-08-07T21:28:17.913Z - INFO: Scraping data for Alameda County with account_lookup '003637030000000
+2024-08-07T21:28:17.913Z - ERROR: Bad Account Lookup 003637030000000
+2024-08-07T21:28:18.368Z - INFO: Scraping data for Alameda County with account_lookup '003284360000000
+2024-08-07T21:28:18.368Z - ERROR: Bad Account Lookup 003284360000000

@@ -4,6 +4,7 @@ import path from 'path';
 
 class AlamedaCountyPPScript extends BaseScript {
   async performScraping() {
+    console.log(`Scraping data for Alameda County with account_lookup ${this.account}`)
     this.account = this.account.replaceAll('-', '').replaceAll("'", '')
 
     if (this.account.length < 19) {
@@ -11,7 +12,6 @@ class AlamedaCountyPPScript extends BaseScript {
       return;
     }
 
-    console.log(this.account)
     const accountNumberParts = [
       this.account.slice(0, 2),
       this.account.slice(2, 8),
