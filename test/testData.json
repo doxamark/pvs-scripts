@@ -2,98 +2,98 @@
     {
       "county": "ALAMEDA",
       "AccountLookupString": "https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true",
-      "Account": "00-004419-00-007-21-00-00",
+      "AccountLookup": "00-004419-00-007-21-00-00",
       "CollectorID": "836P",
       "DocumentName": ""
     },
     {
       "county": "CONTRA COSTA",
       "AccountLookupString": "https://taxcolp.cccounty.us/taxpaymentrev3/lookup/",
-      "Account": "247499-0006",
+      "AccountLookup": "247499-0006",
       "CollectorID": "838P",
       "DocumentName": ""
     },
     {
       "county": "SAN BERNARDINO",
       "AccountLookupString": "https://www.mytaxcollector.com/trSearch.aspx?enc=WFEk%2bboZFdOnFTD05xs4TESrvsvcCQK17d7vJ8fu0C3kFPMxWXJ19Hp3mj4oI2nN",
-      "Account": "011326118P208",
+      "AccountLookup": "011326118P208",
       "CollectorID": "29P",
       "DocumentName": ""
     },
     {
       "county": "LOS ANGELES",
       "AccountLookupString": "https://vcheck.ttc.lacounty.gov/",
-      "Account": "40702806",
+      "AccountLookup": "40702806",
       "CollectorID": "835P",
       "DocumentName": ""
     },
     {
       "county": "SAN JOAQUIN",
       "AccountLookupString": "https://common3.mptsweb.com/MBC/sanjoaquin/tax/search#",
-      "Account": "096-140-620-000",
+      "AccountLookup": "096-140-620-000",
       "CollectorID": "1165P",
       "DocumentName": ""
     },
     {
       "county": "STANISLAUS",
       "AccountLookupString": "https://common3.mptsweb.com/MBC/stanislaus/tax/search#",
-      "Account": "800-088-187-000",
+      "AccountLookup": "800-088-187-000",
       "CollectorID": "1372P",
       "DocumentName": ""
     },
     {
       "county": "MEMPHIS",
       "AccountLookupString": "https://epayments.memphistn.gov/Property/Detail.aspx?ParcelNo=01702300006C",
-      "Account": "01702300006C",
+      "AccountLookup": "01702300006C",
       "CollectorID": "1033P",
       "DocumentName": ""
     },
     {
       "county": "CLARK",
       "AccountLookupString": "https://aoepay.clarkcountynv.gov/AccountDetail.aspx?Account=099249&returnSearch=Account#",
-      "Account": "099249",
+      "AccountLookup": "099249",
       "CollectorID": "101P",
       "DocumentName": ""
     },
     {
       "county": "RIVERSIDE",
       "AccountLookupString": "https://ca-riverside-ttc.publicaccessnow.com/PropertySearch.aspx",
-      "Account": "000090467",
+      "AccountLookup": "000090467",
       "CollectorID": "867P",
       "DocumentName": ""
     },
     {
       "county": "ORANGE",
       "AccountLookupString": "https://tax.ocgov.com/tcweb/tcref_list.asp?tcref_nbr=0008886&asmnt_nbr=",
-      "Account": "0008886",
+      "AccountLookup": "0008886",
       "CollectorID": "27P",
       "DocumentName": ""
     },
     {
       "county": "SAN DIEGO",
       "AccountLookupString": "https://wps.sdttc.com/WebPayments/CoSDTreasurer2/search",
-      "Account": "2024-019539",
+      "AccountLookup": "2024-019539",
       "CollectorID": "861P",
       "DocumentName": ""
     },
     {
       "county": "SACRAMENTO",
       "AccountLookupString": "https://eproptax.saccounty.net/#unsecured/BillSummary/004001003400000019",
-      "Account": "004-0010-034-0000-0019",
+      "AccountLookup": "004-0010-034-0000-0019",
       "CollectorID": "834P",
       "DocumentName": ""
     },
     {
       "county": "DETROIT",
       "AccountLookupString": "https://guestpay.divdatkiosknetwork.com/account/search",
-      "Account": "01000855-7",
+      "AccountLookup": "01000855-7",
       "CollectorID": "1401P",
       "DocumentName": ""
     },
     {
       "county": "FRESNO",
       "AccountLookupString": "https://sonant.fresnocountyca.gov/paymentapplication/",
-      "Account": "303-201-01 00001",
+      "AccountLookup": "303-201-01 00001",
       "CollectorID": "1169P",
       "DocumentName": ""
     }
