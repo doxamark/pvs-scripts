@@ -64,6 +64,7 @@ console.error = (...messages) => {
 
       // Run the script and get the result
       try {
+        console.log("---------------------------")
         const has_succeeded = await script.run();
 
         if (!has_succeeded) {
