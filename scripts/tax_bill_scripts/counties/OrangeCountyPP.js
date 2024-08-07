@@ -32,6 +32,8 @@ class OrangeCountyPPScript extends BaseScript {
             return;
         }
 
+        this.outputPath = `outputs/OrangeCountyPP/${this.account}/${this.account}-${this.year}.pdf`;
+
         const dir = path.dirname(this.outputPath);
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });

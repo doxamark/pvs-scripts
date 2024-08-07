@@ -51,7 +51,7 @@ class DetroitCityPPScript extends BaseScript {
 
 
     async saveAsPDF() {
-
+        this.outputPath = `outputs/DetroitCityPP/${this.account}/${this.account}-${this.year}.pdf`;
         await this.page.evaluate(() => {
             document.querySelectorAll('.no-print').forEach(element => {
                 element.classList.remove('no-print');

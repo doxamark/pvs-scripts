@@ -2,7 +2,7 @@ import BaseScript from '../../../core/BaseScript.js';
 import fs from 'fs';
 import path from 'path';
 
-class SacramentoCountytPPScript extends BaseScript {
+class SacramentoCountyPPScript extends BaseScript {
     async performScraping() {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
@@ -18,6 +18,8 @@ class SacramentoCountytPPScript extends BaseScript {
         if (!this.outputPath) {
             return;
         }
+
+        this.outputPath = `outputs/SacramentoCountyPP/${this.account}/${this.account}-${this.year}.pdf`;
 
         const dir = path.dirname(this.outputPath);
         if (!fs.existsSync(dir)) {
@@ -57,4 +59,4 @@ class SacramentoCountytPPScript extends BaseScript {
     }
 }
 
-export default SacramentoCountytPPScript;
+export default SacramentoCountyPPScript;
