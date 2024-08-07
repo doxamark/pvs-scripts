@@ -23,7 +23,7 @@ puppeteer.use(StealthPlugin());
 class BaseScript {
     constructor(record, year) {
         this.accountLookupString = record.AccountLookupString; // Access JSON properties directly
-        this.account = record.Account;
+        this.account = record.AccountLookup;
         this.year = year;
         this.outputPath = record.DocumentName;
         this.browser = null;

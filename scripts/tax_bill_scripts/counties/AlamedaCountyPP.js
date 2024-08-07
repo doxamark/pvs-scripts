@@ -4,7 +4,14 @@ import path from 'path';
 
 class AlamedaCountyPPScript extends BaseScript {
   async performScraping() {
-    this.account = this.account.replaceAll('-', '')
+    this.account = this.account.replaceAll('-', '').replaceAll("'", '')
+
+    if (this.account.length < 19) {
+      console.log("Bad Account Lookup")
+      return;
+    }
+
+    console.log(this.account)
     const accountNumberParts = [
       this.account.slice(0, 2),
       this.account.slice(2, 8),
@@ -38,6 +45,8 @@ class AlamedaCountyPPScript extends BaseScript {
 
     await this.page.click('input[name="searchByAccountNum"]');
 
+    // if error there is pplerrortext with text that has No Bills Found. Please check your account number.
+
     await this.page.waitForSelector('.pplviewbill', { visible: true });
 
     const viewBillLink = await this.page.$eval('.pplviewbill', el => el.href);
@@ -47,6 +56,11 @@ class AlamedaCountyPPScript extends BaseScript {
   }
 
   async saveAsPDF() {
+
+    if (!this.printLink) {
+      return;
+    }
+
     this.outputPath = `outputs/AlamedaCountyPP/${this.account}/${this.account}-${this.year}.pdf`;
     const dir = path.dirname(this.outputPath);
     if (!fs.existsSync(dir)) {
