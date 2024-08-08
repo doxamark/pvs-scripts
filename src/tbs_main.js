@@ -6,7 +6,7 @@ import path from 'path';
 
 
 const dateTime = format(new Date(), 'yyyy-MM-dd_HH-mm-ss');
-const logsDir = path.join('logs');
+const logsDir = path.join('src/logs');
 const logFile = path.join(logsDir, `log_${dateTime}.log`);
 
 if (!fs.existsSync(logsDir)) {
@@ -40,8 +40,7 @@ console.error = (...messages) => {
 
   const year = new Date().getFullYear();
 
-  const factory = new ScriptFactory('scripts/tax_bill_scripts/tbs_map.json', 'tax_bill_scripts');
-  let successCount = 0;
+  const factory = new ScriptFactory('src/scripts/tax_bill_scripts/tbs_map.json', 'tax_bill_scripts');
   let failureCount = 0;
   for (const record of records) {
     const collectorID = record.CollectorID;
@@ -56,7 +55,7 @@ console.error = (...messages) => {
         const has_succeeded = await script.run();
 
         if (!has_succeeded) {
-          successCount++;
+          failureCount++;
           return;
         }
 
@@ -68,18 +67,16 @@ console.error = (...messages) => {
         // }
 
       } catch (error) {
-        failureCount++;
         console.error(`Failed to run script for collector ID ${collectorID}: ${error.message}`);
       }
 
     } else {
-      failureCount++;
       console.error(`No script class found for collector ID ${collectorID}`);
     }
   }
 
   console.log("========================================")
-  console.log(`Total successful runs: ${successCount}`)
+  console.log(`Total successful runs: ${records.length - failureCount}`)
   console.log(`Total failed runs: ${failureCount}`)
   console.log("========================================")
 })();

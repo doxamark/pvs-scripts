@@ -82,8 +82,6 @@ class AlamedaCountyPPScript extends BaseScript {
     const dir = path.dirname(this.outputPath);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true }); // Create the directory and any missing parent directories
-    } else {
-      console.log("HEYYYYYYYYYYYYYYYYYYYYYYYYYYYY")
     }
 
     const customPath = path.resolve(`src/temp/${this.account}`);

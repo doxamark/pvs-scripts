@@ -18,7 +18,7 @@ import ScriptFactory from './core/ScriptFactory.js';
   const year = new Date().getFullYear();
 
   // Initialize the script factory with the script configuration file and directory
-  const factory = new ScriptFactory('scripts/value_backup_scripts/vbs_map.json',  'value_backup_scripts');
+  const factory = new ScriptFactory('src/scripts/value_backup_scripts/vbs_map.json',  'value_backup_scripts');
 
   // Iterate over each record fetched from the database
   for (const record of records) {
