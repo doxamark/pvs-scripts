@@ -14,7 +14,6 @@ class LosAngelesCountyPPScript extends BaseScript {
 
     for (const button of buttons) {
       const buttonTextContent = await this.page.evaluate(el => el.innerText, button);
-      console.log(buttonTextContent.trim() )
       if (buttonTextContent.trim() === 'Submit') {
         targetButton = button;
         break;
@@ -25,7 +24,6 @@ class LosAngelesCountyPPScript extends BaseScript {
       await new Promise(resolve => setTimeout(resolve, 1000));
       await targetButton.click({ clickCount: 1 });
       await targetButton.click({ clickCount: 1 });
-      console.log("Clicked button")
     }
 
     // Wait for and click the link with the specific text
