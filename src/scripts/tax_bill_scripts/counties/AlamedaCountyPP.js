@@ -82,9 +82,11 @@ class AlamedaCountyPPScript extends BaseScript {
     const dir = path.dirname(this.outputPath);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true }); // Create the directory and any missing parent directories
+    } else {
+      console.log("HEYYYYYYYYYYYYYYYYYYYYYYYYYYYY")
     }
 
-    const customPath = path.resolve(`src/custom-download-folders/${this.account}`);
+    const customPath = path.resolve(`src/downloads/${this.account}`);
 
     const tempFileName = 'UnSecuredBill.pdf';
     const tempFilePath = path.join(customPath, tempFileName);
@@ -121,7 +123,7 @@ class AlamedaCountyPPScript extends BaseScript {
       }
 
       // Remove the directory if needed
-      fs.rmdirSync(customPath, { recursive: true });
+      fs.rmSync(customPath, { recursive: true });
     }
 
     console.log(`PDF saved: ${this.outputPath}`);

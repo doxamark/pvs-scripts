@@ -37,7 +37,7 @@ class SantaClaraCountyPPScript extends BaseScript {
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
         }
-        const customPath = path.resolve(`src/custom-download-folders/${this.account}`);
+        const customPath = path.resolve(`src/downloads/${this.account}`);
         const client = await this.page.createCDPSession();
         await client.send('Page.setDownloadBehavior', {
             behavior: 'allow', downloadPath: customPath

@@ -1,5 +1,5 @@
-import DatabaseManager from '../core/DatabaseManager.js';
-import ScriptFactory from '../core/ScriptFactory.js';
+import DatabaseManager from './core/DatabaseManager.js';
+import ScriptFactory from './core/ScriptFactory.js';
 import fs from 'fs';
 import { format } from 'date-fns';
 import path from 'path';

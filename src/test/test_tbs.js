@@ -14,16 +14,16 @@ async function readRecords(filePath) {
 
 // Function to run tests on each record
 async function runTests(records) {
+  const timestamp = new Date().toISOString().replaceAll(':','').replaceAll('.','');
   for (const record of records) {
-    await runTest(record);
+    await runTest(record, timestamp);
   }
 }
 
 // Function to run a test for a single record
-async function runTest(record) {
+async function runTest(record, timestamp) {
   const year = '2024';
-  const timestamp = new Date().toISOString();
-  record.DocumentName = `src/test_outputs/${timestamp}/${record.Account}/${record.Account}-${year}.pdf`;
+  record.DocumentName = `src/test_outputs/${timestamp}/${record.AccountLookup}/${record.AccountLookup}-${year}.pdf`;
 
   const factory = new ScriptFactory('src/scripts/tax_bill_scripts/tbs_map.json', 'tax_bill_scripts');
   const ScriptClass = await factory.getScriptClass(record.CollectorID);
@@ -42,7 +42,7 @@ async function runTest(record) {
 
 // Main function to initiate the process
 async function main() {
-  const records = await readRecords('./testData.json');
+  const records = await readRecords('src/test/testData.json');
   await runTests(records);
 }
 
