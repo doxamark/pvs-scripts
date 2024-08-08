@@ -1,0 +1,20 @@
+2024-08-08T20:37:27.950Z - INFO: Total Records: 100
+2024-08-08T20:37:28.316Z - INFO: ---------------------------
+2024-08-08T20:37:28.815Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-001-21-00-00
+2024-08-08T20:37:29.932Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:37:31.673Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\16018\PP\2024\Scanned Documents\16018 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-001-23-00-00 Auto.pdf
+2024-08-08T20:37:31.764Z - INFO: ---------------------------
+2024-08-08T20:37:32.166Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-005-23-00-00
+2024-08-08T20:37:33.166Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:37:34.612Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\49736\PP\2024\Scanned Documents\49736 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-005-23-00-00 Auto.pdf
+2024-08-08T20:37:35.224Z - INFO: ---------------------------
+2024-08-08T20:37:35.581Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-19-00-00-
+2024-08-08T20:37:36.671Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:37:38.133Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\59999\PP\2024\Scanned Documents\59999 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-19-00-00- Auto.pdf
+2024-08-08T20:37:38.220Z - INFO: ---------------------------
+2024-08-08T20:37:38.591Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-22-00-00
+2024-08-08T20:37:39.650Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:37:41.094Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\60008\PP\2024\Scanned Documents\60008 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-23-00-00 Auto.pdf
+2024-08-08T20:37:41.173Z - INFO: ---------------------------
+2024-08-08T20:37:41.568Z - INFO: Scraping data for Alameda County with account_lookup '411274-1
+2024-08-08T20:37:41.568Z - ERROR: Bad Account Lookup 4112741

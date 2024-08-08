@@ -1,0 +1,19 @@
+2024-08-08T20:46:45.967Z - INFO: Total Records: 100
+2024-08-08T20:46:46.331Z - INFO: ---------------------------
+2024-08-08T20:46:46.824Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-001-21-00-00
+2024-08-08T20:46:48.055Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:46:49.598Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\16018\PP\2024\Scanned Documents\16018 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-001-23-00-00 Auto.pdf
+2024-08-08T20:46:49.688Z - INFO: Successfully inserted data to database.
+2024-08-08T20:46:49.688Z - INFO: ---------------------------
+2024-08-08T20:46:50.106Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-005-23-00-00
+2024-08-08T20:46:51.122Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:46:52.595Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\49736\PP\2024\Scanned Documents\49736 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-005-23-00-00 Auto.pdf
+2024-08-08T20:46:53.211Z - INFO: Successfully inserted data to database.
+2024-08-08T20:46:53.211Z - INFO: ---------------------------
+2024-08-08T20:46:53.628Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-19-00-00-
+2024-08-08T20:46:54.687Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:46:56.141Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\59999\PP\2024\Scanned Documents\59999 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-19-00-00- Auto.pdf
+2024-08-08T20:46:56.228Z - INFO: Successfully inserted data to database.
+2024-08-08T20:46:56.228Z - INFO: ---------------------------
+2024-08-08T20:46:56.622Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-22-00-00
+2024-08-08T20:46:57.686Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true

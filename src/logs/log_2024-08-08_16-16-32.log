@@ -1,0 +1,23 @@
+2024-08-08T21:16:32.429Z - INFO: Total Records: 99
+2024-08-08T21:16:32.812Z - INFO: ---------------------------
+2024-08-08T21:16:33.444Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-001-21-00-00
+2024-08-08T21:16:34.449Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T21:16:36.042Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\16018\PP\2024\Scanned Documents\16018 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-001-23-00-00 Auto.pdf
+2024-08-08T21:16:36.209Z - INFO: INSERT INTO Document WITH AUTO NAME SELECT 803867 as BillID, 75 as Type, 'Tax Bill - Alameda County - Unsecured - 01-236576-00-001-23-00-00' as Name, 'O:\Clients\Alliance HealthCare Services\Properties\16018\PP\2024\Scanned Documents\16018 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-001-23-00-00 Auto.pdf' as DocumentName, 1 as FileExists, 'L' as BillMethod;
+2024-08-08T21:16:36.219Z - INFO: Successfully inserted data to database.
+2024-08-08T21:16:36.219Z - INFO: ---------------------------
+2024-08-08T21:16:36.657Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-19-00-00-
+2024-08-08T21:16:37.671Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T21:16:38.133Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\59999\PP\2024\Scanned Documents\59999 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-19-00-00- Auto.pdf
+2024-08-08T21:16:38.216Z - INFO: INSERT INTO Document WITH AUTO NAME SELECT 804126 as BillID, 75 as Type, 'Tax Bill - Alameda County - Unsecured - 01-236576-00-000-19-00-00-' as Name, 'O:\Clients\Alliance HealthCare Services\Properties\59999\PP\2024\Scanned Documents\59999 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-19-00-00- Auto.pdf' as DocumentName, 1 as FileExists, 'L' as BillMethod;
+2024-08-08T21:16:38.223Z - INFO: Successfully inserted data to database.
+2024-08-08T21:16:38.224Z - INFO: ---------------------------
+2024-08-08T21:16:38.635Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-22-00-00
+2024-08-08T21:16:39.683Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T21:16:40.204Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\60008\PP\2024\Scanned Documents\60008 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-23-00-00 Auto.pdf
+2024-08-08T21:16:40.503Z - INFO: INSERT INTO Document WITH AUTO NAME SELECT 804139 as BillID, 75 as Type, 'Tax Bill - Alameda County - Unsecured - 01-236576-00-000-23-00-00' as Name, 'O:\Clients\Alliance HealthCare Services\Properties\60008\PP\2024\Scanned Documents\60008 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-23-00-00 Auto.pdf' as DocumentName, 1 as FileExists, 'L' as BillMethod;
+2024-08-08T21:16:40.511Z - INFO: Successfully inserted data to database.
+2024-08-08T21:16:40.511Z - INFO: ---------------------------
+2024-08-08T21:16:40.905Z - INFO: Scraping data for Alameda County with account_lookup '411274-1
+2024-08-08T21:16:40.905Z - ERROR: Bad Account Lookup 4112741
+2024-08-08T21:16:41.516Z - INFO: ---------------------------

@@ -1,0 +1,376 @@
+2024-08-08T20:39:18.924Z - INFO: Total Records: 100
+2024-08-08T20:39:19.280Z - INFO: ---------------------------
+2024-08-08T20:39:19.742Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-001-21-00-00
+2024-08-08T20:39:20.757Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:22.285Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\16018\PP\2024\Scanned Documents\16018 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-001-23-00-00 Auto.pdf
+2024-08-08T20:39:22.381Z - INFO: ---------------------------
+2024-08-08T20:39:22.827Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-005-23-00-00
+2024-08-08T20:39:23.867Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:25.424Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\49736\PP\2024\Scanned Documents\49736 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-005-23-00-00 Auto.pdf
+2024-08-08T20:39:26.035Z - INFO: ---------------------------
+2024-08-08T20:39:26.401Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-19-00-00-
+2024-08-08T20:39:27.459Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:28.986Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\59999\PP\2024\Scanned Documents\59999 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-19-00-00- Auto.pdf
+2024-08-08T20:39:29.065Z - INFO: ---------------------------
+2024-08-08T20:39:29.459Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-22-00-00
+2024-08-08T20:39:30.568Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:32.059Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\60008\PP\2024\Scanned Documents\60008 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-23-00-00 Auto.pdf
+2024-08-08T20:39:32.697Z - INFO: ---------------------------
+2024-08-08T20:39:33.069Z - INFO: Scraping data for Alameda County with account_lookup '411274-1
+2024-08-08T20:39:33.070Z - ERROR: Bad Account Lookup 4112741
+2024-08-08T20:39:33.147Z - INFO: ---------------------------
+2024-08-08T20:39:33.549Z - INFO: Scraping data for Alameda County with account_lookup '01-236576-00-000-19-00-00-
+2024-08-08T20:39:34.592Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:36.213Z - INFO: PDF saved: O:\Clients\Alliance HealthCare Services\Properties\185386\PP\2024\Scanned Documents\185386 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-000-19-00-00- Auto.pdf
+2024-08-08T20:39:36.291Z - INFO: ---------------------------
+2024-08-08T20:39:36.690Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-002-21-00-00
+2024-08-08T20:39:37.913Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:39.400Z - INFO: PDF saved: O:\Clients\Fresenius West Division\Properties\37116\PP\2024\Scanned Documents\37116 - Tax Bill (2024) - Alameda County - Unsecured - 00-301425-00-002-21-00-00 Auto.pdf
+2024-08-08T20:39:40.023Z - INFO: ---------------------------
+2024-08-08T20:39:40.408Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-003-21-00-00
+2024-08-08T20:39:41.459Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:42.926Z - INFO: PDF saved: O:\Clients\Fresenius West Division\Properties\37117\PP\2024\Scanned Documents\37117 - Tax Bill (2024) - Alameda County - Unsecured - 00-402483-00-001-23-00-00 Auto.pdf
+2024-08-08T20:39:43.521Z - INFO: ---------------------------
+2024-08-08T20:39:43.886Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-003-22-00-00
+2024-08-08T20:39:44.898Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:46.342Z - INFO: PDF saved: O:\Clients\Fresenius West Division\Properties\37117\PP\2024\Scanned Documents\37117 - Tax Bill (2024) - Alameda County - Unsecured - 00-301425-00-003-22-00-00 Auto.pdf
+2024-08-08T20:39:46.418Z - INFO: ---------------------------
+2024-08-08T20:39:46.786Z - INFO: Scraping data for Alameda County with account_lookup '00-368705-00-001-21-00-00
+2024-08-08T20:39:47.833Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:49.281Z - INFO: PDF saved: O:\Clients\Fresenius West Division\Properties\71764\PP\2024\Scanned Documents\71764 - Tax Bill (2024) - Alameda County - Unsecured - 00-368705-00-001-23-00-00 Auto.pdf
+2024-08-08T20:39:49.359Z - INFO: ---------------------------
+2024-08-08T20:39:49.755Z - INFO: Scraping data for Alameda County with account_lookup '00-368700-00-001-21-00-00
+2024-08-08T20:39:50.805Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:52.241Z - INFO: PDF saved: O:\Clients\Fresenius West Division\Properties\71765\PP\2024\Scanned Documents\71765 - Tax Bill (2024) - Alameda County - Unsecured - 00-368700-00-001-23-00-00 Auto.pdf
+2024-08-08T20:39:52.320Z - INFO: ---------------------------
+2024-08-08T20:39:52.724Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-001-21-00-00
+2024-08-08T20:39:53.750Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:55.399Z - INFO: PDF saved: O:\Clients\Fresenius West Division\Properties\37112\PP\2024\Scanned Documents\37112 - Tax Bill (2024) - Alameda County - Unsecured - 00-301425-00-001-23-00-00 Auto.pdf
+2024-08-08T20:39:55.478Z - INFO: ---------------------------
+2024-08-08T20:39:55.871Z - INFO: Scraping data for Alameda County with account_lookup '00-301425-00-000-21-00-00
+2024-08-08T20:39:56.851Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:39:58.335Z - INFO: PDF saved: O:\Clients\Fresenius West Division\Properties\37111\PP\2024\Scanned Documents\37111 - Tax Bill (2024) - Alameda County - Unsecured - 00-301425-00-000-23-00-00 Auto.pdf
+2024-08-08T20:39:58.967Z - INFO: ---------------------------
+2024-08-08T20:39:59.351Z - INFO: Scraping data for Alameda County with account_lookup '00-00419-00-007-21-00-00
+2024-08-08T20:39:59.351Z - ERROR: Bad Account Lookup 000041900007210000
+2024-08-08T20:39:59.428Z - INFO: ---------------------------
+2024-08-08T20:39:59.796Z - INFO: Scraping data for Alameda County with account_lookup '00-395377-00-001-21-00-00
+2024-08-08T20:40:00.787Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:02.216Z - INFO: PDF saved: O:\Clients\Fresenius West Division\Properties\47571\PP\2024\Scanned Documents\47571 - Tax Bill (2024) - Alameda County - Unsecured - 00-395377-00-001-23-00-00 Auto.pdf
+2024-08-08T20:40:02.832Z - INFO: ---------------------------
+2024-08-08T20:40:03.192Z - INFO: Scraping data for Alameda County with account_lookup '00-322322-00-000-20-00-00
+2024-08-08T20:40:04.209Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:05.656Z - INFO: PDF saved: O:\Clients\Universal Health Services\Properties\115375\PP\2024\Scanned Documents\115375 - Tax Bill (2024) - Alameda County - Unsecured - 00-322322-00-000-20-00-00 Auto.pdf
+2024-08-08T20:40:05.743Z - INFO: ---------------------------
+2024-08-08T20:40:06.140Z - INFO: Scraping data for Alameda County with account_lookup '00-026434-00-000-22-00-00
+2024-08-08T20:40:07.170Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:08.660Z - INFO: PDF saved: O:\Clients\Dominos Pizza LLC\Properties\206329\PP\2024\Scanned Documents\206329 - Tax Bill (2024) - Alameda County - Unsecured - 00-026434-00-000-23-00-00 Auto.pdf
+2024-08-08T20:40:08.741Z - INFO: ---------------------------
+2024-08-08T20:40:09.135Z - INFO: Scraping data for Alameda County with account_lookup '00-349301-00-000-22-00-00
+2024-08-08T20:40:10.137Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:11.595Z - INFO: PDF saved: O:\Clients\Dominos Pizza LLC\Properties\206325\PP\2024\Scanned Documents\206325 - Tax Bill (2024) - Alameda County - Unsecured - 00-349301-00-000-23-00-00 Auto.pdf
+2024-08-08T20:40:11.676Z - INFO: ---------------------------
+2024-08-08T20:40:12.038Z - INFO: Scraping data for Alameda County with account_lookup '00-330119-00-000-21-00-00
+2024-08-08T20:40:13.247Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:16.002Z - INFO: PDF saved: O:\Clients\United Surgical Partners International\Properties\149824\PP\2024\Scanned Documents\149824 - Tax Bill (2024) - Alameda County - Unsecured - 00-330119-00-000-23-00-00 Auto.pdf
+2024-08-08T20:40:16.079Z - INFO: ---------------------------
+2024-08-08T20:40:16.469Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-002-21-00-00
+2024-08-08T20:40:17.458Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:18.907Z - INFO: PDF saved: O:\Clients\United Surgical Partners International\Properties\149824\PP\2024\Scanned Documents\149824 - Tax Bill (2024) - Alameda County - Unsecured - 02-330119-00-002-21-00-00 Auto.pdf
+2024-08-08T20:40:18.987Z - INFO: ---------------------------
+2024-08-08T20:40:19.352Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-003-21-00-00
+2024-08-08T20:40:20.345Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:21.846Z - INFO: PDF saved: O:\Clients\United Surgical Partners International\Properties\149824\PP\2024\Scanned Documents\149824 - Tax Bill (2024) - Alameda County - Unsecured - 02-330119-00-003-21-00-00 Auto.pdf
+2024-08-08T20:40:21.922Z - INFO: ---------------------------
+2024-08-08T20:40:22.332Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-004-21-00-00
+2024-08-08T20:40:23.329Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:24.794Z - INFO: PDF saved: O:\Clients\United Surgical Partners International\Properties\149824\PP\2024\Scanned Documents\149824 - Tax Bill (2024) - Alameda County - Unsecured - 02-330119-00-004-21-00-00 Auto.pdf
+2024-08-08T20:40:24.876Z - INFO: ---------------------------
+2024-08-08T20:40:25.262Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-003-21-19-00
+2024-08-08T20:40:26.269Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:27.857Z - INFO: PDF saved: O:\Clients\United Surgical Partners International\Properties\149824\PP\2024\Scanned Documents\149824 - Tax Bill (2024) - Alameda County - Unsecured - 02-330119-00-003-21-19-00 Auto.pdf
+2024-08-08T20:40:27.934Z - INFO: ---------------------------
+2024-08-08T20:40:28.326Z - INFO: Scraping data for Alameda County with account_lookup '02-330119-00-005-22-00-00
+2024-08-08T20:40:29.345Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:30.817Z - INFO: PDF saved: O:\Clients\United Surgical Partners International\Properties\149824\PP\2024\Scanned Documents\149824 - Tax Bill (2024) - Alameda County - Unsecured - 02-330119-00-005-22-00-00 Auto.pdf
+2024-08-08T20:40:31.437Z - INFO: ---------------------------
+2024-08-08T20:40:31.806Z - INFO: Scraping data for Alameda County with account_lookup '02-33808-00-120-15-00-00
+2024-08-08T20:40:31.807Z - ERROR: Bad Account Lookup 023380800120150000
+2024-08-08T20:40:31.886Z - INFO: ---------------------------
+2024-08-08T20:40:32.284Z - INFO: Scraping data for Alameda County with account_lookup '00-359462-00-002-21-00-00
+2024-08-08T20:40:33.345Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:34.880Z - INFO: PDF saved: O:\Clients\United Surgical Partners International\Properties\168544\PP\2024\Scanned Documents\168544 - Tax Bill (2024) - Alameda County - Unsecured - 00-359462-00-002-23-00-00 Auto.pdf
+2024-08-08T20:40:35.498Z - INFO: ---------------------------
+2024-08-08T20:40:35.880Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-021-21-00-00
+2024-08-08T20:40:36.906Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:37.210Z - ERROR: No Bills Found. Please check your account number. 0000576300021210000
+2024-08-08T20:40:37.292Z - INFO: ---------------------------
+2024-08-08T20:40:37.689Z - INFO: Scraping data for Alameda County with account_lookup '366137-1
+2024-08-08T20:40:37.689Z - ERROR: Bad Account Lookup 3661371
+2024-08-08T20:40:37.766Z - INFO: ---------------------------
+2024-08-08T20:40:38.166Z - INFO: Scraping data for Alameda County with account_lookup '00-367971-00-002-21-00-00
+2024-08-08T20:40:39.208Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:40.666Z - INFO: PDF saved: O:\Clients\Covenant Surgical Partners\Properties\256226\PP\2024\Scanned Documents\256226 - Tax Bill (2024) - Alameda County - Unsecured - 00-367971-00-002-23-00-00 Auto.pdf
+2024-08-08T20:40:41.278Z - INFO: ---------------------------
+2024-08-08T20:40:41.702Z - INFO: Scraping data for Alameda County with account_lookup '00-389506-00-001-23-00-00
+2024-08-08T20:40:42.751Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:44.224Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\339352\PP\2024\Scanned Documents\339352 - Tax Bill (2024) - Alameda County - Unsecured - 00-389506-00-001-23-00-00 Auto.pdf
+2024-08-08T20:40:44.300Z - INFO: ---------------------------
+2024-08-08T20:40:44.659Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:40:45.720Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:47.158Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38129\PP\2024\Scanned Documents\38129 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:40:47.765Z - INFO: ---------------------------
+2024-08-08T20:40:48.151Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-08T20:40:49.173Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:50.601Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\113544\PP\2024\Scanned Documents\113544 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-014-23-00-00 Auto.pdf
+2024-08-08T20:40:50.682Z - INFO: ---------------------------
+2024-08-08T20:40:51.042Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-08T20:40:52.066Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:53.534Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\207076\PP\2024\Scanned Documents\207076 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-014-23-00-00 Auto.pdf
+2024-08-08T20:40:53.611Z - INFO: ---------------------------
+2024-08-08T20:40:53.999Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:40:55.063Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:56.510Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\47891\PP\2024\Scanned Documents\47891 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:40:56.588Z - INFO: ---------------------------
+2024-08-08T20:40:56.947Z - INFO: Scraping data for Alameda County with account_lookup '00-353789-00-000-21-00-00
+2024-08-08T20:40:58.002Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:40:59.791Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\148156\PP\2024\Scanned Documents\148156 - Tax Bill (2024) - Alameda County - Unsecured - 00-353789-00-000-23-00-00 Auto.pdf
+2024-08-08T20:40:59.868Z - INFO: ---------------------------
+2024-08-08T20:41:00.265Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:41:01.487Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:02.934Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38299\PP\2024\Scanned Documents\38299 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:41:03.013Z - INFO: ---------------------------
+2024-08-08T20:41:03.387Z - INFO: Scraping data for Alameda County with account_lookup '00-013252-00-004-21-00-00
+2024-08-08T20:41:04.461Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:05.946Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38391\PP\2024\Scanned Documents\38391 - Tax Bill (2024) - Alameda County - Unsecured - 00-013252-00-004-23-00-00 Auto.pdf
+2024-08-08T20:41:06.027Z - INFO: ---------------------------
+2024-08-08T20:41:06.387Z - INFO: Scraping data for Alameda County with account_lookup '00-013252-00-000-21-00-00
+2024-08-08T20:41:07.435Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:08.920Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\14832\PP\2024\Scanned Documents\14832 - Tax Bill (2024) - Alameda County - Unsecured - 00-013252-00-000-23-00-00 Auto.pdf
+2024-08-08T20:41:09.548Z - INFO: ---------------------------
+2024-08-08T20:41:09.954Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:41:11.001Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:12.445Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\148135\PP\2024\Scanned Documents\148135 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:41:12.526Z - INFO: ---------------------------
+2024-08-08T20:41:12.966Z - INFO: Scraping data for Alameda County with account_lookup '00-013252-00-002-21-00-00
+2024-08-08T20:41:13.956Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:15.598Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\14894\PP\2024\Scanned Documents\14894 - Tax Bill (2024) - Alameda County - Unsecured - 00-013252-00-002-23-00-00 Auto.pdf
+2024-08-08T20:41:16.226Z - INFO: ---------------------------
+2024-08-08T20:41:16.581Z - INFO: Scraping data for Alameda County with account_lookup '00-013252-00-003-21-00-00
+2024-08-08T20:41:17.604Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:19.078Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\14895\PP\2024\Scanned Documents\14895 - Tax Bill (2024) - Alameda County - Unsecured - 00-013252-00-003-23-00-00 Auto.pdf
+2024-08-08T20:41:19.686Z - INFO: ---------------------------
+2024-08-08T20:41:20.063Z - INFO: Scraping data for Alameda County with account_lookup '00-323003-00-000-21-00-00
+2024-08-08T20:41:21.063Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:22.489Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\47884\PP\2024\Scanned Documents\47884 - Tax Bill (2024) - Alameda County - Unsecured - 00-323003-00-000-23-00-00 Auto.pdf
+2024-08-08T20:41:22.565Z - INFO: ---------------------------
+2024-08-08T20:41:22.959Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-006-21-00-00
+2024-08-08T20:41:24.001Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:25.480Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38121\PP\2024\Scanned Documents\38121 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-006-23-00-00 Auto.pdf
+2024-08-08T20:41:26.093Z - INFO: ---------------------------
+2024-08-08T20:41:26.497Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-013-21-00-00
+2024-08-08T20:41:27.531Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:28.975Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38123\PP\2024\Scanned Documents\38123 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-013-23-00-00 Auto.pdf
+2024-08-08T20:41:29.053Z - INFO: ---------------------------
+2024-08-08T20:41:29.423Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-005-21-00-00
+2024-08-08T20:41:30.580Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:32.041Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38125\PP\2024\Scanned Documents\38125 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-005-23-00-00 Auto.pdf
+2024-08-08T20:41:32.117Z - INFO: ---------------------------
+2024-08-08T20:41:32.509Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-002-21-00-00
+2024-08-08T20:41:33.549Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:35.070Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38127\PP\2024\Scanned Documents\38127 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-002-23-00-00 Auto.pdf
+2024-08-08T20:41:35.150Z - INFO: ---------------------------
+2024-08-08T20:41:35.524Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-012-21-00-00
+2024-08-08T20:41:36.562Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:38.011Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38131\PP\2024\Scanned Documents\38131 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-012-23-00-00 Auto.pdf
+2024-08-08T20:41:38.089Z - INFO: ---------------------------
+2024-08-08T20:41:38.485Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:41:39.526Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:40.978Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38141\PP\2024\Scanned Documents\38141 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:41:41.057Z - INFO: ---------------------------
+2024-08-08T20:41:41.468Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-08T20:41:43.117Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:44.675Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\84522\PP\2024\Scanned Documents\84522 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-014-23-00-00 Auto.pdf
+2024-08-08T20:41:44.763Z - INFO: ---------------------------
+2024-08-08T20:41:45.139Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-015-21-00-00
+2024-08-08T20:41:46.158Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:47.608Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\84512\PP\2024\Scanned Documents\84512 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-015-23-00-00 Auto.pdf
+2024-08-08T20:41:47.686Z - INFO: ---------------------------
+2024-08-08T20:41:48.101Z - INFO: Scraping data for Alameda County with account_lookup '00-329594-00-000-21-00-00
+2024-08-08T20:41:49.155Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:50.603Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\84517\PP\2024\Scanned Documents\84517 - Tax Bill (2024) - Alameda County - Unsecured - 00-329594-00-000-23-00-00 Auto.pdf
+2024-08-08T20:41:51.215Z - INFO: ---------------------------
+2024-08-08T20:41:51.606Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:41:52.704Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:54.162Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\129999\PP\2024\Scanned Documents\129999 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:41:54.240Z - INFO: ---------------------------
+2024-08-08T20:41:54.598Z - INFO: Scraping data for Alameda County with account_lookup '00-389506-00-001-21-00-00
+2024-08-08T20:41:55.633Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:57.071Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\130005\PP\2024\Scanned Documents\130005 - Tax Bill (2024) - Alameda County - Unsecured - 00-389506-00-001-23-00-00 Auto.pdf
+2024-08-08T20:41:57.149Z - INFO: ---------------------------
+2024-08-08T20:41:57.554Z - INFO: Scraping data for Alameda County with account_lookup '00-389506-00-001-21-00-00
+2024-08-08T20:41:58.588Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:41:59.981Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38181\PP\2024\Scanned Documents\38181 - Tax Bill (2024) - Alameda County - Unsecured - 00-389506-00-001-23-00-00 Auto.pdf
+2024-08-08T20:42:00.068Z - INFO: ---------------------------
+2024-08-08T20:42:00.458Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:42:01.539Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:03.091Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\38227\PP\2024\Scanned Documents\38227 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:42:03.173Z - INFO: ---------------------------
+2024-08-08T20:42:03.559Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-005-21-00-00
+2024-08-08T20:42:04.770Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:06.284Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\59686\PP\2024\Scanned Documents\59686 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-005-23-00-00 Auto.pdf
+2024-08-08T20:42:06.365Z - INFO: ---------------------------
+2024-08-08T20:42:06.782Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-08T20:42:07.967Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:09.419Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\113327\PP\2024\Scanned Documents\113327 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-014-23-00-00 Auto.pdf
+2024-08-08T20:42:09.495Z - INFO: ---------------------------
+2024-08-08T20:42:09.889Z - INFO: Scraping data for Alameda County with account_lookup '00-341800-00-000-21-00-00
+2024-08-08T20:42:10.910Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:12.374Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\98376\PP\2024\Scanned Documents\98376 - Tax Bill (2024) - Alameda County - Unsecured - 00-341800-00-000-23-00-00 Auto.pdf
+2024-08-08T20:42:12.458Z - INFO: ---------------------------
+2024-08-08T20:42:12.845Z - INFO: Scraping data for Alameda County with account_lookup '00-343117-00-000-21-00-00
+2024-08-08T20:42:13.830Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:15.255Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\99576\PP\2024\Scanned Documents\99576 - Tax Bill (2024) - Alameda County - Unsecured - 00-343117-00-000-23-00-00 Auto.pdf
+2024-08-08T20:42:15.333Z - INFO: ---------------------------
+2024-08-08T20:42:15.695Z - INFO: Scraping data for Alameda County with account_lookup '00-343117-00-000-21-00-00
+2024-08-08T20:42:16.751Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:18.221Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\113324\PP\2024\Scanned Documents\113324 - Tax Bill (2024) - Alameda County - Unsecured - 00-343117-00-000-23-00-00 Auto.pdf
+2024-08-08T20:42:18.299Z - INFO: ---------------------------
+2024-08-08T20:42:18.692Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:42:19.688Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:21.137Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\113326\PP\2024\Scanned Documents\113326 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:42:21.214Z - INFO: ---------------------------
+2024-08-08T20:42:21.617Z - INFO: Scraping data for Alameda County with account_lookup '00-395483-00-001-20-00-00
+2024-08-08T20:42:22.692Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:24.129Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\166306\PP\2024\Scanned Documents\166306 - Tax Bill (2024) - Alameda County - Unsecured - 00-395483-00-001-23-00-00 Auto.pdf
+2024-08-08T20:42:24.212Z - INFO: ---------------------------
+2024-08-08T20:42:24.585Z - INFO: Scraping data for Alameda County with account_lookup '00-395480-00-001-21-00-00
+2024-08-08T20:42:25.654Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:27.086Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\166328\PP\2024\Scanned Documents\166328 - Tax Bill (2024) - Alameda County - Unsecured - 00-395480-00-001-23-00-00 Auto.pdf
+2024-08-08T20:42:27.167Z - INFO: ---------------------------
+2024-08-08T20:42:27.528Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:42:28.561Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:30.032Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\166329\PP\2024\Scanned Documents\166329 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:42:30.638Z - INFO: ---------------------------
+2024-08-08T20:42:31.019Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-016-21-00-00
+2024-08-08T20:42:32.047Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:33.490Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\166330\PP\2024\Scanned Documents\166330 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-016-23-00-00 Auto.pdf
+2024-08-08T20:42:33.568Z - INFO: ---------------------------
+2024-08-08T20:42:33.966Z - INFO: Scraping data for Alameda County with account_lookup '00-005763-00-014-21-00-00
+2024-08-08T20:42:35.032Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:36.466Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\166331\PP\2024\Scanned Documents\166331 - Tax Bill (2024) - Alameda County - Unsecured - 00-005763-00-014-23-00-00 Auto.pdf
+2024-08-08T20:42:36.545Z - INFO: ---------------------------
+2024-08-08T20:42:36.917Z - INFO: Scraping data for Alameda County with account_lookup '00-395438-00-001-21-00-00
+2024-08-08T20:42:37.938Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:39.366Z - INFO: PDF saved: O:\Clients\DaVita Inc and related subsidiaries\Properties\207669\PP\2024\Scanned Documents\207669 - Tax Bill (2024) - Alameda County - Unsecured - 00-395438-00-001-23-00-00 Auto.pdf
+2024-08-08T20:42:39.445Z - INFO: ---------------------------
+2024-08-08T20:42:39.843Z - INFO: Scraping data for Alameda County with account_lookup '00-399502-00-001-22-00-00
+2024-08-08T20:42:41.749Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:43.247Z - INFO: PDF saved: O:\Clients\IVX Health\Properties\309704\PP\2024\Scanned Documents\309704 - Tax Bill (2024) - Alameda County - Unsecured - 00-399502-00-001-23-00-00 Auto.pdf
+2024-08-08T20:42:43.342Z - INFO: ---------------------------
+2024-08-08T20:42:43.722Z - INFO: Scraping data for Alameda County with account_lookup '00-395325-16
+2024-08-08T20:42:43.723Z - ERROR: Bad Account Lookup 0039532516
+2024-08-08T20:42:43.806Z - INFO: ---------------------------
+2024-08-08T20:42:44.208Z - INFO: Scraping data for Alameda County with account_lookup '00-395325-15
+2024-08-08T20:42:44.208Z - ERROR: Bad Account Lookup 0039532515
+2024-08-08T20:42:44.289Z - INFO: ---------------------------
+2024-08-08T20:42:44.653Z - INFO: Scraping data for Alameda County with account_lookup '395325-7
+2024-08-08T20:42:44.654Z - ERROR: Bad Account Lookup 3953257
+2024-08-08T20:42:44.733Z - INFO: ---------------------------
+2024-08-08T20:42:45.127Z - INFO: Scraping data for Alameda County with account_lookup '395325-5
+2024-08-08T20:42:45.128Z - ERROR: Bad Account Lookup 3953255
+2024-08-08T20:42:45.207Z - INFO: ---------------------------
+2024-08-08T20:42:45.575Z - INFO: Scraping data for Alameda County with account_lookup '395325-17
+2024-08-08T20:42:45.575Z - ERROR: Bad Account Lookup 39532517
+2024-08-08T20:42:46.167Z - INFO: ---------------------------
+2024-08-08T20:42:46.554Z - INFO: Scraping data for Alameda County with account_lookup '395325-3
+2024-08-08T20:42:46.554Z - ERROR: Bad Account Lookup 3953253
+2024-08-08T20:42:46.631Z - INFO: ---------------------------
+2024-08-08T20:42:47.024Z - INFO: Scraping data for Alameda County with account_lookup '395325-2
+2024-08-08T20:42:47.025Z - ERROR: Bad Account Lookup 3953252
+2024-08-08T20:42:47.620Z - INFO: ---------------------------
+2024-08-08T20:42:48.004Z - INFO: Scraping data for Alameda County with account_lookup '00-395325-00-007-21-00-00
+2024-08-08T20:42:49.220Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:50.667Z - INFO: PDF saved: O:\Clients\Renal Therapies - FMC\Properties\280226\PP\2024\Scanned Documents\280226 - Tax Bill (2024) - Alameda County - Unsecured - 00-395325-00-007-23-00-00 Auto.pdf
+2024-08-08T20:42:50.749Z - INFO: ---------------------------
+2024-08-08T20:42:51.141Z - INFO: Scraping data for Alameda County with account_lookup '395325-6
+2024-08-08T20:42:51.141Z - ERROR: Bad Account Lookup 3953256
+2024-08-08T20:42:51.219Z - INFO: ---------------------------
+2024-08-08T20:42:51.584Z - INFO: Scraping data for Alameda County with account_lookup '395325-1
+2024-08-08T20:42:51.585Z - ERROR: Bad Account Lookup 3953251
+2024-08-08T20:42:51.665Z - INFO: ---------------------------
+2024-08-08T20:42:52.059Z - INFO: Scraping data for Alameda County with account_lookup '395325-4
+2024-08-08T20:42:52.060Z - ERROR: Bad Account Lookup 3953254
+2024-08-08T20:42:52.142Z - INFO: ---------------------------
+2024-08-08T20:42:52.543Z - INFO: Scraping data for Alameda County with account_lookup '395325-9
+2024-08-08T20:42:52.543Z - ERROR: Bad Account Lookup 3953259
+2024-08-08T20:42:52.624Z - INFO: ---------------------------
+2024-08-08T20:42:53.015Z - INFO: Scraping data for Alameda County with account_lookup '395325-8
+2024-08-08T20:42:53.015Z - ERROR: Bad Account Lookup 3953258
+2024-08-08T20:42:53.093Z - INFO: ---------------------------
+2024-08-08T20:42:53.488Z - INFO: Scraping data for Alameda County with account_lookup '00395325-14
+2024-08-08T20:42:53.488Z - ERROR: Bad Account Lookup 0039532514
+2024-08-08T20:42:53.566Z - INFO: ---------------------------
+2024-08-08T20:42:53.969Z - INFO: Scraping data for Alameda County with account_lookup '395325-4
+2024-08-08T20:42:53.969Z - ERROR: Bad Account Lookup 3953254
+2024-08-08T20:42:54.589Z - INFO: ---------------------------
+2024-08-08T20:42:54.983Z - INFO: Scraping data for Alameda County with account_lookup '395325-10
+2024-08-08T20:42:54.983Z - ERROR: Bad Account Lookup 39532510
+2024-08-08T20:42:55.064Z - INFO: ---------------------------
+2024-08-08T20:42:55.426Z - INFO: Scraping data for Alameda County with account_lookup '395325-13
+2024-08-08T20:42:55.427Z - ERROR: Bad Account Lookup 39532513
+2024-08-08T20:42:55.504Z - INFO: ---------------------------
+2024-08-08T20:42:55.872Z - INFO: Scraping data for Alameda County with account_lookup '395325-12
+2024-08-08T20:42:55.873Z - ERROR: Bad Account Lookup 39532512
+2024-08-08T20:42:55.951Z - INFO: ---------------------------
+2024-08-08T20:42:56.322Z - INFO: Scraping data for Alameda County with account_lookup '395325-11
+2024-08-08T20:42:56.323Z - ERROR: Bad Account Lookup 39532511
+2024-08-08T20:42:56.404Z - INFO: ---------------------------
+2024-08-08T20:42:56.793Z - INFO: Scraping data for Alameda County with account_lookup '00-362749-00-001-23-00-00
+2024-08-08T20:42:57.812Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:42:59.275Z - INFO: PDF saved: O:\Clients\Community Psychiatry Management LLC  dba Mindpath Health\Properties\404197\PP\2024\Scanned Documents\404197 - Tax Bill (2024) - Alameda County - Unsecured - 00-362749-00-001-23-00-00 Auto.pdf
+2024-08-08T20:42:59.355Z - INFO: ---------------------------
+2024-08-08T20:42:59.720Z - INFO: Scraping data for Alameda County with account_lookup '02-362749-00-005-23-00-00
+2024-08-08T20:43:01.070Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:43:02.523Z - INFO: PDF saved: O:\Clients\Community Psychiatry Management LLC  dba Mindpath Health\Properties\404199\PP\2024\Scanned Documents\404199 - Tax Bill (2024) - Alameda County - Unsecured - 02-362749-00-005-23-00-00 Auto.pdf
+2024-08-08T20:43:03.129Z - INFO: ---------------------------
+2024-08-08T20:43:03.523Z - INFO: Scraping data for Alameda County with account_lookup '02-362749-00-003-23-00-00
+2024-08-08T20:43:04.613Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:43:06.080Z - INFO: PDF saved: O:\Clients\Community Psychiatry Management LLC  dba Mindpath Health\Properties\404203\PP\2024\Scanned Documents\404203 - Tax Bill (2024) - Alameda County - Unsecured - 02-362749-00-003-23-00-00 Auto.pdf
+2024-08-08T20:43:06.160Z - INFO: ---------------------------
+2024-08-08T20:43:06.528Z - INFO: Scraping data for Alameda County with account_lookup '00-362749-00-007-23-00-00
+2024-08-08T20:43:07.616Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:43:09.187Z - INFO: PDF saved: O:\Clients\Community Psychiatry Management LLC  dba Mindpath Health\Properties\404205\PP\2024\Scanned Documents\404205 - Tax Bill (2024) - Alameda County - Unsecured - 00-362749-00-007-23-00-00 Auto.pdf
+2024-08-08T20:43:09.827Z - INFO: ---------------------------
+2024-08-08T20:43:10.215Z - INFO: Scraping data for Alameda County with account_lookup '00-362749-00-002-23-00-00
+2024-08-08T20:43:11.235Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:43:12.653Z - INFO: PDF saved: O:\Clients\Community Psychiatry Management LLC  dba Mindpath Health\Properties\404445\PP\2024\Scanned Documents\404445 - Tax Bill (2024) - Alameda County - Unsecured - 00-362749-00-002-23-00-00 Auto.pdf
+2024-08-08T20:43:12.728Z - INFO: ---------------------------
+2024-08-08T20:43:13.121Z - INFO: Scraping data for Alameda County with account_lookup '003202530000000
+2024-08-08T20:43:13.121Z - ERROR: Bad Account Lookup 003202530000000
+2024-08-08T20:43:13.203Z - INFO: ---------------------------
+2024-08-08T20:43:13.599Z - INFO: Scraping data for Alameda County with account_lookup '0040949700001230000
+2024-08-08T20:43:14.596Z - INFO: Navigated to: https://www.acgov.org/ptax_pub_app/UnsecuredSearchInit.do?showUnsecuredFromLookup=true
+2024-08-08T20:43:16.049Z - INFO: PDF saved: O:\Clients\Premise Health\Properties\405654\PP\2024\Scanned Documents\405654 - Tax Bill (2024) - Alameda County - Unsecured - 0040949700001230000 Auto.pdf
+2024-08-08T20:43:16.653Z - INFO: ---------------------------
+2024-08-08T20:43:17.041Z - INFO: Scraping data for Alameda County with account_lookup '003007900000000
+2024-08-08T20:43:17.041Z - ERROR: Bad Account Lookup 003007900000000
+2024-08-08T20:43:17.119Z - INFO: ---------------------------
+2024-08-08T20:43:17.507Z - INFO: Scraping data for Alameda County with account_lookup '003284360000200
+2024-08-08T20:43:17.507Z - ERROR: Bad Account Lookup 003284360000200
+2024-08-08T20:43:17.587Z - INFO: ---------------------------
+2024-08-08T20:43:17.974Z - INFO: Scraping data for Alameda County with account_lookup '004018800000100
+2024-08-08T20:43:17.974Z - ERROR: Bad Account Lookup 004018800000100
+2024-08-08T20:43:18.054Z - INFO: ---------------------------
+2024-08-08T20:43:18.451Z - INFO: Scraping data for Alameda County with account_lookup '003284360000100
+2024-08-08T20:43:18.451Z - ERROR: Bad Account Lookup 003284360000100
+2024-08-08T20:43:18.539Z - INFO: ---------------------------
+2024-08-08T20:43:18.942Z - INFO: Scraping data for Alameda County with account_lookup '003637030000000
+2024-08-08T20:43:18.942Z - ERROR: Bad Account Lookup 003637030000000
+2024-08-08T20:43:19.022Z - INFO: ---------------------------
+2024-08-08T20:43:19.403Z - INFO: Scraping data for Alameda County with account_lookup '003284360000000
+2024-08-08T20:43:19.404Z - ERROR: Bad Account Lookup 003284360000000
+2024-08-08T20:43:19.484Z - INFO: ========================================
+2024-08-08T20:43:19.484Z - INFO: Total successful runs: 70
+2024-08-08T20:43:19.484Z - INFO: Total failed runs: 30
+2024-08-08T20:43:19.485Z - INFO: ========================================
