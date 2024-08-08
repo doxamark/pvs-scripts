@@ -71,7 +71,13 @@ class BaseScript {
         try {
             await this.setupDriver();
             this.moveMouseRandomly(this.page, 0, 1000, 0, 1000).catch(console.error);
-            await this.performScraping();
+
+            const is_success = await this.performScraping();
+
+            if (!is_success) {
+                return false;
+            }
+
             await this.saveAsPDF();
             return true;
         } catch (error) {

@@ -56,15 +56,18 @@ console.error = (...messages) => {
 
         if (!has_succeeded) {
           failureCount++;
-          return;
+          continue;
         }
 
-        // const insertQuery = record.InsertString;
-        // try {
-        //   await dbManager.insert(insertQuery);
-        // } catch (error) {
-        //   console.error(`Failed to insert data: ${error.message}`);
-        // }
+        const insertQuery = record.InsertString;
+        try {
+          // INSERT INTO Document WITH AUTO NAME SELECT 804103 as BillID, 75 as Type, 'Tax Bill - Alameda County - Unsecured - 01-236576-00-005-23-00-00' as Name, 'O:\Clients\Alliance HealthCare Services\Properties\49736\PP\2024\Scanned Documents\49736 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-005-23-00-00 Auto.pdf' as DocumentName, 1 as FileExists, 'L' as BillMethod
+          console.log(insertQuery.replaceAll('"',""))
+          await dbManager.insert(insertQuery.replaceAll('"',""));
+          console.log("Successfully inserted data to database.")
+        } catch (error) {
+          console.error(`Failed to insert data: ${error.message}`);
+        }
 
       } catch (error) {
         console.error(`Failed to run script for collector ID ${collectorID}: ${error.message}`);

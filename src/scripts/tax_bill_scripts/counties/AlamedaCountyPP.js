@@ -9,7 +9,7 @@ class AlamedaCountyPPScript extends BaseScript {
 
     if (this.account.length < 19) {
       console.error(`Bad Account Lookup ${this.account}`)
-      return;
+      return false;
     }
 
     const accountNumberParts = [
@@ -70,6 +70,8 @@ class AlamedaCountyPPScript extends BaseScript {
     const viewBillLink = await this.page.$eval('.pplviewbill', el => el.href);
     const viewBillElement = await this.page.$('.pplviewbill');
     this.printLink = viewBillElement
+    
+    return true;
 
   }
 
