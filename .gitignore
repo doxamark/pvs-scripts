@@ -7,12 +7,15 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# downloads
+# Ignore only database.log
+database.log
+
+# outputs
 outputs
 new_outputs
 test_outputs
 custom-downloaded-folders
-downloads
+temp
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

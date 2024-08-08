@@ -26,7 +26,7 @@ class ContraCostaCountyPPScript extends BaseScript {
       fs.mkdirSync(dir, { recursive: true });
     }
 
-    const customPath = path.resolve(`src/downloads/${this.account}`);
+    const customPath = path.resolve(`src/temp/${this.account}`);
 
     const client = await this.page.createCDPSession();
     await client.send('Page.setDownloadBehavior', {

@@ -86,7 +86,7 @@ class AlamedaCountyPPScript extends BaseScript {
       console.log("HEYYYYYYYYYYYYYYYYYYYYYYYYYYYY")
     }
 
-    const customPath = path.resolve(`src/downloads/${this.account}`);
+    const customPath = path.resolve(`src/temp/${this.account}`);
 
     const tempFileName = 'UnSecuredBill.pdf';
     const tempFilePath = path.join(customPath, tempFileName);

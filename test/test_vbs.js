@@ -1,4 +1,4 @@
-import ScriptFactory from '../core/ScriptFactory.js';
+import ScriptFactory from '../src/core/ScriptFactory.js';
 
 // // HARRIS
 // const record = {
