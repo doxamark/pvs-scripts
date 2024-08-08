@@ -105,10 +105,24 @@ class AlamedaCountyPPScript extends BaseScript {
     // Rename the downloaded file
     const files = fs.readdirSync(customPath);
     if (files.length > 0) {
-        const downloadedFile = path.resolve(tempFilePath);
-        const outputFilePath = path.resolve(this.outputPath);
+      const downloadedFile = path.resolve(tempFilePath);
+      const outputFilePath = path.resolve(this.outputPath);
+
+      try {
+        // Attempt to rename the file
         fs.renameSync(downloadedFile, outputFilePath);
-        fs.rmdirSync(customPath);
+      } catch (err) {
+        if (err.code === 'EXDEV') {
+          // Handle cross-device link error by copying and then deleting
+          fs.copyFileSync(downloadedFile, outputFilePath);
+          fs.unlinkSync(downloadedFile);
+        } else {
+          throw err; // Re-throw error if it's not an EXDEV error
+        }
+      }
+
+      // Remove the directory if needed
+      fs.rmdirSync(customPath, { recursive: true });
     }
 
     console.log(`PDF saved: ${this.outputPath}`);
