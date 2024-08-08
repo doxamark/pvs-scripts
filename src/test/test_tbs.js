@@ -1,4 +1,4 @@
-import ScriptFactory from './core/ScriptFactory.js';
+import ScriptFactory from '../core/ScriptFactory.js';
 import fs from 'fs/promises';
 
 // Function to read the JSON file asynchronously
@@ -22,9 +22,10 @@ async function runTests(records) {
 // Function to run a test for a single record
 async function runTest(record) {
   const year = '2024';
-  record.DocumentName = `new_outputs/${record.Account}/${record.Account}-${year}.pdf`;
+  const timestamp = new Date().toISOString();
+  record.DocumentName = `src/test_outputs/${timestamp}/${record.Account}/${record.Account}-${year}.pdf`;
 
-  const factory = new ScriptFactory('scripts/tax_bill_scripts/tbs_map.json', 'tax_bill_scripts');
+  const factory = new ScriptFactory('src/scripts/tax_bill_scripts/tbs_map.json', 'tax_bill_scripts');
   const ScriptClass = await factory.getScriptClass(record.CollectorID);
 
   if (ScriptClass) {
@@ -41,7 +42,7 @@ async function runTest(record) {
 
 // Main function to initiate the process
 async function main() {
-  const records = await readRecords('test/testData.json');
+  const records = await readRecords('./testData.json');
   await runTests(records);
 }
 

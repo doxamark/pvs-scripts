@@ -32,13 +32,11 @@ class OrangeCountyPPScript extends BaseScript {
             return;
         }
 
-        this.outputPath = `outputs/OrangeCountyPP/${this.account}/${this.account}-${this.year}.pdf`;
-
         const dir = path.dirname(this.outputPath);
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
         }
-        const customPath = path.resolve(`custom-download-folders/${this.account}`);
+        const customPath = path.resolve(`src/custom-download-folders/${this.account}`);
         const client = await this.page.createCDPSession();
         await client.send('Page.setDownloadBehavior', {
             behavior: 'allow', downloadPath: customPath

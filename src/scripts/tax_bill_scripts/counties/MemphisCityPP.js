@@ -31,7 +31,6 @@ class MemphisCityPPScript extends BaseScript {
     }
 
     async saveAsPDF() {
-        this.outputPath = `outputs/MemphisCityPP/${this.account}/${this.account}-${this.year}.pdf`;
         const dir = path.dirname(this.outputPath);
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true }); // Create the directory and any missing parent directories

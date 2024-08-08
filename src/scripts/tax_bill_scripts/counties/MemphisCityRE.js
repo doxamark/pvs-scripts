@@ -7,7 +7,6 @@ class MemphisCityREScript extends MemphisCityPPScript {
     // the same site with Memphis PP
     constructor(){
         super();
-        this.outputPath = `outputs/MemphisCityRE/${this.account}/${this.account}-${this.year}.pdf`;
     }
 }
 

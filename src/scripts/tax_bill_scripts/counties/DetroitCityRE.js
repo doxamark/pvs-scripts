@@ -7,7 +7,6 @@ class DetroitCityREScript extends DetroitCityPPScript {
     // the same site with Detroit PP
     constructor(){
         super();
-        this.outputPath = `outputs/DetroitCityRE/${this.account}/${this.account}-${this.year}.pdf`;
     }
 }
 

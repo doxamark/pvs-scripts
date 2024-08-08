@@ -79,13 +79,12 @@ class AlamedaCountyPPScript extends BaseScript {
       return;
     }
 
-    this.outputPath = `outputs/AlamedaCountyPP/${this.account}/${this.account}-${this.year}.pdf`;
     const dir = path.dirname(this.outputPath);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true }); // Create the directory and any missing parent directories
     }
 
-    const customPath = path.resolve(`custom-download-folders/${this.account}`);
+    const customPath = path.resolve(`src/custom-download-folders/${this.account}`);
 
     const tempFileName = 'UnSecuredBill.pdf';
     const tempFilePath = path.join(customPath, tempFileName);

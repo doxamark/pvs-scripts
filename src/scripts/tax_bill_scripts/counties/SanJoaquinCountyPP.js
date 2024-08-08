@@ -2,7 +2,7 @@ import BaseScript from '../../../core/BaseScript.js';
 import fs from 'fs';
 import path from 'path';
 
-class StanislausCountyPPScript extends BaseScript {
+class SanJoaquinCountyPPScript extends BaseScript {
     async performScraping() {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
@@ -39,12 +39,11 @@ class StanislausCountyPPScript extends BaseScript {
     }
 
     async saveAsPDF() {
-        this.outputPath = `outputs/StanislausCountyPP/${this.account}/${this.account}-${this.year}.pdf`;
         const dir = path.dirname(this.outputPath);
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
         }
-        const customPath = path.resolve(`custom-download-folders/${this.account}`);
+        const customPath = path.resolve(`src/custom-download-folders/${this.account}`);
         const client = await this.page.createCDPSession();
         await client.send('Page.setDownloadBehavior', {
             behavior: 'allow', downloadPath: customPath
@@ -77,4 +76,4 @@ class StanislausCountyPPScript extends BaseScript {
     }
 }
 
-export default StanislausCountyPPScript;
+export default SanJoaquinCountyPPScript;

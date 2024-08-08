@@ -1,4 +1,4 @@
-import ScriptFactory from './core/ScriptFactory.js';
+import ScriptFactory from '../core/ScriptFactory.js';
 
 // // HARRIS
 // const record = {
@@ -42,10 +42,10 @@ const record = {
 };
 
 const year = '2024';
-record.DocumentName = `outputs/${record.Account}/${record.Account}-${year}.pdf`;
+record.DocumentName = `src/outputs/${record.Account}/${record.Account}-${year}.pdf`;
 
 (async () => {
-  const factory = new ScriptFactory('scripts/value_backup_scripts/vbs_map.json', 'value_backup_scripts');
+  const factory = new ScriptFactory('src/scripts/value_backup_scripts/vbs_map.json', 'value_backup_scripts');
   const ScriptClass = await factory.getScriptClass(record.AssessorID);
   if (ScriptClass) {
     const script = new ScriptClass(record, year);

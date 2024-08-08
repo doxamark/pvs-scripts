@@ -1,4 +1,4 @@
-import DatabaseManager from './core/DatabaseManager.js';
+import DatabaseManager from '../core/DatabaseManager.js';
 
 (async () => {
   const dbManager = new DatabaseManager();
