@@ -25,6 +25,7 @@ console.error = (...messages) => {
 };
 
 (async () => {
+  const startTime = new Date(); // Start time
   const dbManager = new DatabaseManager();
   const fetchQuery = 'SELECT * FROM tso.TaxBillBackupNeededScript()';
   let records = [];
@@ -48,6 +49,10 @@ console.error = (...messages) => {
     const mapID = `${collectorID}${type}`;
     const ScriptClass = await factory.getScriptClass(mapID);
 
+    // for testing - comment the code below if you run for production.
+    record.DocumentName = record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
+    record.InsertString = record.InsertString.replace('O:', "C:\\Users\\pvsscripts\\Documents")
+
     if (ScriptClass) {
       const script = new ScriptClass(record, year);
       try {
@@ -62,7 +67,6 @@ console.error = (...messages) => {
         
         try {
           let insertQuery = record.InsertString;
-          // INSERT INTO Document WITH AUTO NAME SELECT 804103 as BillID, 75 as Type, 'Tax Bill - Alameda County - Unsecured - 01-236576-00-005-23-00-00' as Name, 'O:\Clients\Alliance HealthCare Services\Properties\49736\PP\2024\Scanned Documents\49736 - Tax Bill (2024) - Alameda County - Unsecured - 01-236576-00-005-23-00-00 Auto.pdf' as DocumentName, 1 as FileExists, 'L' as BillMethod
           insertQuery = insertQuery.replaceAll('"',"").replaceAll('INSERT INTO Document', 'INSERT INTO tso.Document')
           console.log(insertQuery)
           await dbManager.insert(insertQuery);
@@ -79,9 +83,13 @@ console.error = (...messages) => {
       console.error(`No script class found for collector ID ${collectorID}`);
     }
   }
-
+  
   console.log("========================================")
   console.log(`Total successful runs: ${records.length - failureCount}`)
   console.log(`Total failed runs: ${failureCount}`)
   console.log("========================================")
+
+  const endTime = new Date(); // End time
+  const timeTaken = (endTime - startTime) / 1000; // Time in seconds
+  console.log(`Total execution time - ${timeTaken} seconds.`);
 })();
