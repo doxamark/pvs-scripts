@@ -50,10 +50,10 @@ console.error = (...messages) => {
     const ScriptClass = await factory.getScriptClass(mapID);
 
     // for testing - comment the code below if you run for production.
-    testDocumentName =  record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
+    let testDocumentName =  record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
     testDocumentName = getUniqueFilename(testDocumentName)
 
-    record.InsertString = record.InsertString.replace(record.InsertString.split(",")[2], `'${testDocumentName}' as DocumentName`)
+    record.InsertString = record.InsertString.replace(record.InsertString.split(",")[3], `'${testDocumentName}' as DocumentName`)
     record.DocumentName = testDocumentName
     if (ScriptClass) {
       const script = new ScriptClass(record, year);
@@ -71,8 +71,8 @@ console.error = (...messages) => {
           let insertQuery = record.InsertString;
           insertQuery = insertQuery.replaceAll('"',"").replaceAll('INSERT INTO Document', 'INSERT INTO tso.Document')
           console.log(insertQuery)
-          await dbManager.insert(insertQuery);
-          console.log("Successfully inserted data to database.")
+          // await dbManager.insert(insertQuery);
+          // console.log("Successfully inserted data to database.")
         } catch (error) {
           console.error(`Failed to insert data: ${error.message}`);
         }

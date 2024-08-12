@@ -36,7 +36,7 @@ class AlamedaCountyPPScript extends BaseScript {
     ] = accountNumberParts;
 
     if (acctYear != this.year.toString().slice(-2)) {
-      console.log("Search year does not match with the target year.")
+      console.error("Search year does not match with the target year.")
       return false
     }
 
