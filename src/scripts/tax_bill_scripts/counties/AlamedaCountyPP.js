@@ -35,6 +35,11 @@ class AlamedaCountyPPScript extends BaseScript {
       acctCorrNum
     ] = accountNumberParts;
 
+    if (acctYear != this.year.toString().slice(-2)) {
+      console.log("Search year does not match with the target year.")
+      return false
+    }
+
     await this.page.type('#acctClass', acctClass);
     await this.page.type('#acctAssesseeId', acctAssesseeId);
     await this.page.type('#acctDivision', acctDivision);
@@ -64,7 +69,7 @@ class AlamedaCountyPPScript extends BaseScript {
 
     if (noBillFound) {
       console.error('No Bills Found. Please check your account number.', this.account);
-      return;
+      return false;
     }
 
     const viewBillLink = await this.page.$eval('.pplviewbill', el => el.href);
@@ -78,7 +83,7 @@ class AlamedaCountyPPScript extends BaseScript {
   async saveAsPDF() {
 
     if (!this.printLink) {
-      return;
+      return false;
     }
 
     const dir = path.dirname(this.outputPath);
