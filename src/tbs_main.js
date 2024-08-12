@@ -50,9 +50,11 @@ console.error = (...messages) => {
     const ScriptClass = await factory.getScriptClass(mapID);
 
     // for testing - comment the code below if you run for production.
-    record.DocumentName = record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
-    record.InsertString = record.InsertString.replace('O:', "C:\\Users\\pvsscripts\\Documents")
+    testDocumentName =  record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
+    testDocumentName = getUniqueFilename(testDocumentName)
 
+    record.InsertString = record.InsertString.replace(record.InsertString.split(",")[2], `'${testDocumentName}' as DocumentName`)
+    record.DocumentName = testDocumentName
     if (ScriptClass) {
       const script = new ScriptClass(record, year);
       try {
@@ -93,3 +95,21 @@ console.error = (...messages) => {
   const timeTaken = (endTime - startTime) / 1000; // Time in seconds
   console.log(`Total execution time - ${timeTaken} seconds.`);
 })();
+
+
+
+function getUniqueFilename(filePath) {
+  const dir = path.dirname(filePath);
+  const ext = path.extname(filePath);
+  const baseName = path.basename(filePath, ext);
+
+  let uniquePath = filePath;
+  let counter = 1;
+
+  while (fs.existsSync(uniquePath)) {
+      uniquePath = path.join(dir, `${baseName} (${counter})${ext}`);
+      counter++;
+  }
+
+  return uniquePath;
+}
