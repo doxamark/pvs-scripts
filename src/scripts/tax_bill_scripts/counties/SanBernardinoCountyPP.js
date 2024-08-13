@@ -13,6 +13,7 @@ class SanBernardinoCountyPPScript extends BaseScript {
 
         // Click the search button
         await this.page.click('input[name="ctl00$contentHolder$cmdSearch"]');
+        return true;
     }
 
     async saveAsPDF() {

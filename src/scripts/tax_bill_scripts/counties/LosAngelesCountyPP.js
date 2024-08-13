@@ -24,6 +24,8 @@ class LosAngelesCountyPPScript extends BaseScript {
       await new Promise(resolve => setTimeout(resolve, 1000));
       await targetButton.click({ clickCount: 1 });
       await targetButton.click({ clickCount: 1 });
+    } else {
+      return false;
     }
 
     // Wait for and click the link with the specific text
@@ -47,6 +49,8 @@ class LosAngelesCountyPPScript extends BaseScript {
     await this.page.click('input.submitButton[value="Yes"]');
     // Wait for the table to appear
     await this.page.waitForSelector('table.unsecInquiryDetailTable');
+
+    return true;
   }
 
   async saveAsPDF(){

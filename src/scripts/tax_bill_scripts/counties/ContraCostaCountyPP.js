@@ -18,6 +18,7 @@ class ContraCostaCountyPPScript extends BaseScript {
 
     // Wait for the results table to appear
     await this.page.waitForSelector('table.SelectableResultsTableWidget.ResultsTableWidget');
+    return true;
   }
 
   async saveAsPDF() {

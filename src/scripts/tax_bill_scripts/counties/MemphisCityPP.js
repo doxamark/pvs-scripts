@@ -4,7 +4,7 @@ import path from 'path';
 
 class MemphisCityPPScript extends BaseScript {
     async performScraping() {
-        
+
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
@@ -16,18 +16,19 @@ class MemphisCityPPScript extends BaseScript {
             new Promise(resolve => this.browser.once('targetcreated', target => resolve(target.page()))),
             this.page.waitForSelector('a#MainBodyPlaceHolder_hlinkPrint2'),
             this.page.click('a#MainBodyPlaceHolder_hlinkPrint2')
-            ]);
-            
-            const newPage = await newPagePromise;
-            const newPageUrl = newPage.url();
+        ]);
 
-            newPage.on('dialog', async dialog => {
-                await dialog.dismiss(); // Dismiss the dialog (use dialog.accept() if you need to accept it)
-            });
-            
-            // Optionally navigate to the new page URL if needed
-            await this.page.goto(newPageUrl);
-            await newPage.close();
+        const newPage = await newPagePromise;
+        const newPageUrl = newPage.url();
+
+        newPage.on('dialog', async dialog => {
+            await dialog.dismiss(); // Dismiss the dialog (use dialog.accept() if you need to accept it)
+        });
+
+        // Optionally navigate to the new page URL if needed
+        await this.page.goto(newPageUrl);
+        await newPage.close();
+        return true;
     }
 
     async saveAsPDF() {

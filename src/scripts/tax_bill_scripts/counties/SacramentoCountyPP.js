@@ -11,6 +11,7 @@ class SacramentoCountyPPScript extends BaseScript {
 
         // Click the bill number link
         await this.page.click('a[data-bind*="text: FullBillNumber"]');
+        return true;
     }
 
     async saveAsPDF() {

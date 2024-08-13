@@ -60,19 +60,39 @@ class RiversideCountyPPScript extends BaseScript {
                 break;
             }
         }
+
+        await this.page.waitForSelector('#headingPaid button')
+        await this.page.click('#headingPaid button');
+
         // Wait for the element with the text "View Bill Detail" and click it
         await this.page.waitForSelector('a.btn.btn-default[style*="background-color:#aba7a7;float:right"]');
         const billLinks = await this.page.$$('a.btn.btn-default[style*="background-color:#aba7a7;float:right"]');
         for (const link of billLinks) {
             const text = await this.page.evaluate(el => el.textContent, link);
             if (text.trim().includes('View Bill Detail')) {
-                await link.click();
-                break;
+                const parentTh = await this.page.evaluateHandle(el => el.closest('th'), link);
+
+                // Get the sibling <span> element that contains the bill number
+                const billNumberSpan = await parentTh.$('span');
+
+                if (billNumberSpan) {
+                    // Extract the text content of the span
+                    const billNumberText = await this.page.evaluate(el => el.textContent, billNumberSpan);
+
+                    // Use a regular expression to extract the bill year from the bill number
+                    const yearMatch = billNumberText.match(/Bill Number:\s(\d{4})/);
+                    if (yearMatch && yearMatch[1] === this.year) {
+                        // Click the link if the bill year is 2023
+                        await link.click();
+                        break;
+                    }
+                }
             }
         }
 
         await new Promise(resolve => setTimeout(resolve, 3000));
-        
+
+        return true;
     }
 
     async saveAsPDF() {

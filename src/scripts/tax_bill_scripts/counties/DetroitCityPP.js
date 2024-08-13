@@ -47,6 +47,7 @@ class DetroitCityPPScript extends BaseScript {
                 break;
             }
         }
+        return true;
     }
 
 

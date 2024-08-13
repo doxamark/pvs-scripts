@@ -10,7 +10,7 @@ class FresnoCountyPPScript extends BaseScript {
 
         const inputs = this.account.split(" ")
         if (inputs.length != 2) {
-            return;
+            return false;
         }
 
         let parcel_number = inputs[0]
@@ -19,7 +19,7 @@ class FresnoCountyPPScript extends BaseScript {
         let parcel_number_inputs = parcel_number.split("-")
 
         if (parcel_number_inputs.length != 3) {
-            return;
+            return false;
         }
 
         // Click the "Start Search" button
@@ -50,6 +50,8 @@ class FresnoCountyPPScript extends BaseScript {
 
         // Wait for the "unsecuredDetails" element
         await this.page.waitForSelector('#unsecuredDetails');
+        
+        return true;
     }
 
 

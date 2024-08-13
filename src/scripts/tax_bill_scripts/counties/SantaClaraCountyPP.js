@@ -30,6 +30,7 @@ class SantaClaraCountyPPScript extends BaseScript {
             const assessmentLink = links.find(link => link.textContent.startsWith('24'));
             assessmentLink.click();
         });
+        return true;
     }
 
     async saveAsPDF() {
