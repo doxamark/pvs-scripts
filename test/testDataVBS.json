@@ -7,10 +7,26 @@
     "DocumentName": ""
   },
   {
+    "county": "PASCO",
+    "AccountLookupString": "http://search.pascopa.com/tpp.aspx",
+    "AccountLookup": "748840",
+    "AssessorID": "495P",
+    "DocumentName": ""
+  },
+  {
     "county": "LAKE",
     "AccountLookupString": "https://www.lakecopropappr.com/property-search.aspx",
     "AccountLookup": "141925050000000000",
     "AssessorID": "1721R",
     "DocumentName": ""
+  },
+  {
+    "county": "LAKE",
+    "AccountLookupString": "https://www.lakecopropappr.com/property-search.aspx",
+    "AccountLookup": "000000000000092484",
+    "AssessorID": "1721P",
+    "DocumentName": ""
   }
+
+
 ]

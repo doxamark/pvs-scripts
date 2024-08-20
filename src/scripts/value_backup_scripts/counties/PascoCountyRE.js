@@ -7,7 +7,7 @@ class PascoCountyREScript extends BaseScript {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
-        this.account = this.account.replaceAll('-', '')
+        this.account = this.account.replaceAll('-', '').trim()
 
         if (this.account.length !== 19) {
             console.error('Bad Account Lookup')

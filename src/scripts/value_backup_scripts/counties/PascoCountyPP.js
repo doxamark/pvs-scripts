@@ -12,7 +12,7 @@ class PascoCountyPPScript extends BaseScript {
         await this.page.waitForSelector(inputSelector);
 
         // Input data into the text field
-        await this.page.type(inputSelector, this.account); // Replace with the actual account number
+        await this.page.type(inputSelector, this.account.trim()); // Replace with the actual account number
 
         // Locate the correct submit button by its relationship to the input field
         const submitButtonSelector = 'td > input[type="submit"][value="Submit"][name="action"]';

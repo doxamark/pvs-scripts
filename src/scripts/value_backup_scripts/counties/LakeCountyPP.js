@@ -19,7 +19,7 @@ class LakeCountyPPScript extends BaseScript {
         await this.page.waitForSelector('input#cphMain_rblRealTangible_1');
         await this.page.click('input#cphMain_rblRealTangible_0');
 
-        this.account = this.account.replace('-', '')
+        this.account = this.account.replace('-', '').trim()
 
         if (this.account.length !== 18) {
            console.error('Bad Account Lookup')
