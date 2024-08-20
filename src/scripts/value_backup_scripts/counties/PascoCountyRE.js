@@ -9,6 +9,10 @@ class PascoCountyREScript extends BaseScript {
 
         this.account = this.account.replaceAll('-', '')
 
+        if (this.account.length !== 19) {
+            console.error('Bad Account Lookup')
+         }
+
         this.account = [
             this.account.slice(0, 2),
             this.account.slice(2, 4),
@@ -96,7 +100,7 @@ class PascoCountyREScript extends BaseScript {
             }
         }
 
-        await new Promise(resolve => setTimeout(resolve, 5000));
+        await new Promise(resolve => setTimeout(resolve, 2000));
 
         // Wait for the file to download
         while (!fs.existsSync(customPath) || fs.readdirSync(customPath).length === 0) {

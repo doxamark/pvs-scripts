@@ -5,5 +5,12 @@
     "AccountLookup": "1126160010015000042",
     "AssessorID": "495R",
     "DocumentName": ""
+  },
+  {
+    "county": "LAKE",
+    "AccountLookupString": "https://www.lakecopropappr.com/property-search.aspx",
+    "AccountLookup": "141925050000000000",
+    "AssessorID": "1721R",
+    "DocumentName": ""
   }
 ]

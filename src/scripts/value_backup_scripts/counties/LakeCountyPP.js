@@ -7,34 +7,56 @@ class LakeCountyPPScript extends BaseScript {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
-        // Wait for the specific input field to appear
-        const inputSelector = 'td > input[name="account"][type="text"]';
-        await this.page.waitForSelector(inputSelector);
-
-        // Input data into the text field
-        await this.page.type(inputSelector, this.account); // Replace with the actual account number
-
-        // Locate the correct submit button by its relationship to the input field
-        const submitButtonSelector = 'td > input[type="submit"][value="Submit"][name="action"]';
-        await this.page.evaluate((inputSelector, submitButtonSelector) => {
-            const inputElement = document.querySelector(inputSelector);
-            const submitButton = inputElement.closest('td').nextElementSibling.querySelector(submitButtonSelector);
-            submitButton.click();
-        }, inputSelector, submitButtonSelector);
-
-        const resultsTableSelector = 'table.results';
-        const notFoundSelector = 'div.pacontent';
-
         await Promise.race([
-            this.page.waitForSelector(resultsTableSelector, { visible: true }),
-            this.page.waitForSelector(notFoundSelector, { visible: true })
+            this.page.waitForSelector('input#cphMain_imgBtnSubmit', { visible: true }),
+            this.page.waitForSelector('input#cphMain_rblRealTangible_1', { visible: true })
         ]);
 
-        const errorMessages = await this.page.$$('div.pacontent div');
+        await this.page.waitForSelector('input#cphMain_imgBtnSubmit');
+        await this.page.click('input#cphMain_imgBtnSubmit');
+
+        // Select the 'Real Property' radio button
+        await this.page.waitForSelector('input#cphMain_rblRealTangible_1');
+        await this.page.click('input#cphMain_rblRealTangible_0');
+
+        this.account = this.account.replace('-', '')
+
+        if (this.account.length !== 18) {
+           console.error('Bad Account Lookup')
+        }
+    
+        // Extract values from the input text
+        const section = this.account.substring(0, 2);
+        const township = this.account.substring(2, 4);
+        const range = this.account.substring(4, 6);
+        const subdivisionNum = this.account.substring(6, 10);
+        const block = this.account.substring(10, 13);
+        const lot = this.account.substring(13, 18);
+    
+        // Fill in the input fields with the extracted values
+        await this.page.type('input#cphMain_txtSection', section);
+        await this.page.type('input#cphMain_txtTownship', township);
+        await this.page.type('input#cphMain_txtRange', range);
+        await this.page.type('input#cphMain_txtSubdivisionNum', subdivisionNum);
+        await this.page.type('input#cphMain_txtBlock', block);
+        await this.page.type('input#cphMain_txtLot', lot);
+
+        // Click the 'Search' button
+        await this.page.click('input#cphMain_btnSearch');
+
+        // Wait for the table containing search results to load
+        await this.page.waitForSelector('table#cphMain_gvParcels');
+
+        await Promise.race([
+            this.page.waitForSelector('.gv_empty', { visible: true }),
+            this.page.waitForSelector('.gv_head', { visible: true })
+        ]);
+
+        const errorMessages = await this.page.$$('.gv_empty');
         let noBillFound = false;
         for (let element of errorMessages) {
             const text = await this.page.evaluate(el => el.textContent, element);
-            if (text.includes('NOT FOUND')) {
+            if (text.includes('There are no results found that meet your criteria.')) {
                 noBillFound = true;
                 break;
             }
@@ -45,19 +67,14 @@ class LakeCountyPPScript extends BaseScript {
             return false;
         }
 
-        // Wait for the results table to load
-        await this.page.waitForSelector(resultsTableSelector);
+        await this.page.click('a#cphMain_gvParcels_lView_0');
 
-        const links = await this.page.$$('a.pdf');
-        for (const link of links) {
-            const text = await this.page.evaluate(el => el.textContent, link);
-            if (text === this.year) {
-                return true;
-            }
-        }
+        // Click the 'view' link in the search results
+        await this.page.click('a#cphMain_gvParcels_lView_0');
 
-        console.error("Target year does not match.")
-        return false;
+        // Wait for the Proposed Tax Notice link to appear
+        await this.page.waitForSelector('a#cphMain_lnkTRIM');
+        return true;
     }
 
     async saveAsPDF() {
@@ -71,16 +88,12 @@ class LakeCountyPPScript extends BaseScript {
             behavior: 'allow', downloadPath: customPath
         });
 
-        const links = await this.page.$$('a.pdf');
-        for (const link of links) {
-            const text = await this.page.evaluate(el => el.textContent, link);
-            if (text === this.year) {
-                await link.click();
-                break;
-            }
-        }
-
-        await new Promise(resolve => setTimeout(resolve, 5000));
+        await this.page.waitForSelector('a#cphMain_lnkTRIM');
+        const billLinkSelector = 'a#cphMain_lnkTRIM';
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        await this.page.click(billLinkSelector, { clickCount: 1});
+        
+        await new Promise(resolve => setTimeout(resolve, 2000));
 
         // Wait for the file to download
         while (!fs.existsSync(customPath) || fs.readdirSync(customPath).length === 0) {

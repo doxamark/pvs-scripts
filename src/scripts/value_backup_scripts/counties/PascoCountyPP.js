@@ -80,7 +80,7 @@ class PascoCountyPPScript extends BaseScript {
             }
         }
 
-        await new Promise(resolve => setTimeout(resolve, 5000));
+        await new Promise(resolve => setTimeout(resolve, 2000));
 
         // Wait for the file to download
         while (!fs.existsSync(customPath) || fs.readdirSync(customPath).length === 0) {
