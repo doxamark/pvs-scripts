@@ -17,35 +17,20 @@ class LakeCountyPPScript extends BaseScript {
 
         // Select the 'Real Property' radio button
         await this.page.waitForSelector('input#cphMain_rblRealTangible_1');
-        await this.page.click('input#cphMain_rblRealTangible_0');
+        await this.page.click('input#cphMain_rblRealTangible_1');
 
-        this.account = this.account.replace('-', '').trim()
+        // Wait for the specific input field to appear
+        const inputSelector = 'input#cphMain_txtAltKey';
+        await this.page.waitForSelector(inputSelector);
 
-        if (this.account.length !== 18) {
-           console.error('Bad Account Lookup')
-        }
-    
-        // Extract values from the input text
-        const section = this.account.substring(0, 2);
-        const township = this.account.substring(2, 4);
-        const range = this.account.substring(4, 6);
-        const subdivisionNum = this.account.substring(6, 10);
-        const block = this.account.substring(10, 13);
-        const lot = this.account.substring(13, 18);
-    
-        // Fill in the input fields with the extracted values
-        await this.page.type('input#cphMain_txtSection', section);
-        await this.page.type('input#cphMain_txtTownship', township);
-        await this.page.type('input#cphMain_txtRange', range);
-        await this.page.type('input#cphMain_txtSubdivisionNum', subdivisionNum);
-        await this.page.type('input#cphMain_txtBlock', block);
-        await this.page.type('input#cphMain_txtLot', lot);
+        // Input data into the text field
+        await this.page.type(inputSelector, this.account.trim()); // Replace with the actual account number
 
         // Click the 'Search' button
         await this.page.click('input#cphMain_btnSearch');
 
         // Wait for the table containing search results to load
-        await this.page.waitForSelector('table#cphMain_gvParcels');
+        await this.page.waitForSelector('table#cphMain_gvTPP');
 
         await Promise.race([
             this.page.waitForSelector('.gv_empty', { visible: true }),
@@ -67,10 +52,8 @@ class LakeCountyPPScript extends BaseScript {
             return false;
         }
 
-        await this.page.click('a#cphMain_gvParcels_lView_0');
-
         // Click the 'view' link in the search results
-        await this.page.click('a#cphMain_gvParcels_lView_0');
+        await this.page.click('a#cphMain_gvTPP_lView_0');
 
         // Wait for the Proposed Tax Notice link to appear
         await this.page.waitForSelector('a#cphMain_lnkTRIM');
