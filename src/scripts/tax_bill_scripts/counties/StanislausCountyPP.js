@@ -55,7 +55,7 @@ class StanislausCountyPPScript extends BaseScript {
         await new Promise(resolve => setTimeout(resolve, 1000));
         await this.page.click(billLinkSelector, { clickCount: 1});
         
-        await new Promise(resolve => setTimeout(resolve, 10000));
+        await new Promise(resolve => setTimeout(resolve, 3000));
 
         // Wait for the file to download
         while (!fs.existsSync(customPath) || fs.readdirSync(customPath).length === 0) {

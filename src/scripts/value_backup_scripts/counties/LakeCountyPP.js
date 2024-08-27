@@ -24,7 +24,7 @@ class LakeCountyPPScript extends BaseScript {
         await this.page.waitForSelector(inputSelector);
 
         // Input data into the text field
-        await this.page.type(inputSelector, this.account.trim()); // Replace with the actual account number
+        await this.page.type(inputSelector, this.account.trim().replaceAll("'","")); // Replace with the actual account number
 
         // Click the 'Search' button
         await this.page.click('input#cphMain_btnSearch');

@@ -4,16 +4,47 @@ import path from 'path';
 
 class SanBernardinoCountyPPScript extends BaseScript {
     async performScraping() {
+        this.account = this.account.replaceAll('-', '')
+        console.log(`Scraping data for San Bernardino County with account_lookup ${this.account}`)
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
-        this.account = this.account.replaceAll('-', '')
         // Find the input element and type a value
         await this.page.type('input[name="txtParcelNumber"]', this.account);
 
         // Click the search button
         await this.page.click('input[name="ctl00$contentHolder$cmdSearch"]');
+
+        const noBillsSelector = 'div:contains("Sorry, there were no current bills found for this parcel.")';
+        const successSelector = 'table.propInfoTable';
+
+        // Wait for either of the selectors to be present        
+        await Promise.race([
+            this.page.waitForSelector(noBillsSelector, { visible: true }),
+            this.page.waitForSelector(successSelector, { visible: true })
+        ]);
+
+        const divMessages = await this.page.$$('.main-wrapper div');
+        let noBillFound = false;
+        for (let element of divMessages) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes('Sorry, there were no current bills found for this parcel.')) {
+                noBillFound = true;
+                break;
+            }
+        }
+
+        if (noBillFound) {
+            console.error('No Bills Found. Please check your account number.', this.account);
+            return false;
+        }
+
+        await this.page.$eval(successSelector, el => el.href);
+        await this.page.$(successSelector);
+
         return true;
+
+
     }
 
     async saveAsPDF() {

@@ -9,7 +9,7 @@ class SanJoaquinCountyPPScript extends BaseScript {
 
         // Wait for the search filters div and select the current year
         await this.page.waitForSelector('#SearchDiv');
-        await this.page.select('#SelTaxYear', this.year);
+        await this.page.select('#SelTaxYear', this.year + '');
 
         await this.page.waitForSelector('select#SearchVal');
         await this.page.select('select#SearchVal', 'asmt');
@@ -56,7 +56,7 @@ class SanJoaquinCountyPPScript extends BaseScript {
         await new Promise(resolve => setTimeout(resolve, 1000));
         await this.page.click(billLinkSelector, { clickCount: 1});
         
-        await new Promise(resolve => setTimeout(resolve, 10000));
+        await new Promise(resolve => setTimeout(resolve, 3000));
 
         // Wait for the file to download
         while (!fs.existsSync(customPath) || fs.readdirSync(customPath).length === 0) {

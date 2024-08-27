@@ -70,7 +70,7 @@ class BaseScript {
     async run() {
         try {
             await this.setupDriver();
-            this.moveMouseRandomly(this.page, 0, 1000, 0, 1000).catch(console.error);
+            // this.moveMouseRandomly(this.page, 0, 1000, 0, 1000).catch(console.error);
 
             const is_success = await this.performScraping();
 

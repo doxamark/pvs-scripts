@@ -1,13 +1,35 @@
 import DatabaseManager from './core/DatabaseManager.js';
 import ScriptFactory from './core/ScriptFactory.js';
+import fs from 'fs';
+import { format } from 'date-fns';
+import path from 'path';
+
+
+const dateTime = format(new Date(), 'yyyy-MM-dd_HH-mm-ss');
+const logsDir = path.join('src/logs');
+const logFile = path.join(logsDir, `log_${dateTime}.log`);
+
+if (!fs.existsSync(logsDir)) {
+  fs.mkdirSync(logsDir);
+}
+
+console.log = (...messages) => {
+  const timestamp = new Date().toISOString();
+  const logMessage = messages.join(' ');
+  fs.appendFileSync(logFile, `${timestamp} - INFO: ${logMessage}\n`);
+};
+console.error = (...messages) => {
+  const timestamp = new Date().toISOString();
+  const errorMessage = messages.join(' ');
+  fs.appendFileSync(logFile, `${timestamp} - ERROR: ${errorMessage}\n`);
+};
 
 (async () => {
+  const startTime = new Date(); // Start time
   const dbManager = new DatabaseManager();
-
-  // Fetch records from the database that require a value backup script
-  const fetchQuery = 'SELECT * FROM tso.ParcelValueBackupNeededScript()';
+  const fetchQuery = 'SELECT * FROM tso.ParcelValueBackupNeededScript() WHERE AssessorID in (1721)';
   let records = [];
-  
+
   try {
     records = await dbManager.fetch(fetchQuery);
   } catch (error) {
@@ -15,40 +37,83 @@ import ScriptFactory from './core/ScriptFactory.js';
     return;
   }
 
-  const year = new Date().getFullYear();
+  console.log(`Total Records: ${records.length}`)
 
-  // Initialize the script factory with the script configuration file and directory
-  const factory = new ScriptFactory('src/scripts/value_backup_scripts/vbs_map.json',  'value_backup_scripts');
+  const year =  new Date().getFullYear() + '';
 
-  // Iterate over each record fetched from the database
+  const factory = new ScriptFactory('src/scripts/value_backup_scripts/vbs_map.json', 'value_backup_scripts');
+  let failureCount = 0;
   for (const record of records) {
-    const assessorId = record.AssessorID;  // Extract assessor ID
+    const assessorID = record.AssessorID;
+    const type = record.REPP;
+    const mapID = `${assessorID}${type}`;
+    const ScriptClass = await factory.getScriptClass(mapID);
 
-    // Get the script class for the given assessor ID from the factory
-    const ScriptClass = await factory.getScriptClass(assessorId);
+    continue
+    record.AccountLookup = record.Account
+    // record.AccountLookupString = type == 'P' ? 'http://search.pascopa.com/tpp.aspx' : record.AccountLookupString
+    // record.AccountLookupString = 'https://www.lakecopropappr.com/property-search.aspx'
 
-    // Check if a script class was found for the assessor ID
+    // for testing - comment the code below if you run for production.
+    let testDocumentName =  record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
+    testDocumentName = getUniqueFilename(testDocumentName)
+
+    record.InsertString = record.InsertString.replace(record.InsertString.split(",")[3], `'${testDocumentName}' as DocumentName`)
+    record.DocumentName = testDocumentName
     if (ScriptClass) {
-      // Instantiate the script class with account ID, year, and URL
       const script = new ScriptClass(record, year);
-      
-      // Run the script and get the result
       try {
-        await script.run();
+        console.log("---------------------------")
+        const has_succeeded = await script.run();
+
+        if (!has_succeeded) {
+          failureCount++;
+          continue;
+        }
+
+        try {
+          let insertQuery = record.InsertString;
+          insertQuery = insertQuery.replaceAll('"',"").replaceAll('INSERT INTO Document', 'INSERT INTO tso.Document')
+          console.log(insertQuery)
+          // await dbManager.insert(insertQuery);
+          // console.log("Successfully inserted data to database.")
+        } catch (error) {
+          console.error(`Failed to insert data: ${error.message}`);
+        }
+
       } catch (error) {
-        console.error(`Failed to run script for assessor ID ${assessorId}: ${error.message}`);
+        console.error(`Failed to run script for assessor ID ${assessorID}: ${error.message}`);
       }
 
-      // Insert the data into the specified table in the database
-      const insertQuery = record.InsertString;
-      try {
-        await dbManager.insert(insertQuery);
-      } catch (error) {
-        console.error(`Failed to insert data: ${error.message}`);
-      }
     } else {
-      // Print a message if no script class was found for the assessor ID
-      console.log(`No script class found for assessor ID ${assessorId}`);
+      console.error(`No script class found for assessor ID ${assessorID}`);
     }
   }
+  
+  console.log("========================================")
+  console.log(`Total successful runs: ${records.length - failureCount}`)
+  console.log(`Total failed runs: ${failureCount}`)
+  console.log("========================================")
+
+  const endTime = new Date(); // End time
+  const timeTaken = (endTime - startTime) / 1000; // Time in seconds
+  console.log(`Total execution time - ${timeTaken} seconds.`);
 })();
+
+
+
+function getUniqueFilename(filePath) {
+  const dir = path.dirname(filePath);
+  const ext = path.extname(filePath);
+  const baseName = path.basename(filePath, ext);
+
+  let uniquePath = filePath;
+  let counter = 1;
+
+  while (fs.existsSync(uniquePath)) {
+      uniquePath = path.join(dir, `${baseName} (${counter})${ext}`);
+      counter++;
+  }
+
+  return uniquePath;
+}

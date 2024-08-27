@@ -39,7 +39,7 @@ console.error = (...messages) => {
 
   console.log(`Total Records: ${records.length}`)
 
-  const year = new Date().getFullYear();
+  const year =  new Date().getFullYear() + '';
 
   const factory = new ScriptFactory('src/scripts/tax_bill_scripts/tbs_map.json', 'tax_bill_scripts');
   let failureCount = 0;
