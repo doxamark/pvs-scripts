@@ -6,7 +6,7 @@ class ClarkCountyPPScript extends BaseScript {
     async performScraping() {
         console.log(`Navigated to: ${this.accountLookupString}`);
         this.printLink = this.accountLookupString
-        return true;
+        return { is_success: true, msg: "" };
     }
 }
 

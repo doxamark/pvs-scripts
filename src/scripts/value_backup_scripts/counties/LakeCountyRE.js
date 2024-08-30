@@ -22,7 +22,8 @@ class LakeCountyREScript extends BaseScript {
         this.account = this.account.replaceAll('-', '').replaceAll("'", "").trim()
 
         if (this.account.length !== 18) {
-            console.error('Bad Account Lookup')
+            console.error('Bad Account Lookup', this.account)
+            return { is_success: false, msg: `Bad account lookup: ${this.account}` };
         }
 
         // Extract values from the input text
@@ -64,7 +65,7 @@ class LakeCountyREScript extends BaseScript {
 
         if (noBillFound) {
             console.error('No Results Found. Please check your account number.', this.account);
-            return false;
+            return { is_success: false, msg: `No Results Found. Please check your account number. ${this.account}` };
         }
 
         // Click the 'view' link in the search results
@@ -72,7 +73,24 @@ class LakeCountyREScript extends BaseScript {
 
         // Wait for the Proposed Tax Notice link to appear
         await this.page.waitForSelector('a#cphMain_lnkTRIM');
-        return true;
+
+        // check year
+        const yearStatement = await this.page.$$('.red');
+        let correctYear = false;
+        for (let element of yearStatement) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes(this.year)) {
+                correctYear = true;
+                break;
+            }
+        }
+
+        if (!correctYear) {
+            console.error("Target year does not match.")
+            return { is_success: false, msg: `Target year does not match.` };
+        }
+
+        return {is_success: true, msg: ''};
     }
 
     async saveAsPDF() {

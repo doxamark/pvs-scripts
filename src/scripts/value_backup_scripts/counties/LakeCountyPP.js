@@ -23,8 +23,17 @@ class LakeCountyPPScript extends BaseScript {
         const inputSelector = 'input#cphMain_txtAltKey';
         await this.page.waitForSelector(inputSelector);
 
+        this.account = this.account.trim().replaceAll("'", "").replaceAll("-", "")
+
+        const containsLetters = /[a-zA-Z]/.test(this.account);
+
+        if (containsLetters) {
+            console.error('Bad account lookup');
+            return { is_success: false, msg: `Bad account lookup: ${this.account}` };
+        }
+
         // Input data into the text field
-        await this.page.type(inputSelector, this.account.trim().replaceAll("'","")); // Replace with the actual account number
+        await this.page.type(inputSelector, this.account); // Replace with the actual account number
 
         // Click the 'Search' button
         await this.page.click('input#cphMain_btnSearch');
@@ -49,15 +58,32 @@ class LakeCountyPPScript extends BaseScript {
 
         if (noBillFound) {
             console.error('No Results Found. Please check your account number.', this.account);
-            return false;
+            return { is_success: false, msg: `No Results Found. Please check your account number. ${this.account}` };
         }
 
         // Click the 'view' link in the search results
         await this.page.click('a#cphMain_gvTPP_lView_0');
 
-        // Wait for the Proposed Tax Notice link to appear
-        await this.page.waitForSelector('a#cphMain_lnkTRIM');
-        return true;
+         // Wait for the Proposed Tax Notice link to appear
+         await this.page.waitForSelector('a#cphMain_lnkTRIM');
+
+        // check year
+        const yearStatement = await this.page.$$('.red');
+        let correctYear = false;
+        for (let element of yearStatement) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes(this.year)) {
+                correctYear = true;
+                break;
+            }
+        }
+
+        if (!correctYear) {
+            console.error("Target year does not match.")
+            return { is_success: false, msg: `Target year does not match.` };
+        }
+
+        return {is_success: true, msg: ''};
     }
 
     async saveAsPDF() {
@@ -74,8 +100,8 @@ class LakeCountyPPScript extends BaseScript {
         await this.page.waitForSelector('a#cphMain_lnkTRIM');
         const billLinkSelector = 'a#cphMain_lnkTRIM';
         await new Promise(resolve => setTimeout(resolve, 1000));
-        await this.page.click(billLinkSelector, { clickCount: 1});
-        
+        await this.page.click(billLinkSelector, { clickCount: 1 });
+
         await new Promise(resolve => setTimeout(resolve, 2000));
 
         // Wait for the file to download

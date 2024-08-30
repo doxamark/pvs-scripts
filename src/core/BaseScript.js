@@ -72,17 +72,17 @@ class BaseScript {
             await this.setupDriver();
             // this.moveMouseRandomly(this.page, 0, 1000, 0, 1000).catch(console.error);
 
-            const is_success = await this.performScraping();
+            const {is_success, msg} = await this.performScraping();
 
             if (!is_success) {
-                return false;
+                return {is_success: false, msg: msg}
             }
 
             await this.saveAsPDF();
-            return true;
+            return {is_success: true, msg: ""};
         } catch (error) {
             console.error(`An error occurred: ${error.message}`);
-            return false;
+            return {is_success: false, msg: error.message}
         } finally {
             await this.closeDriver();
         }
@@ -104,6 +104,8 @@ class BaseScript {
             printBackground: true
         });
         console.log(`PDF saved: ${this.outputPath}`);
+
+        return true, null
     }
 
     async moveMouseRandomly(page, minX, maxX, minY, maxY) {

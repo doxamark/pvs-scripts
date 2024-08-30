@@ -64,7 +64,7 @@ class WakeCountyPP extends BaseScript {
         // Wait for the print link to appear
         await this.page.waitForSelector(printLinkSelector, { visible: true });
 
-        return true;
+        return { is_success: true, msg: `` };
     }
 
     async saveAsPDF() {

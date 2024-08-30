@@ -51,7 +51,7 @@ class FresnoCountyPPScript extends BaseScript {
         // Wait for the "unsecuredDetails" element
         await this.page.waitForSelector('#unsecuredDetails');
         
-        return true;
+        return { is_success: true, msg: `` };
     }
 
 

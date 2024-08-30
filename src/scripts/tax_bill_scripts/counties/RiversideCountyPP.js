@@ -92,7 +92,7 @@ class RiversideCountyPPScript extends BaseScript {
 
         await new Promise(resolve => setTimeout(resolve, 3000));
 
-        return true;
+        return { is_success: true, msg: `` };
     }
 
     async saveAsPDF() {

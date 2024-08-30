@@ -10,8 +10,8 @@ class PascoCountyREScript extends BaseScript {
         this.account = this.account.replaceAll('-', '').replaceAll("'","").trim()
 
         if (this.account.length !== 19) {
-            console.error('Bad Account Lookup')
-            return false;
+            console.error('Bad Account Lookup', this.account)
+            return { is_success: false, msg: `Bad Account Lookup ${this.account}` };
          }
 
         this.account = [
@@ -63,7 +63,7 @@ class PascoCountyREScript extends BaseScript {
 
         if (noBillFound) {
             console.error('No Results Found. Please check your account number.', this.account);
-            return false;
+            return { is_success: false, msg: `No Results Found. Please check your account number. ${this.account}` };
         }
 
         // Wait for the results table to load
@@ -73,12 +73,12 @@ class PascoCountyREScript extends BaseScript {
         for (const link of links) {
             const text = await this.page.evaluate(el => el.textContent, link);
             if (text === this.year) {
-                return true;
+                return { is_success: true, msg: `` };
             }
         }
 
         console.error("Target year does not match.")
-        return false;
+        return { is_success: false, msg: `Target year does not match.` };
     }
 
     async saveAsPDF() {

@@ -41,7 +41,7 @@ class MecklenburgCountyRE extends BaseScript {
         // // Optionally navigate to the new this.page URL if needed
         await this.page.goto(newPageUrl);
         await newPage.close();
-        return true;
+        return { is_success: true, msg: `` };
     }
 
     async saveAsPDF() {

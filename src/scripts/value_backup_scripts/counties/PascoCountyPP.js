@@ -7,21 +7,6 @@ class PascoCountyPPScript extends BaseScript {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
-        // // Wait for the specific input field to appear
-        // const inputSelector = 'td > input[name="account"][type="text"]';
-        // await this.page.waitForSelector(inputSelector);
-
-        // // Input data into the text field
-        // await this.page.type(inputSelector, this.account.trim()); // Replace with the actual account number
-
-        // // Locate the correct submit button by its relationship to the input field
-        // const submitButtonSelector = 'td > input[type="submit"][value="Submit"][name="action"]';
-        // await this.page.evaluate((inputSelector, submitButtonSelector) => {
-        //     const inputElement = document.querySelector(inputSelector);
-        //     const submitButton = inputElement.closest('td').nextElementSibling.querySelector(submitButtonSelector);
-        //     submitButton.click();
-        // }, inputSelector, submitButtonSelector);
-
         const resultsTableSelector = 'table.results';
         const notFoundSelector = 'div.pacontent';
 
@@ -42,7 +27,7 @@ class PascoCountyPPScript extends BaseScript {
 
         if (noBillFound) {
             console.error('No Results Found. Please check your account number.', this.account);
-            return false;
+            return { is_success: false, msg: `No Results Found. Please check your account number. ${this.account}` };
         }
 
         // Wait for the results table to load
@@ -52,12 +37,12 @@ class PascoCountyPPScript extends BaseScript {
         for (const link of links) {
             const text = await this.page.evaluate(el => el.textContent, link);
             if (text === this.year) {
-                return true;
+                return {is_success: true, msg: ''};
             }
         }
 
         console.error("Target year does not match.")
-        return false;
+        return { is_success: false, msg: `Target year does not match.` };
     }
 
     async saveAsPDF() {

@@ -13,23 +13,33 @@ if (!fs.existsSync(logsDir)) {
   fs.mkdirSync(logsDir);
 }
 
+const originalConsoleLog = console.log;
+const originalConsoleError = console.error;
+
 console.log = (...messages) => {
   const timestamp = new Date().toISOString();
   const logMessage = messages.join(' ');
   fs.appendFileSync(logFile, `${timestamp} - INFO: ${logMessage}\n`);
+
+  originalConsoleLog.apply(console, messages);
 };
+
 console.error = (...messages) => {
   const timestamp = new Date().toISOString();
   const errorMessage = messages.join(' ');
   fs.appendFileSync(logFile, `${timestamp} - ERROR: ${errorMessage}\n`);
+
+  originalConsoleError.apply(console, messages);
 };
 
 (async () => {
   const startTime = new Date(); // Start time
-  const dbManager = new DatabaseManager();
-  const fetchQuery = 'SELECT * FROM tso.ParcelValueBackupNeededScript() WHERE AssessorID in (1721)';
-  let records = [];
+  console.log(`Start Value Backup Scripts - ${getStartTime(startTime)}`)
 
+  const dbManager = new DatabaseManager();
+  const fetchQuery = 'SELECT * FROM tso.ParcelValueBackupNeededScript() WHERE AssessorID in (495)';
+  let records = [];
+  
   try {
     records = await dbManager.fetch(fetchQuery);
   } catch (error) {
@@ -43,16 +53,17 @@ console.error = (...messages) => {
 
   const factory = new ScriptFactory('src/scripts/value_backup_scripts/vbs_map.json', 'value_backup_scripts');
   let failureCount = 0;
+
+  const identity = await dbManager.insertWithIdentity('INSERT INTO tso.ParcelValueBackupLog WITH AUTO NAME SELECT Current TimeStamp as StartTime;');
+  const LID = identity + "";
+
   for (const record of records) {
     const assessorID = record.AssessorID;
     const type = record.REPP;
     const mapID = `${assessorID}${type}`;
     const ScriptClass = await factory.getScriptClass(mapID);
 
-    continue
     record.AccountLookup = record.Account
-    // record.AccountLookupString = type == 'P' ? 'http://search.pascopa.com/tpp.aspx' : record.AccountLookupString
-    // record.AccountLookupString = 'https://www.lakecopropappr.com/property-search.aspx'
 
     // for testing - comment the code below if you run for production.
     let testDocumentName =  record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
@@ -64,10 +75,11 @@ console.error = (...messages) => {
       const script = new ScriptClass(record, year);
       try {
         console.log("---------------------------")
-        const has_succeeded = await script.run();
-
-        if (!has_succeeded) {
+        const {is_success, msg} = await script.run();
+        
+        if (!is_success) {
           failureCount++;
+          await dbManager.insert(`INSERT INTO tso.ParcelValueBackupLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.ParcelID} as ParcelID, current timestamp as runtime, 0 as Successful, 'Failed to Retrieve - error: ${msg}' as Note;`);
           continue;
         }
 
@@ -76,19 +88,23 @@ console.error = (...messages) => {
           insertQuery = insertQuery.replaceAll('"',"").replaceAll('INSERT INTO Document', 'INSERT INTO tso.Document')
           console.log(insertQuery)
           // await dbManager.insert(insertQuery);
-          // console.log("Successfully inserted data to database.")
+          console.log("Successfully inserted data to database.")
+          await dbManager.insert(`INSERT INTO tso.ParcelValueBackupLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.ParcelID} as ParcelID, current timestamp as runtime, 1 as Successful, 'Successfully Retrieved.' as Note;`);
         } catch (error) {
           console.error(`Failed to insert data: ${error.message}`);
+          await dbManager.insert(`INSERT INTO tso.ParcelValueBackupLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.ParcelID} as ParcelID, current timestamp as runtime, 0 as Successful, 'Failed to Retrieve - error: ${error.message}' as Note;`);
         }
-
       } catch (error) {
         console.error(`Failed to run script for assessor ID ${assessorID}: ${error.message}`);
+        await dbManager.insert(`INSERT INTO tso.ParcelValueBackupLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.ParcelID} as ParcelID, current timestamp as runtime, 0 as Successful, 'Failed to run script for assessor ID ${assessorID}: ${error.message}' as Note;`);
       }
-
     } else {
       console.error(`No script class found for assessor ID ${assessorID}`);
+      await dbManager.insert(`INSERT INTO tso.ParcelValueBackupLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.ParcelID} as ParcelID, current timestamp as runtime, 0 as Successful, 'No script class found for assessor ID ${assessorID}' as Note;`);
     }
   }
+
+  await dbManager.insert(`UPDATE tso.ParcelValueBackupLog SET EndTime = Current Timestamp, RecordCount = ${records.length} WHERE LogID = ${LID};`);
   
   console.log("========================================")
   console.log(`Total successful runs: ${records.length - failureCount}`)
@@ -116,4 +132,19 @@ function getUniqueFilename(filePath) {
   }
 
   return uniquePath;
+}
+
+function getStartTime(startTime) {
+  const readableStartTime = startTime.toLocaleString('en-US', {
+    weekday: 'long', // e.g., "Monday"
+    year: 'numeric', // e.g., "2024"
+    month: 'long',   // e.g., "August"
+    day: 'numeric',  // e.g., "27"
+    hour: '2-digit', // e.g., "03 PM"
+    minute: '2-digit', // e.g., "05 PM"
+    second: '2-digit', // e.g., "45 PM"
+    timeZoneName: 'short' // e.g., "PDT"
+  });
+
+  return readableStartTime
 }

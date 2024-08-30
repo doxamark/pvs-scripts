@@ -13,21 +13,31 @@ if (!fs.existsSync(logsDir)) {
   fs.mkdirSync(logsDir);
 }
 
+const originalConsoleLog = console.log;
+const originalConsoleError = console.error;
+
 console.log = (...messages) => {
   const timestamp = new Date().toISOString();
   const logMessage = messages.join(' ');
   fs.appendFileSync(logFile, `${timestamp} - INFO: ${logMessage}\n`);
+
+  originalConsoleLog.apply(console, messages);
 };
+
 console.error = (...messages) => {
   const timestamp = new Date().toISOString();
   const errorMessage = messages.join(' ');
   fs.appendFileSync(logFile, `${timestamp} - ERROR: ${errorMessage}\n`);
+
+  originalConsoleError.apply(console, messages);
 };
 
 (async () => {
   const startTime = new Date(); // Start time
+  console.log(`Start Value Backup Scripts - ${getStartTime(startTime)}`)
+  
   const dbManager = new DatabaseManager();
-  const fetchQuery = 'SELECT * FROM tso.TaxBillBackupNeededScript()';
+  const fetchQuery = 'SELECT * FROM tso.TaxBillBackupNeededScript() WHERE CollectorID in (834)';
   let records = [];
 
   try {
@@ -43,6 +53,10 @@ console.error = (...messages) => {
 
   const factory = new ScriptFactory('src/scripts/tax_bill_scripts/tbs_map.json', 'tax_bill_scripts');
   let failureCount = 0;
+
+  const identity = await dbManager.insertWithIdentity('INSERT INTO tso.BillTaxBillLog WITH AUTO NAME SELECT Current TimeStamp as StartTime;');
+  const LID = identity + "";
+
   for (const record of records) {
     const collectorID = record.CollectorID;
     const type = record.REPP;
@@ -59,32 +73,38 @@ console.error = (...messages) => {
       const script = new ScriptClass(record, year);
       try {
         console.log("---------------------------")
-        const has_succeeded = await script.run();
-
-        if (!has_succeeded) {
+        const {is_success, msg} = await script.run();
+        
+        if (!is_success) {
           failureCount++;
+          await dbManager.insert(`INSERT INTO tso.BillTaxBillLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.BillID} as BillID, current timestamp as runtime, 0 as Successful, 'Failed to Retrieve - error: ${msg}' as Note;`);
           continue;
         }
 
-        
         try {
           let insertQuery = record.InsertString;
           insertQuery = insertQuery.replaceAll('"',"").replaceAll('INSERT INTO Document', 'INSERT INTO tso.Document')
           console.log(insertQuery)
           // await dbManager.insert(insertQuery);
-          // console.log("Successfully inserted data to database.")
+          console.log("Successfully inserted data to database.")
+          await dbManager.insert(`INSERT INTO tso.BillTaxBillLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.BillID} as BillID, current timestamp as runtime, 1 as Successful, 'Successfully Retrieved.' as Note;`);
         } catch (error) {
           console.error(`Failed to insert data: ${error.message}`);
+          await dbManager.insert(`INSERT INTO tso.BillTaxBillLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.BillID} as BillID, current timestamp as runtime, 0 as Successful, 'Failed to Retrieve - error: ${error.message}' as Note;`);
         }
 
       } catch (error) {
         console.error(`Failed to run script for collector ID ${collectorID}: ${error.message}`);
+        await dbManager.insert(`INSERT INTO tso.BillTaxBillLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.BillID} as BillID, current timestamp as runtime, 0 as Successful, 'Failed to run script for collector ID ${collectorID}: ${error.message}' as Note;`);
       }
 
     } else {
       console.error(`No script class found for collector ID ${collectorID}`);
+      await dbManager.insert(`INSERT INTO tso.BillTaxBillLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.ParcelID} as ParcelID, current timestamp as runtime, 0 as Successful, 'No script class found for collector ID ${collectorID}' as Note;`);
     }
   }
+
+  await dbManager.insert(`UPDATE tso.BillTaxBillLog SET EndTime = Current Timestamp, RecordCount = ${records.length} WHERE LogID = ${LID};`);
   
   console.log("========================================")
   console.log(`Total successful runs: ${records.length - failureCount}`)
@@ -112,4 +132,19 @@ function getUniqueFilename(filePath) {
   }
 
   return uniquePath;
+}
+
+function getStartTime(startTime) {
+  const readableStartTime = startTime.toLocaleString('en-US', {
+    weekday: 'long', // e.g., "Monday"
+    year: 'numeric', // e.g., "2024"
+    month: 'long',   // e.g., "August"
+    day: 'numeric',  // e.g., "27"
+    hour: '2-digit', // e.g., "03 PM"
+    minute: '2-digit', // e.g., "05 PM"
+    second: '2-digit', // e.g., "45 PM"
+    timeZoneName: 'short' // e.g., "PDT"
+  });
+
+  return readableStartTime
 }

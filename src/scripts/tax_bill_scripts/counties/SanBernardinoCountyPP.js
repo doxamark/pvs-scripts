@@ -36,13 +36,13 @@ class SanBernardinoCountyPPScript extends BaseScript {
 
         if (noBillFound) {
             console.error('No Bills Found. Please check your account number.', this.account);
-            return false;
+            return { is_success: false, msg: `No Bills Found. Please check your account number. ${this.account}` };
         }
 
         await this.page.$eval(successSelector, el => el.href);
         await this.page.$(successSelector);
 
-        return true;
+        return { is_success: true, msg: `` };
 
 
     }

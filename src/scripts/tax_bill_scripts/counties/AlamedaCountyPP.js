@@ -9,7 +9,7 @@ class AlamedaCountyPPScript extends BaseScript {
 
     if (this.account.length < 19) {
       console.error(`Bad Account Lookup ${this.account}`)
-      return false;
+      return { is_success: false, msg: `Bad account lookup ${this.account}` };
     }
 
     const accountNumberParts = [
@@ -37,7 +37,7 @@ class AlamedaCountyPPScript extends BaseScript {
 
     if (acctYear != this.year.toString().slice(-2)) {
       console.error("Search year does not match with the target year.")
-      return false
+      return { is_success: false, msg: `Search year does not match with the target year.` };
     }
 
     await this.page.type('#acctClass', acctClass);
@@ -69,14 +69,14 @@ class AlamedaCountyPPScript extends BaseScript {
 
     if (noBillFound) {
       console.error('No Bills Found. Please check your account number.', this.account);
-      return false;
+      return { is_success: false, msg: `No Bills Found. Please check your account number. ${this.account}` };
     }
 
     const viewBillLink = await this.page.$eval('.pplviewbill', el => el.href);
     const viewBillElement = await this.page.$('.pplviewbill');
     this.printLink = viewBillElement
     
-    return true;
+    return { is_success: true, msg: "" };
 
   }
 

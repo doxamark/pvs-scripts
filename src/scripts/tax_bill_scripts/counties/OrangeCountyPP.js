@@ -23,10 +23,10 @@ class OrangeCountyPPScript extends BaseScript {
 
         if (!isBillYearAvailable) {
             this.outputPath = null
-            return false;
+            return { is_success: false, msg: `Target year is not available` };
         }
 
-        return true;
+        return { is_success: true, msg: `` };
     }
 
     async saveAsPDF() {

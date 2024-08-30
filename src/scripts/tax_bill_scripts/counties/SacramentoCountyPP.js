@@ -4,14 +4,34 @@ import path from 'path';
 
 class SacramentoCountyPPScript extends BaseScript {
     async performScraping() {
-        await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
+        await this.page.goto(this.accountLookupString.replaceAll("-",""), { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
-        await this.page.waitForSelector('#billDetailGrid');
+        await new Promise(resolve => setTimeout(resolve, 3000));
+        
+        await Promise.race([
+            this.page.waitForSelector('#billDetailGrid', { visible: true }),
+            this.page.waitForSelector('div.alert-info', { visible: true })
+        ]);
+
+        const errorMessages = await this.page.$$('div.alert-info');
+        let noBillFound = false;
+        for (let element of errorMessages) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes('No bills are payable at this time.')) {
+                noBillFound = true;
+                break;
+            }
+        }
+
+        if (noBillFound) {
+            console.error('No Results Found. Please check your account number.', this.account);
+            return { is_success: false, msg: `No Results Found. Please check your account number. ${this.account}` };
+        }
 
         // Click the bill number link
         await this.page.click('a[data-bind*="text: FullBillNumber"]');
-        return true;
+        return { is_success: true, msg: `` };
     }
 
     async saveAsPDF() {

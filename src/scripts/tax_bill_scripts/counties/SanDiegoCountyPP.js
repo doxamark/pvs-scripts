@@ -38,7 +38,7 @@ class SanDiegoCountyPPScript extends BaseScript {
 
         // Wait for the modal to appear
         await this.page.waitForSelector('.modal-dialog');
-        return true;
+        return { is_success: true, msg: `` };
     }
 
     async saveAsPDF() {

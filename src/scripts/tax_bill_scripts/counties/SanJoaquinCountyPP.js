@@ -35,7 +35,7 @@ class SanJoaquinCountyPPScript extends BaseScript {
 
         // Wait for the this.page to load after clicking the link
         await this.page.waitForNavigation({ waitUntil: 'networkidle2' });
-        return true;
+        return { is_success: true, msg: `` };
 
     }
 

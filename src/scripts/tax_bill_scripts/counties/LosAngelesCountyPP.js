@@ -50,7 +50,7 @@ class LosAngelesCountyPPScript extends BaseScript {
     // Wait for the table to appear
     await this.page.waitForSelector('table.unsecInquiryDetailTable');
 
-    return true;
+    return { is_success: true, msg: `` };
   }
 
   async saveAsPDF(){
