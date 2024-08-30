@@ -37,7 +37,7 @@ console.error = (...messages) => {
   console.log(`Start Value Backup Scripts - ${getStartTime(startTime)}`)
 
   const dbManager = new DatabaseManager();
-  const fetchQuery = 'SELECT * FROM tso.ParcelValueBackupNeededScript() WHERE AssessorID in (495)';
+  const fetchQuery = 'SELECT * FROM tso.ParcelValueBackupNeededScript()';
   let records = [];
   
   try {
@@ -66,7 +66,7 @@ console.error = (...messages) => {
     record.AccountLookup = record.Account
 
     // for testing - comment the code below if you run for production.
-    let testDocumentName =  record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
+    // let testDocumentName =  record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
     testDocumentName = getUniqueFilename(testDocumentName)
 
     record.InsertString = record.InsertString.replace(record.InsertString.split(",")[3], `'${testDocumentName}' as DocumentName`)
