@@ -37,7 +37,7 @@ console.error = (...messages) => {
   console.log(`Start Value Backup Scripts - ${getStartTime(startTime)}`)
 
   const dbManager = new DatabaseManager();
-  const fetchQuery = 'SELECT * FROM tso.ParcelValueBackupNeededScript()';
+  const fetchQuery = 'SELECT * FROM tso.ParcelValueBackupNeededScript() WHERE AssessorID in (495, 1721)';
   let records = [];
   
   try {
@@ -67,7 +67,7 @@ console.error = (...messages) => {
 
     // for testing - comment the code below if you run for production.
     // let testDocumentName =  record.DocumentName.replace('O:', "C:\\Users\\pvsscripts\\Documents")
-    testDocumentName = getUniqueFilename(testDocumentName)
+    let testDocumentName = getUniqueFilename(record.DocumentName)
 
     record.InsertString = record.InsertString.replace(record.InsertString.split(",")[3], `'${testDocumentName}' as DocumentName`)
     record.DocumentName = testDocumentName
@@ -79,6 +79,7 @@ console.error = (...messages) => {
         
         if (!is_success) {
           failureCount++;
+          console.log("Failed")
           await dbManager.insert(`INSERT INTO tso.ParcelValueBackupLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.ParcelID} as ParcelID, current timestamp as runtime, 0 as Successful, 'Failed to Retrieve - error: ${msg}' as Note;`);
           continue;
         }
@@ -87,7 +88,7 @@ console.error = (...messages) => {
           let insertQuery = record.InsertString;
           insertQuery = insertQuery.replaceAll('"',"").replaceAll('INSERT INTO Document', 'INSERT INTO tso.Document')
           console.log(insertQuery)
-          // await dbManager.insert(insertQuery);
+          await dbManager.insert(insertQuery);
           console.log("Successfully inserted data to database.")
           await dbManager.insert(`INSERT INTO tso.ParcelValueBackupLogDetail WITH AUTO NAME SELECT ${LID} as LogID, ${record.ParcelID} as ParcelID, current timestamp as runtime, 1 as Successful, 'Successfully Retrieved.' as Note;`);
         } catch (error) {
