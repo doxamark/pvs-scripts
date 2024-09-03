@@ -14,8 +14,8 @@ import DatabaseManager from '../src/core/DatabaseManager.js';
   // Example fetch
   // SELECT * FROM tso.TaxBillBackupNeededScript()
   try {
-    // const records = await dbManager.fetch("SELECT * FROM tso.TaxBillBackupNeededScript() WHERE CollectorID in (861)");
-    const records = await dbManager.fetch("SELECT * FROM tso.ParcelValueBackupNeededScript() WHERE AssessorID in (495,1721)");
+    const records = await dbManager.fetch("SELECT * FROM tso.TaxBillBackupNeededScript() WHERE CollectorID in (1397)");
+    // const records = await dbManager.fetch("SELECT * FROM tso.ParcelValueBackupNeededScript() WHERE AssessorID in (495,1721)");
     // const identity = await dbManager.insertWithIdentity('INSERT INTO tso.ParcelValueBackupLog WITH AUTO NAME SELECT Current TimeStamp as StartTime;');
     // const LID = identity + "";
     // const result = await dbManager.fetch('SELECT @@Identity as LastID')
