@@ -23,7 +23,26 @@ class StanislausCountyPPScript extends BaseScript {
         // Wait for the results section
         await this.page.waitForSelector('#ResultDiv');
 
-        await this.page.waitForSelector('#ResultDiv .title a');
+        await Promise.race([
+            this.page.waitForSelector('#ResultDiv .title a', { visible: true }),
+            this.page.waitForSelector('#ResultDiv .alert-warning', { visible: true })
+        ]);
+
+        const errorMessages = await this.page.$$('#ResultDiv .alert-warning');
+        let noBillFound = false;
+        for (let element of errorMessages) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes('no matching records were found')) {
+                noBillFound = true;
+                break;
+            }
+        }
+
+        if (noBillFound) {
+            console.error('No Results Found. Please check your account number.', this.account);
+            return { is_success: false, msg: `No Results Found. Please check your account number. ${this.account}` };
+        }
+
         const links = await this.page.$$('#ResultDiv .title a');
         for (const link of links) {
             const text = await this.page.evaluate(el => el.textContent, link);
@@ -35,6 +54,14 @@ class StanislausCountyPPScript extends BaseScript {
 
         // Wait for the this.page to load after clicking the link
         await this.page.waitForNavigation({ waitUntil: 'networkidle2' });
+        const isTextDangerPresent = await this.page.evaluate(() => {
+            return document.querySelector('a.text-danger') !== null;
+          });
+        
+        if (!isTextDangerPresent) {
+            console.error('No download link');
+            return { is_success: false, msg: `No download link.` };
+        }
         return { is_success: true, msg: `` };
     }
 
@@ -67,8 +94,19 @@ class StanislausCountyPPScript extends BaseScript {
         if (files.length > 0) {
             const downloadedFile = path.join(customPath, files[0]);
             const outputFilePath = path.resolve(this.outputPath);
-            fs.renameSync(downloadedFile, outputFilePath);
-            fs.rmdirSync(customPath);
+
+            try {
+                fs.renameSync(downloadedFile, outputFilePath);
+            } catch (err) {
+                if (err.code === 'EXDEV') {
+                    fs.copyFileSync(downloadedFile, outputFilePath);
+                    fs.unlinkSync(downloadedFile);
+                } else {
+                    throw err;
+                }
+            }
+
+            fs.rmSync(customPath, { recursive: true });
         }
 
         console.log(`PDF saved: ${this.outputPath}`);

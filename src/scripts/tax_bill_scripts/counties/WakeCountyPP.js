@@ -33,7 +33,8 @@ class WakeCountyPP extends BaseScript {
         }
 
         if (!foundLink) {
-            return false;
+            console.error("Result year does not match with target year")
+            return { is_success: false, msg: `Result year does not match with target year` };
         }
 
         await this.page.evaluate((link) => {

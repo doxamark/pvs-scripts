@@ -33,6 +33,28 @@ class DetroitCityPPScript extends BaseScript {
         await this.page.click('button.mat-raised-button.mat-primary');
 
         await new Promise(resolve => setTimeout(resolve, 3000));
+
+        await Promise.race([
+            this.page.waitForSelector('dx-list', { visible: true }),
+            this.page.waitForSelector('app-error', { visible: true })
+        ]);
+
+        const errorMessages = await this.page.$$('app-error');
+        let noBillFound = false;
+        for (let element of errorMessages) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes('Could not find your account.')) {
+                noBillFound = true;
+                break;
+            }
+        }
+
+
+        if (noBillFound) {
+            console.error('No Results Found. Please check your account number.', this.account);
+            return { is_success: false, msg: `No Results Found. Please check your account number. ${this.account}` };
+        }
+
         await this.page.waitForSelector('dx-list');
         const dxLists = await this.page.$$('dx-list');
 

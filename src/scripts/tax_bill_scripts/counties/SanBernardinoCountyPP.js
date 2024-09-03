@@ -15,7 +15,7 @@ class SanBernardinoCountyPPScript extends BaseScript {
         // Click the search button
         await this.page.click('input[name="ctl00$contentHolder$cmdSearch"]');
 
-        const noBillsSelector = 'div:contains("Sorry, there were no current bills found for this parcel.")';
+        const noBillsSelector = '.main-wrapper';
         const successSelector = 'table.propInfoTable';
 
         // Wait for either of the selectors to be present        
@@ -41,6 +41,15 @@ class SanBernardinoCountyPPScript extends BaseScript {
 
         await this.page.$eval(successSelector, el => el.href);
         await this.page.$(successSelector);
+
+        const isLinkPresent = await this.page.evaluate(() => {
+            return document.querySelector('table.propInfoTable tbody tr td a') !== null;
+          });
+        
+        if (!isLinkPresent) {
+            console.error('No download link');
+            return { is_success: false, msg: `No download link.` };
+        }
 
         return { is_success: true, msg: `` };
 
@@ -71,14 +80,25 @@ class SanBernardinoCountyPPScript extends BaseScript {
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
 
-        // Rename the file inside the customPath to this.outputPath
         const files = fs.readdirSync(customPath);
         if (files.length > 0) {
             const downloadedFile = path.join(customPath, files[0]);
             const outputFilePath = path.resolve(this.outputPath);
-            fs.renameSync(downloadedFile, outputFilePath);
-            fs.rmdirSync(customPath);
+
+            try {
+                fs.renameSync(downloadedFile, outputFilePath);
+            } catch (err) {
+                if (err.code === 'EXDEV') {
+                    fs.copyFileSync(downloadedFile, outputFilePath);
+                    fs.unlinkSync(downloadedFile);
+                } else {
+                    throw err;
+                }
+            }
+
+            fs.rmSync(customPath, { recursive: true });
         }
+
 
         console.log(`PDF saved: ${this.outputPath}`);
 

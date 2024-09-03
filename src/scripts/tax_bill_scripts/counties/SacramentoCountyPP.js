@@ -45,6 +45,12 @@ class SacramentoCountyPPScript extends BaseScript {
             fs.mkdirSync(dir, { recursive: true });
         }
         const customPath = path.resolve(`src/temp/${this.account}`);
+
+        const match = this.page.url().match(/\/BillDetail\/(\d+)/);
+        const tempFileName = `${match}.pdf`;
+        const tempFilePath = path.join(customPath, tempFileName);
+
+
         const client = await this.page.createCDPSession();
         await client.send('Page.setDownloadBehavior', {
             behavior: 'allow', downloadPath: customPath
@@ -60,17 +66,31 @@ class SacramentoCountyPPScript extends BaseScript {
         await new Promise(resolve => setTimeout(resolve, 3000));
 
         // Wait for the file to download
-        while (!fs.existsSync(customPath) || fs.readdirSync(customPath).length === 0) {
+        while (!fs.existsSync(tempFilePath)) {
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
 
-        // Rename the file inside the customPath to this.outputPath
+        // Rename the downloaded file
         const files = fs.readdirSync(customPath);
         if (files.length > 0) {
-            const downloadedFile = path.join(customPath, files[0]);
+            const downloadedFile = path.resolve(tempFilePath);
             const outputFilePath = path.resolve(this.outputPath);
-            fs.renameSync(downloadedFile, outputFilePath);
-            fs.rmdirSync(customPath);
+
+            try {
+                // Attempt to rename the file
+                fs.renameSync(downloadedFile, outputFilePath);
+            } catch (err) {
+                if (err.code === 'EXDEV') {
+                    // Handle cross-device link error by copying and then deleting
+                    fs.copyFileSync(downloadedFile, outputFilePath);
+                    fs.unlinkSync(downloadedFile);
+                } else {
+                    throw err; // Re-throw error if it's not an EXDEV error
+                }
+            }
+
+            // Remove the directory if needed
+            fs.rmSync(customPath, { recursive: true });
         }
 
         console.log(`PDF saved: ${this.outputPath}`);
