@@ -6,12 +6,17 @@ class SanDiegoCountyPPScript extends BaseScript {
     async performScraping() {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
-
+        let modifiedAccount = ""
         if (this.account.split("-").length == 2) {
-            this.year = this.account.split("-")[0]
-            this.account = this.account.split("-")[1]
+            this.year = this.account.split("-")[0].trim()
+            modifiedAccount = this.account.split("-")[1].trim()
         }
         
+        if (this.year.length != 4 || modifiedAccount.length != 4)  {
+            console.error(`Bad Account Lookup - Pattern should be year-bill_no - ${this.account}`)
+            return { is_success: false, msg: `Bad Account Lookup - Pattern should be year-bill_no - ${this.account}` };
+        }
+
         // Click "Option 3: Unsecured Bill Number"
         await this.page.click('#BillSearchPanelGroup-heading-SearchByUnsecureBillNumberBlock a[aria-controls="BillSearchPanelGroup-body-SearchByUnsecureBillNumberBlock"]');
 
@@ -19,7 +24,7 @@ class SanDiegoCountyPPScript extends BaseScript {
         await this.page.type('#year', this.year);
 
         // Input the bill number
-        await this.page.type('#unsecuredBillNumber', this.account);
+        await this.page.type('#unsecuredBillNumber', modifiedAccount);
 
         const buttons = await this.page.$$('#search-by-unsecured-bill-number-block-form button.btn-primary.btn-custom');
         for (const button of buttons) {

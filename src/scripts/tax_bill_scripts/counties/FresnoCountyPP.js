@@ -4,22 +4,30 @@ import path from 'path';
 
 class FresnoCountyPPScript extends BaseScript {
     async performScraping() {
+        this.accountLookupString = 'https://sonant.fresnocountyca.gov/paymentapplication'
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
 
         const inputs = this.account.split(" ")
         if (inputs.length != 2) {
-            return false;
+            console.error(`Bad Account Lookup - ${this.account}`)
+            return { is_success: false, msg: `Bad Account Lookup - ${this.account}` };
         }
 
         let parcel_number = inputs[0]
         let sub_number = inputs[1]
 
+        if (parcel_number.length < 8 || sub_number.length != 5 ) {
+            console.error(`Bad Account Lookup - ${this.account}`)
+            return { is_success: false, msg: `Bad Account Lookup - ${this.account}` };
+        }
+
         let parcel_number_inputs = parcel_number.split("-")
 
         if (parcel_number_inputs.length != 3) {
-            return false;
+            console.error(`Bad Account Lookup - ${this.account}`)
+            return { is_success: false, msg: `Bad Account Lookup - ${this.account}` };
         }
 
         // Click the "Start Search" button
@@ -42,6 +50,28 @@ class FresnoCountyPPScript extends BaseScript {
         // Click the "Submit" button
         await this.page.click('#Submit');
 
+        // Wait for either the error message or the bill view to be visible
+        await Promise.race([
+            this.page.waitForSelector('input[value="View Tax Info"]', { visible: true }),
+            this.page.waitForSelector('#NoRows', { visible: true })
+        ]);
+
+        // Check if the error message is present and contains the specific text
+        const errorMessages = await this.page.$$('#NoRows');
+        let noBillFound = false;
+        for (let element of errorMessages) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes('There are no property taxes that match the Parcel Number you searched.')) {
+                noBillFound = true;
+                break;
+            }
+        }
+
+        if (noBillFound) {
+            console.error('No Bills Found. Please check your account number.', this.account);
+            return { is_success: false, msg: `No Bills Found. Please check your account number. ${this.account}` };
+        }
+
         // Wait for the "View Tax Info" button
         await this.page.waitForSelector('input[value="View Tax Info"]');
 
@@ -50,7 +80,7 @@ class FresnoCountyPPScript extends BaseScript {
 
         // Wait for the "unsecuredDetails" element
         await this.page.waitForSelector('#unsecuredDetails');
-        
+
         return { is_success: true, msg: `` };
     }
 
