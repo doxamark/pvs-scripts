@@ -8,18 +8,6 @@ class RiversideCountyPPScript extends BaseScript {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
-        // // Click the element with the text "BILL NUMBER"
-        // await this.page.waitForSelector('h3.w-100.ml-3.ng-star-inserted');
-        // const headers = await this.page.$$('h3.w-100.ml-3.ng-star-inserted');
-        // for (const header of headers) {
-        //     const text = await this.page.evaluate(el => el.textContent, header);
-        //     console.log(text)
-        //     if (text.trim() === 'BILL NUMBER') {
-        //         await header.click();
-        //         break;
-        //     }
-        // }
-
         // Wait for the input field next to h6 with text 'Bill Number' and input a value
         await this.page.waitForSelector('div.mb-1.mt-1.col-sm-12.d-flex.align-items-center.ng-star-inserted');
         const divs = await this.page.$$('div.mb-1.mt-1.col-sm-12.d-flex.align-items-center.ng-star-inserted');
@@ -48,8 +36,40 @@ class RiversideCountyPPScript extends BaseScript {
             }
         }
 
+        // Wait for either the error message or the bill view to be visible
+    await Promise.race([
+        this.page.waitForSelector('.table.table.table-condensed a', { visible: true }),
+        this.page.waitForSelector('h4.ng-star-inserted', { visible: true })
+      ]);
+  
+      // Check if the error message is present and contains the specific text
+      const errorMessages = await this.page.$$('h4.ng-star-inserted');
+      let noBillFound = false;
+      for (let element of errorMessages) {
+        const text = await this.page.evaluate(el => el.textContent, element);
+        if (text.includes('No Result Found')) {
+          noBillFound = true;
+          break;
+        }
+      }
+  
+      if (noBillFound) {
+        console.error('No Bills Found. Please check your account number.', this.account);
+        return { is_success: false, msg: `No Bills Found. Please check your account number. ${this.account}` };
+      }
+      
         // Wait for the table element
         await this.page.waitForSelector('table.table.table-condensed a');
+
+        const status = await this.page.$('.badge.badge-warning')
+        if (status) {
+            const textStatus = await this.page.evaluate(el => el.textContent, status);
+            if (textStatus && textStatus.trim().includes('Inactive')) {
+                console.error('Bill is inactive.', this.account);
+                return { is_success: false, msg: `Bill is inactive. ${this.account}` };
+            }
+        }
+        
 
         // Click the 'a' tag with 'view account' text
         const links = await this.page.$$('table.table.table-condensed a');
