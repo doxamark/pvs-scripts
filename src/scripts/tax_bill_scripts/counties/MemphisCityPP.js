@@ -8,6 +8,21 @@ class MemphisCityPPScript extends BaseScript {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
+        const billingNumber = await this.page.$$('#MainBodyPlaceHolder_lblParcelNo');
+        let noBillingNumber = false;
+        for (let element of billingNumber) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.trim() == '') {
+                noBillingNumber = true;
+                break;
+            }
+        }
+
+        if (noBillingNumber) {
+            console.error('No Billing Number Found. PDF not printable.');
+            return { is_success: false, msg: `No Billing Number Found. PDF not printable.` };
+        }
+
         this.page.on('dialog', async dialog => {
             await dialog.dismiss(); // Dismiss the dialog (use dialog.accept() if you need to accept it)
         });
