@@ -2,11 +2,30 @@ import BaseScript from '../../../core/BaseScript.js';
 import fs from 'fs';
 import path from 'path';
 
-class WakeCountyPP extends BaseScript {
+class WakeCountyPPScript extends BaseScript {
     async performScraping() {
-
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
+
+        await Promise.race([
+            this.page.waitForSelector('td.medFont a[title="Go To Billing Statement"]', { visible: true }),
+            this.page.waitForSelector('span.billMessageLarge', { visible: true })
+        ]);
+
+        const errorMessages = await this.page.$$('span.billMessageLarge');
+        let noBillFound = false;
+        for (let element of errorMessages) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes('No records matched your request')) {
+                noBillFound = true;
+                break;
+            }
+        }
+
+        if (noBillFound) {
+            console.error('No Results Found. Please check your account number.', this.account);
+            return { is_success: false, msg: `No Results Found. Please check your account number. ${this.account}` };
+        }
 
         // Create a selector for the <td> element with class 'medFont' that contains the <a> tag with the specific title
         const tdSelector = 'td.medFont a[title="Go To Billing Statement"]';
@@ -25,8 +44,8 @@ class WakeCountyPP extends BaseScript {
         // Loop through the results to find the one with the matching account and year pattern
         let foundLink = null;
         for (const link of links) {
-            const regex = new RegExp(`${this.account}-${this.year}-${this.year}-\\d{6}`);
-            if (regex.test(link.text)) {
+            // const regex = new RegExp(`${this.account}-${this.year}-${this.year}-\\d{6}`);
+            if (link.text.includes(this.year)) {
                 foundLink = link.href;
                 break;
             }
@@ -89,4 +108,4 @@ class WakeCountyPP extends BaseScript {
 
 }
 
-export default WakeCountyPP;
+export default WakeCountyPPScript;

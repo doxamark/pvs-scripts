@@ -37,7 +37,7 @@ console.error = (...messages) => {
   console.log(`Start Value Backup Scripts - ${getStartTime(startTime)}`)
   
   const dbManager = new DatabaseManager();
-  const fetchQuery = 'SELECT * FROM tso.TaxBillBackupNeededScript() WHERE CollectorID in (1397)';
+  const fetchQuery = 'SELECT * FROM tso.TaxBillBackupNeededScript() WHERE CollectorID in (836,834,1401,1372,1165,281,29,1397,1033,277,835,1169,861,27,867)';
   let records = [];
 
   try {
