@@ -6,7 +6,7 @@ class WashoeCountyPPScript extends BaseScript {
     async performScraping() {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
-        
+
         const inputSelector = 'input.form-control.ng-untouched.ng-pristine.ng-valid.ng-star-inserted';
         await Promise.race([
             this.page.waitForSelector(inputSelector, { visible: true }),
@@ -41,11 +41,11 @@ class WashoeCountyPPScript extends BaseScript {
         const zeroBill = await this.page.$$('.public-access-payment-bill-module payment-bill .bill-main .bill-header__total-amount', { visible: true });
         let hasZeroBill = false;
         for (let element of zeroBill) {
-        const text = await this.page.evaluate(el => el.textContent, element);
-        if (text.includes('$0.00')) {
-            hasZeroBill = true;
-            break;
-        }
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes('$0.00')) {
+                hasZeroBill = true;
+                break;
+            }
         }
 
         if (hasZeroBill) {
@@ -53,8 +53,23 @@ class WashoeCountyPPScript extends BaseScript {
             return { is_success: false, msg: `Result has $0.00 payable.` };
         }
 
+        const noRecordFound = await this.page.$$('.public-access-payment-bill-module payment-bill .bill-main', { visible: true });
+        let hasNoRecordFound = false;
+        for (let element of noRecordFound) {
+            const text = await this.page.evaluate(el => el.textContent, element);
+            if (text.includes('No records found')) {
+                hasNoRecordFound = true;
+                break;
+            }
+        }
+
+        if (hasNoRecordFound) {
+            console.error('No Results Found. Please check your account number.', this.account);
+            return { is_success: false, msg: `No Results Found. Please check your account number. ${this.account}` };
+        }
+
         return { is_success: true, msg: "" };
-        
+
 
     }
 
@@ -87,7 +102,7 @@ class WashoeCountyPPScript extends BaseScript {
                 }
             `
         });
-    
+
         await this.page.pdf({
             path: this.outputPath,
             format: 'A4',
