@@ -117,5 +117,12 @@
     "AccountLookup": "0000113283",
     "CollectorID": "281P",
     "DocumentName": ""
+  },
+  {
+    "county": "WASHOE",
+    "AccountLookupString": "https://nv-washoe.publicaccessnow.com/Treasurer/TaxSearch.aspx",
+    "AccountLookup": "2002084",
+    "CollectorID": "1399P",
+    "DocumentName": ""
   }
 ]
