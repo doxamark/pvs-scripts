@@ -1,0 +1,13 @@
+SELECT left(REPLACE(Bill.Account, ' ', ''),5)+right(REPLACE(Bill.Account, ' ', ''),8) as NewAccountLookup, Bill.Account, Bill.AccountLookup
+FROM Bill
+JOIN Parcel on Bill.ParcelID = Parcel.ParcelID
+WHERE Bill.SysYear = 2024
+AND Parcel.REPP = 'P'
+AND Bill.CollectorID = 568;
+ 
+UPDATE Bill
+JOIN Parcel on Bill.ParcelID = Parcel.ParcelID
+SET Bill.AccountLookup = left(REPLACE(Bill.Account, ' ', ''),5)+right(REPLACE(Bill.Account, ' ', ''),8)
+WHERE Bill.SysYear = 2024
+AND Parcel.REPP = 'P'
+AND Bill.CollectorID = 568;
