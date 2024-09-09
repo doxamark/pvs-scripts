@@ -36,8 +36,15 @@ console.error = (...messages) => {
   const startTime = new Date(); // Start time
   console.log(`Start Value Backup Scripts - ${getStartTime(startTime)}`)
   
+  const availableCollectorIDs = [
+    836, 834, 1401, 1372, 1165, 
+    281, 29, 1397, 1033, 277, 
+    835, 1169, 861, 27, 867, 
+    1399, 849
+];
+
   const dbManager = new DatabaseManager();
-  const fetchQuery = 'SELECT * FROM tso.TaxBillBackupNeededScript() WHERE CollectorID in (836,834,1401,1372,1165,281,29,1397,1033,277,835,1169,861,27,867,1399)';
+  const fetchQuery = `SELECT * FROM tso.TaxBillBackupNeededScript() WHERE CollectorID IN (${availableCollectorIDs.join(', ')});`;
   let records = [];
 
   try {
