@@ -124,5 +124,27 @@
     "AccountLookup": "2002084",
     "CollectorID": "1399P",
     "DocumentName": ""
+  },
+  {
+    "county": "FULTON PP",
+    "AccountLookupString": "https://www.fultoncountytaxes.org/propertytax/summary/P00000010838",
+    "AccountLookup": "P00000010838",
+    "CollectorID": "474P",
+    "DocumentName": ""
+  },
+  {
+    "county": "FULTON RE",
+    "AccountLookupString": "https://www.fultoncountytaxes.org/propertytax/summary/17 019700050366",
+    "AccountLookup": "17 019700050366",
+    "CollectorID": "474R",
+    "DocumentName": ""
+  },
+  {
+    "county": "KNOXVILLE PP",
+    "AccountLookupString": "https://propertytax.knoxvilletn.gov/pptax_master_show_vw/ShowPptax_master_show_vw.aspx?Sequence_No=1285086",
+    "AccountLookup": "1285086",
+    "CollectorID": "849P",
+    "DocumentName": ""
   }
+
 ]
