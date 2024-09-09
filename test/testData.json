@@ -145,6 +145,20 @@
     "AccountLookup": "1285086",
     "CollectorID": "849P",
     "DocumentName": ""
+  },
+  {
+    "county": "WILLIAMSON PP",
+    "AccountLookupString": "https://www.williamsonpropertytax.com/taxes.html#/WildfireSearch",
+    "AccountLookup": "01101402P113",
+    "CollectorID": "568P",
+    "DocumentName": ""
+  },
+  {
+    "county": "WILLIAMSON RE",
+    "AccountLookupString": "https://www.williamsonpropertytax.com/taxes.html#/WildfireSearch",
+    "AccountLookup": "062FA00200C005",
+    "CollectorID": "568R",
+    "DocumentName": ""
   }
 
 ]
