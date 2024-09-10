@@ -1,11 +1,12 @@
-SELECT BillID
-INTO TABLE TempBillIDs
+//Copy results out
+SELECT list(BillID, ',')
 FROM Bill
 JOIN BillStatus on Bill.Status = BillStatus.Code and BillStatus.Updateable = 0
 JOIN Parcel on Bill.ParcelID = Parcel.ParcelID
 WHERE Bill.SysYear = 2024
 AND Parcel.REPP = 'P'
 AND Bill.CollectorID = 568;
+//824674,830383,843884,821781,821783,823938,823939,805187,823657,824242,848445
  
 UPDATE Bill
 JOIN BillStatus on Bill.Status = BillStatus.Code and BillStatus.Updateable = 0
@@ -23,7 +24,19 @@ AND Parcel.REPP = 'P'
 AND Bill.CollectorID = 568;
  
 UPDATE Bill
-JOIN TempBillIDS on Bill.BillID = TempBillIDs.BillID
-SET Bill.UpdateOverride = 0;
- 
-DROP TABLE TempBillIDs;
+SET Bill.UpdateOverride = 0
+WHERE Bill.BillID in (824674,830383,843884,821781,821783,823938,823939,805187,823657,824242,848445);
+
+
+
+# new
+
+
+UPDATE Bill
+JOIN BillStatus ON Bill.Status = BillStatus.Code AND BillStatus.Updateable = 1
+JOIN Parcel ON Bill.ParcelID = Parcel.ParcelID
+SET Bill.Account = REPLACE(Bill.Account, '-', ''),
+    Bill.AccountLookup = REPLACE(Bill.Account, '-', '')
+WHERE Bill.SysYear = 2024
+AND Parcel.REPP = 'B'
+AND Bill.CollectorID in (3351,400,3669);
