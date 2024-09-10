@@ -159,6 +159,47 @@
     "AccountLookup": "062FA00200C005",
     "CollectorID": "568R",
     "DocumentName": ""
+  },
+  {
+    "county": "GALVESTON PP",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/galveston/showdetail2.jsp?can=286418",
+    "AccountLookup": "286418",
+    "CollectorID": "3351P",
+    "DocumentName": ""
+  },
+  {
+    "county": "GALVESTON RE",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/galveston/showdetail2.jsp?can=166856",
+    "AccountLookup": "166856",
+    "CollectorID": "3351P",
+    "DocumentName": ""
+  },
+  {
+    "county": "NUECES RE",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/nueces/showdetail2.jsp?can=048600030050",
+    "AccountLookup": "048600030050",
+    "CollectorID": "400R",
+    "DocumentName": ""
+  },
+  {
+    "county": "NUECES PP",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/nueces/showdetail2.jsp?can=048600030050",
+    "AccountLookup": "C00473890000",
+    "CollectorID": "400P",
+    "DocumentName": ""
+  },
+  {
+    "county": "HIDALGO PP",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/hidalgo/showdetail2.jsp?can=B22259900C002900",
+    "AccountLookup": "B22259900C002900",
+    "CollectorID": "3669P",
+    "DocumentName": ""
+  },
+  {
+    "county": "HIDALGO RE",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/hidalgo/showdetail2.jsp?can=B22250000C002910",
+    "AccountLookup": "B22250000C002910",
+    "CollectorID": "3669R",
+    "DocumentName": ""
   }
-
 ]
