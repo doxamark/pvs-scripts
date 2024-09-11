@@ -41,7 +41,7 @@ console.error = (...messages) => {
     281, 29, 1397, 1033, 277, 
     835, 1169, 861, 27, 867, 
     1399, 849, 568, 3669, 400, 3351,
-    1871, 2582
+    1871, 2852
 ];
 
   const dbManager = new DatabaseManager();
