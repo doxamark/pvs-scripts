@@ -201,5 +201,19 @@
     "AccountLookup": "B22250000C002910",
     "CollectorID": "3669R",
     "DocumentName": ""
+  },
+  {
+    "county": "POTTER RE",
+    "AccountLookupString": "https://www.pottercountytax.com/Accounts/AccountDetails?TaxAccountNumber=165051",
+    "AccountLookup": "165051",
+    "CollectorID": "1871R",
+    "DocumentName": ""
+  },
+  {
+    "county": "POTTER PP",
+    "AccountLookupString": "https://www.pottercountytax.com/Accounts/AccountDetails?TaxAccountNumber=165051",
+    "AccountLookup": "239646",
+    "CollectorID": "1871P",
+    "DocumentName": ""
   }
 ]
