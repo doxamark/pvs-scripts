@@ -230,7 +230,7 @@
     "CollectorID": "2852P",
     "DocumentName": ""
   },
-  {
+    {
     "county": "MultnomahCountyPP",
     "AccountLookupString": "https://multcoproptax.com/Property-Search",
     "AccountLookup": "P504714",
@@ -242,6 +242,13 @@
     "AccountLookupString": "https://multcoproptax.com/Property-Search",
     "AccountLookup": "R317589",
     "CollectorID": "313R",
+    "DocumentName": ""
+  },
+  {
+    "county": "ChathamCountyPP",
+    "AccountLookupString": "https://www.chathamtax.org/PT/search/CommonSearch.aspx?mode=REALPROP",
+    "AccountLookup": "112547",
+    "CollectorID": "2436P",
     "DocumentName": ""
   }
 ]
