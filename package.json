@@ -15,7 +15,7 @@
     "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "node-fetch": "^3.3.2",
-    "odbc": "^2.4.9",
+    "odbc": "^2.4.7",
     "pdf-lib": "^1.17.1",
     "puppeteer": "^22.13.1",
     "puppeteer-extra": "^3.3.6",
