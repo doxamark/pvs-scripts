@@ -229,5 +229,19 @@
     "AccountLookup": "926-10036-010",
     "CollectorID": "2852P",
     "DocumentName": ""
+  },
+  {
+    "county": "MultnomahCountyPP",
+    "AccountLookupString": "https://multcoproptax.com/Property-Search",
+    "AccountLookup": "P504714",
+    "CollectorID": "313P",
+    "DocumentName": ""
+  },
+  {
+    "county": "MultnomahCountyRE",
+    "AccountLookupString": "https://multcoproptax.com/Property-Search",
+    "AccountLookup": "R317589",
+    "CollectorID": "313R",
+    "DocumentName": ""
   }
 ]
