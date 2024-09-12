@@ -46,6 +46,7 @@ class DatabaseManager {
     try {
       await this._connect();
       await this.conn.query(query);
+      await this.conn.commit();
     } catch (error) {
       this.logger.error(`An error occurred: ${error.message}`);
     } finally {
