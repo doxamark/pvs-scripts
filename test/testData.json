@@ -250,5 +250,26 @@
     "AccountLookup": "112547",
     "CollectorID": "2436P",
     "DocumentName": ""
+  },
+  {
+    "county": "WilkesBarreAreaSchoolDistrictRE",
+    "AccountLookupString": "https://eliterevenue.rba.com/taxes/wilkesbarre/trirsp2ppwcurr.asp?parcel=73-H10NW1-002-001-000++++&currentlist=0&",
+    "AccountLookup": "73-H10NW1-002-001-000",
+    "CollectorID": "4401R",
+    "DocumentName": ""
+  },
+  {
+    "county": "PulaskiCountyPP",
+    "AccountLookupString": "https://public.pulaskicountytreasurer.net/",
+    "AccountLookup": "28655B",
+    "CollectorID": "15P",
+    "DocumentName": ""
+  },
+  {
+    "county": "PulaskiCountyRE",
+    "AccountLookupString": "https://public.pulaskicountytreasurer.net/tax.html",
+    "AccountLookup": "34L1150100100",
+    "CollectorID": "15R",
+    "DocumentName": ""
   }
 ]
