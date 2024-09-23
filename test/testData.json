@@ -327,5 +327,19 @@
     "AccountLookup": "019210A000",
     "CollectorID": "256R",
     "DocumentName": ""
+  },
+  {
+    "county": "JeffersonParishPP",
+    "AccountLookupString": "https://propertytax.jpso.com/PropertyTax/propSrch.aspx#result",
+    "AccountLookup": "3410725596",
+    "CollectorID": "201P",
+    "DocumentName": ""
+  },
+  {
+    "county": "JeffersonParishRE",
+    "AccountLookupString": "https://propertytax.jpso.com/PropertyTax/propSrch.aspx#result",
+    "AccountLookup": "0420004674",
+    "CollectorID": "201R",
+    "DocumentName": ""
   }
 ]
