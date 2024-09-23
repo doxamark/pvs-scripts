@@ -271,5 +271,61 @@
     "AccountLookup": "34L1150100100",
     "CollectorID": "15R",
     "DocumentName": ""
+  },
+  {
+    "county": "StatesboroCityPP",
+    "AccountLookupString": "https://www.municipalonlinepayments.com/statesboroga/tax/search",
+    "AccountLookup": "20485",
+    "CollectorID": "712P",
+    "DocumentName": ""
+  },
+  {
+    "county": "StatesboroCityRE",
+    "AccountLookupString": "https://www.municipalonlinepayments.com/statesboroga/tax/search",
+    "AccountLookup": "MS63000026 014",
+    "CollectorID": "712R",
+    "DocumentName": ""
+  },
+  {
+    "county": "EastBatonRougeParishPP",
+    "AccountLookupString": "https://snstaxpayments.com/ebr?terms=yes",
+    "AccountLookup": "359386",
+    "CollectorID": "195P",
+    "DocumentName": ""
+  },
+  {
+    "county": "EastBatonRougeParishRE",
+    "AccountLookupString": "https://snstaxpayments.com/ebr?terms=yes",
+    "AccountLookup": "564354",
+    "CollectorID": "195R",
+    "DocumentName": ""
+  },
+  {
+    "county": "StTammanyParishPP",
+    "AccountLookupString": "https://secure.stpsopayments.com/propertyTax/PropSrch.aspx",
+    "AccountLookup": "9000807",
+    "CollectorID": "215P",
+    "DocumentName": ""
+  },
+  {
+    "county": "StTammanyParishRE",
+    "AccountLookupString": "https://secure.stpsopayments.com/propertyTax/PropSrch.aspx",
+    "AccountLookup": "115803",
+    "CollectorID": "215R",
+    "DocumentName": ""
+  },
+  {
+    "county": "StCharlesCountyPP",
+    "AccountLookupString": "https://www.stcharlesmocollector.com/#/WildfireSearch",
+    "AccountLookup": "P0617646",
+    "CollectorID": "256P",
+    "DocumentName": ""
+  },
+  {
+    "county": "StCharlesCountyRE",
+    "AccountLookupString": "https://www.stcharlesmocollector.com/#/WildfireSearch",
+    "AccountLookup": "019210A000",
+    "CollectorID": "256R",
+    "DocumentName": ""
   }
 ]
