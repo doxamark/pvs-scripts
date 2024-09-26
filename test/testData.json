@@ -341,5 +341,19 @@
     "AccountLookup": "0420004674",
     "CollectorID": "201R",
     "DocumentName": ""
+  },
+  {
+    "county": "OuachitaParishPP",
+    "AccountLookupString": "https://laparishtax.com/county/Ouachita",
+    "AccountLookup": "191942",
+    "CollectorID": "208P",
+    "DocumentName": ""
+  },
+  {
+    "county": "OuachitaParishRE",
+    "AccountLookupString": "https://laparishtax.com/county/Ouachita",
+    "AccountLookup": "118671",
+    "CollectorID": "208R",
+    "DocumentName": ""
   }
 ]
