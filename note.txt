@@ -1,42 +1,36 @@
-//Copy results out
-SELECT list(BillID, ',')
-FROM Bill
-JOIN BillStatus on Bill.Status = BillStatus.Code and BillStatus.Updateable = 0
+ALTER VIEW "tso"."TaxBillBackupNeeded"
+AS
+SELECT Bill.BillID, ''''+ coalesce(Bill.AccountLookup,Bill.Account) as AccountLookup,
+//REPLACE(REPLACE(REPLACE(IF Parcel.REPP = 'R' THEN Collector.AccountLookupString ELSE Collector.PPAccountLookupString ENDIF,'#ACCOUNT#',coalesce(Bill.AccountLookup, Bill.Account)),'#YEAR#',Bill.SysYear), '#UNFORMATTED#', coalesce(Bill.AccountLookup, Bill.Account)) AS AccountLookupString,
+REPLACE(REPLACE(REPLACE(REPLACE(IF Parcel.REPP = 'R' THEN Collector.AccountLookupString ELSE Collector.PPAccountLookupString ENDIF,'#ACCOUNT#',coalesce(Bill.AccountLookup, Bill.Account)),'#YEAR#',Bill.SysYear), '#UNFORMATTED#', coalesce(Bill.AccountLookup, Bill.Account)), '#C#','') AS AccountLookupString,
+Collector.CollectorID, Parcel.REPP, null as SiteNote,
+'C:\Temp\'+ REPLACE(REPLACE(REPLACE(REPLACE(DocumentTYpe.DefaultFileName, '#Collector#', Collector.Name),'#SysYear#', Bill.SysYear),'#Account#',Bill.Account),'#MasterID#',Prop.PropMasterID)+'.pdf'  as TempName,
+GetFolder(Parcel.PropID, DocumentType.DefaultFolder) + REPLACE(REPLACE(REPLACE(REPLACE(DocumentType.DefaultFileName, '#Collector#', Collector.Name),'#SysYear#', Bill.SysYear),'#Account#',Bill.Account),'#MasterID#',Prop.PropMasterID)+' Auto.pdf' as DocumentName,
+'"INSERT INTO Document WITH AUTO NAME SELECT '+cast(Bill.BillID as VarChar(20))+' as BillID, '+cast(DocumentType.ID as VarChar(4)) +' as Type, '''+Name+''' as Name, '''+DocumentName+''' as DocumentName, 1 as FileExists, ''L'' as BillMethod;"' as InsertString,
+REPLACE(REPLACE(DocumentType.DefaultName, '#Collector#',Collector.Name), '#Account#',Bill.Account) AS Name,
+Collector.Name as Collector, Parcel.State, Bill.SysYear, TaxStatement.Due, TaxStatement.Delinquent, Parcel.Status, Prop.Name as PropName, left(PropName,4) as PropName4
+FROM Collector
+JOIN TaxStatement on Collector.CollectorID = TaxStatement.CollectorID
+JOIN Bill on TaxStatement.TaxStatementID = Bill.TaxStatementID
 JOIN Parcel on Bill.ParcelID = Parcel.ParcelID
-WHERE Bill.SysYear = 2024
-AND Parcel.REPP = 'P'
-AND Bill.CollectorID = 568;
-//824674,830383,843884,821781,821783,823938,823939,805187,823657,824242,848445
+JOIN ParcelStatus on Parcel.Status = ParcelStatus.Code
+JOIN Prop on Parcel.PropID = Prop.PropID
+JOIN DocumentType on (Parcel.REPP = 'R' and DocumentType.ID = 23)  or (Parcel.REPP = 'P' and DocumentTYpe.ID = 75)
+LEFT OUTER JOIN Document on Document.BillID = Bill.BillID and Document.Type in (23, 75) //RE & PP Tax Bill
+//WHERE DateDiff(Day, Current Date, TaxStatement.Due) <= 45
+WHERE Bill.Status = 'N'
+//AND DateDiff(Day, Current Date, TaxStatementEarliestDueDate(TaxStatement.TaxStatementID)) <= 45
+and ParcelStatus.Active = 1 
+AND Document.DocumentID is null
+AND TaxStatementEarliestDueDate(TaxStatement.TaxStatementID) > '2022-01-01'
+//AND Collector.TBScript = 1 //Add TBScript to Collector
+AND ((Collector.TBScriptREPP in ('P','B') AND Parcel.REPP = 'P' AND TaxStatement.TBScriptPPReady = 1) OR (Collector.TBScriptREPP in ('R','B') AND Parcel.REPP = 'R' AND TaxStatement.TBScriptREReady = 1))
+AND coalesce(Bill.AccountLookup, Bill.Account) IS NOT NULL
+AND LEFT(coalesce(Bill.AccountLookup, Bill.Account),3) <> 'New'
+//Change of Address set to true
+AND Parcel.ChangeOfAddress = 1;
  
-UPDATE Bill
-JOIN BillStatus on Bill.Status = BillStatus.Code and BillStatus.Updateable = 0
-JOIN Parcel on Bill.ParcelID = Parcel.ParcelID
-SET Bill.UpdateOverride = 1
-WHERE Bill.SysYear = 2024
-AND Parcel.REPP = 'P'
-AND Bill.CollectorID = 568;
- 
-UPDATE Bill
-JOIN Parcel on Bill.ParcelID = Parcel.ParcelID
-SET Bill.AccountLookup = left(REPLACE(Bill.Account, ' ', ''),5)+right(REPLACE(Bill.Account, ' ', ''),8)
-WHERE Bill.SysYear = 2024
-AND Parcel.REPP = 'P'
-AND Bill.CollectorID = 568;
- 
-UPDATE Bill
-SET Bill.UpdateOverride = 0
-WHERE Bill.BillID in (824674,830383,843884,821781,821783,823938,823939,805187,823657,824242,848445);
-
-
-
-# new
-
-
-UPDATE Bill
-JOIN BillStatus ON Bill.Status = BillStatus.Code AND BillStatus.Updateable = 1
-JOIN Parcel ON Bill.ParcelID = Parcel.ParcelID
-SET Bill.Account = REPLACE(Bill.Account, '-', ''),
-    Bill.AccountLookup = REPLACE(Bill.Account, '-', '')
-WHERE Bill.SysYear = 2024
-AND Parcel.REPP = 'B'
-AND Bill.CollectorID in (3351,400,3669);
+ALTER PROCEDURE "tso"."TaxBillBackupNeededScript"
+AS
+SELECT AccountLookup, CollectorID, REPP, replace(AccountLookupString, '#C#', '') as AccountLookupString, DocumentName, InsertString, BillID, PropName4
+FROM TaxBillBackupNeeded;
