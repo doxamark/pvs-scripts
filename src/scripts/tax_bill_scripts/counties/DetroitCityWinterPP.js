@@ -3,7 +3,7 @@ import DetroitCityPPScript from './DetroitCityPP.js';
 import fs from 'fs';
 import path from 'path';
 
-class DetroitCityREScript extends DetroitCityPPScript {
+class DetroitCityWinterPPScript extends DetroitCityPPScript {
 }
 
-export default DetroitCityREScript;
+export default DetroitCityWinterPPScript;

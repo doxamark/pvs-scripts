@@ -355,5 +355,33 @@
     "AccountLookup": "118671",
     "CollectorID": "208R",
     "DocumentName": ""
+  },
+  {
+    "county": "BuncombeCountyPP",
+    "AccountLookupString": "https://tax.buncombecounty.org/Search.aspx",
+    "AccountLookup": "0000797126",
+    "CollectorID": "271P",
+    "DocumentName": ""
+  },
+  {
+    "county": "BuncombeCountyRE",
+    "AccountLookupString": "https://tax.buncombecounty.org/Search.aspx",
+    "AccountLookup": "0000797126",
+    "CollectorID": "271R",
+    "DocumentName": ""
+  },
+  {
+    "county": "DETROIT WINTER",
+    "AccountLookupString": "https://guestpay.divdatkiosknetwork.com/account/search",
+    "AccountLookup": "01000855-7",
+    "CollectorID": "1203R",
+    "DocumentName": ""
+  },
+  {
+    "county": "DETROIT WINTER",
+    "AccountLookupString": "https://guestpay.divdatkiosknetwork.com/account/search",
+    "AccountLookup": "01990932.06",
+    "CollectorID": "1203P",
+    "DocumentName": ""
   }
 ]
