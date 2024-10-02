@@ -383,5 +383,33 @@
     "AccountLookup": "01990932.06",
     "CollectorID": "1203P",
     "DocumentName": ""
+  },
+  {
+    "county": "FORTBEND PP",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/fbc/showdetail2.jsp?can=9960060920013907",
+    "AccountLookup": "9960060920013907",
+    "CollectorID": "374P",
+    "DocumentName": ""
+  },
+  {
+    "county": "FORTBEND RE",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/fbc/showdetail2.jsp?can=7139000000010907",
+    "AccountLookup": "7139000000010907",
+    "CollectorID": "374R",
+    "DocumentName": ""
+  },
+  {
+    "county": "GREGG PP",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/gregg/showdetail2.jsp?can=1595246",
+    "AccountLookup": "1595246",
+    "CollectorID": "2093P",
+    "DocumentName": ""
+  },
+  {
+    "county": "GREGG RE",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/gregg/showdetail2.jsp?can=1124142",
+    "AccountLookup": "1124142",
+    "CollectorID": "2093R",
+    "DocumentName": ""
   }
 ]
