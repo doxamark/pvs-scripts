@@ -411,5 +411,19 @@
     "AccountLookup": "1124142",
     "CollectorID": "2093R",
     "DocumentName": ""
+  },
+  {
+    "county": "ELPASO PP",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/elpaso/index.jsp",
+    "AccountLookup": "519805",
+    "CollectorID": "371P",
+    "DocumentName": ""
+  },
+  {
+    "county": "ELPASO PP",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/elpaso/index.jsp",
+    "AccountLookup": "317885",
+    "CollectorID": "371R",
+    "DocumentName": ""
   }
 ]
