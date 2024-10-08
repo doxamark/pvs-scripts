@@ -425,5 +425,68 @@
     "AccountLookup": "317885",
     "CollectorID": "371R",
     "DocumentName": ""
+  },
+  {
+    "county": "CuyahogaCountyRE",
+    "AccountLookupString": "https://myplace.cuyahogacounty.gov/",
+    "AccountLookup": "129-02-001",
+    "CollectorID": "2373R",
+    "DocumentName": ""
+  },
+  {
+    "county": "MontgomeryCountyPP",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/montgomery/showdetail2.jsp?can=1940029200999",
+    "AccountLookup": "1940029200999",
+    "CollectorID": "399P",
+    "DocumentName": ""
+  },
+  {
+    "county": "MontgomeryCountyRE",
+    "AccountLookupString": "https://actweb.acttax.com/act_webdev/montgomery/showdetail2.jsp?can=R266551",
+    "AccountLookup": "R266551",
+    "CollectorID": "399R",
+    "DocumentName": ""
+  },
+  {
+    "county": "CharlestonCountyRE",
+    "AccountLookupString": "https://sc-charleston.publicaccessnow.com/RealPropertyBillSearch.aspx",
+    "AccountLookup": "5370000072",
+    "CollectorID": "629R",
+    "DocumentName": ""
+  },
+  {
+    "county": "CharlestonCountyPP",
+    "AccountLookupString": "https://sc-charleston.publicaccessnow.com/PersonalPropertySearch.aspx",
+    "AccountLookup": "BPC130001650",
+    "CollectorID": "629P",
+    "DocumentName": ""
+  },
+  {
+    "county": "LexingtonCountyPP",
+    "AccountLookupString": "https://lexingtoncountytreasurer.qpaybill.com/Taxes/TaxesDefaultType4.aspx",
+    "AccountLookup": "5-114025983",
+    "CollectorID": "1121P",
+    "DocumentName": ""
+  },
+  {
+    "county": "LexingtonCountyRE",
+    "AccountLookupString": "https://lexingtoncountytreasurer.qpaybill.com/Taxes/TaxesDefaultType4.aspx",
+    "AccountLookup": "00430003130",
+    "CollectorID": "1121R",
+    "DocumentName": ""
+  },
+  {
+    "county": "RichlandCountyPP",
+    "AccountLookupString": "https://www6.richlandcountysc.gov/TreasurerTaxInfo/Main.aspx",
+    "AccountLookup": "X9922075",
+    "CollectorID": "486P",
+    "DocumentName": ""
+  },
+  {
+    "county": "RichlandCountyRE",
+    "AccountLookupString": "https://www6.richlandcountysc.gov/TreasurerTaxInfo/Main.aspx",
+    "AccountLookup": "050000228",
+    "CollectorID": "486R",
+    "DocumentName": ""
   }
 ]
