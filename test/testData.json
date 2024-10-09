@@ -516,5 +516,19 @@
     "AccountLookup": "650281DEN",
     "CollectorID": "370R",
     "DocumentName": ""
+  },
+  {
+    "county": "LamarCountyTXPP",
+    "AccountLookupString": "https://esearch.lamarcad.org/Property/View/104074/",
+    "AccountLookup": "104074",
+    "CollectorID": "391P",
+    "DocumentName": ""
+  },
+  {
+    "county": "LamarCountyTXRE",
+    "AccountLookupString": "https://esearch.lamarcad.org/Property/View/107325/",
+    "AccountLookup": "107325",
+    "CollectorID": "391R",
+    "DocumentName": ""
   }
 ]
