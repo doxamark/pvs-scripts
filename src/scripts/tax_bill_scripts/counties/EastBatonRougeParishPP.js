@@ -2,7 +2,7 @@ import BaseScript from '../../../core/BaseScript.js';
 import fs from 'fs';
 import path from 'path';
 
-class EastBatonRougeParishPPcript extends BaseScript {
+class EastBatonRougeParishPPScript extends BaseScript {
     async performScraping() {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
@@ -114,4 +114,4 @@ class EastBatonRougeParishPPcript extends BaseScript {
 
 }
 
-export default EastBatonRougeParishPPcript;
+export default EastBatonRougeParishPPScript;

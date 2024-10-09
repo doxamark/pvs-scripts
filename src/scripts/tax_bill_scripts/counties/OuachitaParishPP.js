@@ -2,7 +2,7 @@ import BaseScript from '../../../core/BaseScript.js';
 import fs from 'fs';
 import path from 'path';
 
-class OuachitaParishPPcript extends BaseScript {
+class OuachitaParishPPScript extends BaseScript {
     async performScraping() {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
@@ -167,4 +167,4 @@ class OuachitaParishPPcript extends BaseScript {
 
 }
 
-export default OuachitaParishPPcript;
+export default OuachitaParishPPScript;

@@ -2,7 +2,7 @@ import BaseScript from '../../../core/BaseScript.js';
 import fs from 'fs';
 import path from 'path';
 
-class JeffersonParishREcript extends BaseScript {
+class JeffersonParishREScript extends BaseScript {
     async performScraping() {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
@@ -96,4 +96,4 @@ class JeffersonParishREcript extends BaseScript {
 
 }
 
-export default JeffersonParishREcript;
+export default JeffersonParishREScript;

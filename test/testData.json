@@ -488,5 +488,33 @@
     "AccountLookup": "050000228",
     "CollectorID": "486R",
     "DocumentName": ""
+  },
+  {
+    "county": "CollinCountyPP",
+    "AccountLookupString": "https://taxpublic.collincountytx.gov/search",
+    "AccountLookup": "2099916",
+    "CollectorID": "362P",
+    "DocumentName": ""
+  },
+  {
+    "county": "CollinCountyRE",
+    "AccountLookupString": "https://taxpublic.collincountytx.gov/search",
+    "AccountLookup": "1530132",
+    "CollectorID": "362R",
+    "DocumentName": ""
+  },
+  {
+    "county": "DentonCountyPP",
+    "AccountLookupString": "https://taxweb.dentoncounty.gov/Accounts/AccountDetails?taxAccountNumber=11563761TAR",
+    "AccountLookup": "11563761TAR",
+    "CollectorID": "370P",
+    "DocumentName": ""
+  },
+  {
+    "county": "DentonCountyRE",
+    "AccountLookupString": "https://taxweb.dentoncounty.gov/Accounts/AccountDetails?taxAccountNumber=650281DEN",
+    "AccountLookup": "650281DEN",
+    "CollectorID": "370R",
+    "DocumentName": ""
   }
 ]
