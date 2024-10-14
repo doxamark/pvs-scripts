@@ -471,7 +471,7 @@
   {
     "county": "LexingtonCountyRE",
     "AccountLookupString": "https://lexingtoncountytreasurer.qpaybill.com/Taxes/TaxesDefaultType4.aspx",
-    "AccountLookup": "00430003130",
+    "AccountLookup": "004597-09-012",
     "CollectorID": "1121R",
     "DocumentName": ""
   },
@@ -557,6 +557,48 @@
     "AccountLookupString": "https://webb.go2gov.net/faces/_rlvid.jsp?_rap=pc_SearchResults.doAccountNumber1LnkAction&_rvip=/searchResults.jsp&accountNumber=92610032015",
     "AccountLookup": "92610032015",
     "CollectorID": "2851R",
+    "DocumentName": ""
+  },
+  {
+    "county": "VictoriaCountyPP",
+    "AccountLookupString": "https://actweb.acttax.com/victoria/victoria/account-details.jsp?can=146868",
+    "AccountLookup": "146868",
+    "CollectorID": "1895P",
+    "DocumentName": ""
+  },
+  {
+    "county": "VictoriaCountyRE",
+    "AccountLookupString": "https://actweb.acttax.com/victoria/victoria/account-details.jsp?can=134129",
+    "AccountLookup": "134129",
+    "CollectorID": "1895R",
+    "DocumentName": ""
+  },
+  {
+    "county": "LubbockCountyPP",
+    "AccountLookupString": "https://lubbockcad.org/Property-Detail/PropertyQuickRefID/P105028",
+    "AccountLookup": "P105028",
+    "CollectorID": "2500P",
+    "DocumentName": ""
+  },
+  {
+    "county": "LubbockCountyRE",
+    "AccountLookupString": "https://lubbockcad.org/Property-Detail/PropertyQuickRefID/R137291",
+    "AccountLookup": "R137291",
+    "CollectorID": "2500R",
+    "DocumentName": ""
+  },
+  {
+    "county": "WilliamsonCountyTXPP",
+    "AccountLookupString": "https://tax.wilcotx.gov/Property-Detail/PropertyQuickRefID/P455255",
+    "AccountLookup": "P455255",
+    "CollectorID": "800P",
+    "DocumentName": ""
+  },
+  {
+    "county": "WilliamsonCountyTXRE",
+    "AccountLookupString": "https://tax.wilcotx.gov/Property-Detail/PropertyQuickRefID/R031433",
+    "AccountLookup": "R031433",
+    "CollectorID": "800R",
     "DocumentName": ""
   }
 ]
