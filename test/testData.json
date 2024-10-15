@@ -600,5 +600,35 @@
     "AccountLookup": "R031433",
     "CollectorID": "800R",
     "DocumentName": ""
+  },
+  {
+    "county": "CookCountyPP",
+    "AccountLookupString": "https://www.cookcountytreasurer.com/setsearchparameters.aspx",
+    "AccountLookup": "31-24-208-035-0000",
+    "CollectorID": "856P",
+    "DocumentName": ""
+  },
+  {
+    "county": "CookCountyRE",
+    "AccountLookupString": "https://www.cookcountytreasurer.com/setsearchparameters.aspx",
+    "AccountLookup": "31-24-208-020-0000",
+    "CollectorID": "856R",
+    "DocumentName": ""
+  },
+  {
+    "county": "FranklinCountyRE",
+    "AccountLookupString": "http://treapropsearch.franklincountyohio.gov/",
+    "AccountLookup": "010-294889-00",
+    "CollectorID": "2349R",
+    "DocumentName": "",
+    "StatementNo": 1
+  },
+  {
+    "county": "FranklinCountyRE",
+    "AccountLookupString": "http://treapropsearch.franklincountyohio.gov/",
+    "AccountLookup": "010-294889-00",
+    "CollectorID": "2349R",
+    "DocumentName": "",
+    "StatementNo": 2
   }
 ]
