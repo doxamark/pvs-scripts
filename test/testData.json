@@ -658,5 +658,19 @@
     "AccountLookup": "73-H10NW1-002-001-000",
     "CollectorID": "4399R",
     "DocumentName": ""
+  },
+  {
+    "county": "DouglasCountyPP",
+    "AccountLookupString": "https://apps.douglas.co.us/treasurer/treasurerweb/account.jsp?account=P0420612",
+    "AccountLookup": "P0420612",
+    "CollectorID": "36P",
+    "DocumentName": ""
+  },
+  {
+    "county": "DouglasCountyRE",
+    "AccountLookupString": "https://apps.douglas.co.us/treasurer/treasurerweb/account.jsp?account=R0458903",
+    "AccountLookup": "R0458903",
+    "CollectorID": "36R",
+    "DocumentName": ""
   }
 ]
