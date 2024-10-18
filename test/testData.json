@@ -672,5 +672,19 @@
     "AccountLookup": "R0458903",
     "CollectorID": "36R",
     "DocumentName": ""
+  },
+  {
+    "county": "JeffersonCountyPP",
+    "AccountLookupString": "https://treasurerpropertysearch.jeffco.us/propertyrecordssearch/pin?pin=300419142&page=1&sortBy=pin&sortDirection=asc",
+    "AccountLookup": "300419142",
+    "CollectorID": "39P",
+    "DocumentName": ""
+  },
+  {
+    "county": "JeffersonCountyRE",
+    "AccountLookupString": "https://treasurerpropertysearch.jeffco.us/propertyrecordssearch/pin?pin=300010074&page=1&sortBy=pin&sortDirection=asc",
+    "AccountLookup": "300010074",
+    "CollectorID": "39R",
+    "DocumentName": ""
   }
 ]
