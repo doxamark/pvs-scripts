@@ -630,5 +630,33 @@
     "CollectorID": "2349R",
     "DocumentName": "",
     "StatementNo": 2
+  },
+  {
+    "county": "SalineCountyPP",
+    "AccountLookupString": "https://www.arcountydata.com/propsearch.asp?county=Saline&s=T",
+    "AccountLookup": "10086039",
+    "CollectorID": "16P",
+    "DocumentName": ""
+  },
+  {
+    "county": "SalineCountyRE",
+    "AccountLookupString": "https://www.arcountydata.com/propsearch.asp?county=Saline&s=T",
+    "AccountLookup": "800-57450-003",
+    "CollectorID": "16R",
+    "DocumentName": ""
+  },
+  {
+    "county": "LuzerneCountyPP",
+    "AccountLookupString": "https://www.luzernecounty.org/938/Treasurer-Online-Tax-Payment",
+    "AccountLookup": "73-H10NW1-002-001-000",
+    "CollectorID": "4399P",
+    "DocumentName": ""
+  },
+  {
+    "county": "LuzerneCountyRE",
+    "AccountLookupString": "https://www.luzernecounty.org/938/Treasurer-Online-Tax-Payment",
+    "AccountLookup": "73-H10NW1-002-001-000",
+    "CollectorID": "4399R",
+    "DocumentName": ""
   }
 ]
