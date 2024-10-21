@@ -686,5 +686,40 @@
     "AccountLookup": "300010074",
     "CollectorID": "39R",
     "DocumentName": ""
+  },
+  {
+    "county": "KingCountyPP",
+    "AccountLookupString": "https://payment.kingcounty.gov/Home/Index?app=PropertyTaxes",
+    "AccountLookup": "00014787",
+    "CollectorID": "431P",
+    "DocumentName": ""
+  },
+  {
+    "county": "KingCountyRE",
+    "AccountLookupString": "https://payment.kingcounty.gov/Home/Index?app=PropertyTaxes",
+    "AccountLookup": "030046003007",
+    "CollectorID": "2456R",
+    "DocumentName": ""
+  },
+  {
+    "county": "PierceCountyPP",
+    "AccountLookupString": "https://atip.piercecountywa.gov/app/v2/propertySummary/1200040118",
+    "AccountLookup": "1200040118",
+    "CollectorID": "1723P",
+    "DocumentName": ""
+  },
+  {
+    "county": "SpokaneCountyPP",
+    "AccountLookupString": "https://cp.spokanecounty.org/scout/propertyinformation/",
+    "AccountLookup": "00.006842",
+    "CollectorID": "768P",
+    "DocumentName": ""
+  },
+  {
+    "county": "SpokaneCountyRE",
+    "AccountLookupString": "https://cp.spokanecounty.org/scout/propertyinformation/",
+    "AccountLookup": "13123.3206",
+    "CollectorID": "3526R",
+    "DocumentName": ""
   }
 ]
