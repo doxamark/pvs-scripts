@@ -721,5 +721,19 @@
     "AccountLookup": "13123.3206",
     "CollectorID": "3526R",
     "DocumentName": ""
+  },
+  {
+    "county": "ClarkCountyINPP",
+    "AccountLookupString": "https://www.quicksearchhere.com/index.php?action=SearchPublic&statement=StatementEntity&county_id=3&parcel=10-011-51000-0312-033&owner=&location=",
+    "AccountLookup": "10-011-51000-0312-033",
+    "CollectorID": "101P",
+    "DocumentName": ""
+  },
+  {
+    "county": "ClarkCountyINRE",
+    "AccountLookupString": "https://www.quicksearchhere.com/index.php?action=SearchPublic&statement=StatementEntity&county_id=3&parcel=10-06-25-800-033.000-027&owner=&location=",
+    "AccountLookup": "10-06-25-800-033.000-027",
+    "CollectorID": "101R",
+    "DocumentName": ""
   }
 ]
