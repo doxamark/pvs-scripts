@@ -7,6 +7,24 @@ class LakeCountyPPScript extends BaseScript {
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
+        await this.page.waitForSelector(".menulevel2")
+        const navLinks = await this.page.$$(".menulevel2")
+        let navBtn = null;
+        for (let link of navLinks) {
+            const label = await this.page.evaluate(el => el.textContent, link);
+            if (label.trim().includes("Tax Search")) {
+                navBtn = link
+                break
+            }
+        }
+
+        if (!navBtn) {
+            console.error('Tax Search does not exist. Please check your account number.', this.account);
+            return { is_success: false, msg: `Tax Search does not exist. Please check your account number. ${this.account}` };
+        }
+
+        await navBtn.click()
+        await new Promise(resolve => setTimeout(resolve, 1000));
 
         await this.page.waitForSelector(".menulevel2")
         const navLinks2 = await this.page.$$(".menulevel2")
