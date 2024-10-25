@@ -735,5 +735,19 @@
     "AccountLookup": "10-06-25-800-033.000-027",
     "CollectorID": "101R",
     "DocumentName": ""
+  },
+  {
+    "county": "LakeCountyPP",
+    "AccountLookupString": "https://in-lake-treasurer2.governmax.com/collectmax/search_collect.asp?l_nm=parcelid&form=searchform&formelement=0&sid=23DAAB482AA949C4823BDA60F7D5E007",
+    "AccountLookup": "45-104-00269-00",
+    "CollectorID": "2922P",
+    "DocumentName": ""
+  },
+  {
+    "county": "LakeCountyRE",
+    "AccountLookupString": "https://in-lake-treasurer2.governmax.com/collectmax/search_collect.asp?l_nm=parcelid&form=searchform&formelement=0&sid=23DAAB482AA949C4823BDA60F7D5E007",
+    "AccountLookup": "45-03-22-381-016.000-024",
+    "CollectorID": "2922R",
+    "DocumentName": ""
   }
 ]
