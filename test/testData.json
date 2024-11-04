@@ -749,5 +749,54 @@
     "AccountLookup": "45-03-22-381-016.000-024",
     "CollectorID": "2922R",
     "DocumentName": ""
+  },
+  {
+    "county": "LamarCountyMSRE",
+    "AccountLookupString": "https://www.deltacomputersystems.com/cgi-lrm5/LRMCGI02?HTMCNTY=MS37&HTMBASE=C&HTMKEY=MS370000151202300&HTMODB=&HTMPGM=&HTMPFL=&",
+    "AccountLookup": "000151",
+    "CollectorID": "1297R",
+    "DocumentName": ""
+  },
+  {
+    "county": "LauderdaleCountyRE",
+    "AccountLookupString": "https://altags.com/lauderdale_revenue/property.aspx",
+    "AccountLookup": "048339",
+    "CollectorID": "1102R",
+    "DocumentName": ""
+  },
+  {
+    "county": "LauderdaleCountyPP",
+    "AccountLookupString": "https://altags.com/lauderdale_revenue/property.aspx",
+    "AccountLookup": "063128",
+    "CollectorID": "1102P",
+    "DocumentName": ""
+  },
+  {
+    "county": "AllenCountyPP",
+    "AccountLookupString": "https://lowtaxinfo.com/allencounty",
+    "AccountLookup": "02-041-5020035",
+    "CollectorID": "2013P",
+    "DocumentName": ""
+  },
+  {
+    "county": "AllenCountyRE",
+    "AccountLookupString": "https://lowtaxinfo.com/allencounty",
+    "AccountLookup": "02-07-20-200-009.000-073",
+    "CollectorID": "2013R",
+    "DocumentName": ""
+  },
+  {
+    "county": "LaPorteCountyPP",
+    "AccountLookupString": "https://lowtaxinfo.com/laportecounty",
+    "AccountLookup": "46-05-99-00-507-081",
+    "CollectorID": "1708P",
+    "DocumentName": ""
+  },
+  {
+    "county": "LaPorteCountyRE",
+    "AccountLookupString": "https://lowtaxinfo.com/laportecounty",
+    "AccountLookup": "46-04-33-277-017.000-050",
+    "CollectorID": "1708R",
+    "DocumentName": ""
   }
 ]
