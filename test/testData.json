@@ -798,5 +798,19 @@
     "AccountLookup": "46-04-33-277-017.000-050",
     "CollectorID": "1708R",
     "DocumentName": ""
+  },
+  {
+    "county": "MarionCountyPP",
+    "AccountLookupString": "https://www.indy.gov/workflow/property-taxes",
+    "AccountLookup": "A033999",
+    "CollectorID": "114P",
+    "DocumentName": ""
+  },
+  {
+    "county": "MarionCountyRE",
+    "AccountLookupString": "https://www.indy.gov/workflow/property-taxes",
+    "AccountLookup": "1019818",
+    "CollectorID": "114R",
+    "DocumentName": ""
   }
 ]
