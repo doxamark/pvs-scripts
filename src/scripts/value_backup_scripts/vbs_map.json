@@ -1,7 +1,10 @@
 {
-    "575": "AlamedaCounty",
+    "575R": "AlamedaCountyRE",
     "27": "OrangeCounty",
-    "28": "RiversideCounty",
+    "28R": "RiversideCountyRE",
+    "28P": "RiversideCountyPP",
+    "32P": "AdamsCountyPP",
+    "32R": "AdamsCountyRE",
     "39": "JeffersonCounty",
     "487": "DistrictofColumbia",
     "1721P": "LakeCountyPP",

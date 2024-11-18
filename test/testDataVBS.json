@@ -26,6 +26,41 @@
     "AccountLookup": "3919788",
     "AssessorID": "1721P",
     "DocumentName": ""
+  },
+  {
+    "county": "ALAMEDA RE",
+    "AccountLookupString": "https://propinfo.acgov.org/",
+    "AccountLookup": "25-710-35",
+    "AssessorID": "575R",
+    "DocumentName": ""
+  },
+  {
+    "county": "RIVERSIDE RE",
+    "AccountLookupString": "https://rivcoview.riversideacr.com/#/Property-Search",
+    "AccountLookup": "193231036",
+    "AssessorID": "28R",
+    "DocumentName": ""
+  },
+  {
+    "county": "RIVERSIDE PP",
+    "AccountLookupString": "https://rivcoview.riversideacr.com/#/Property-Search",
+    "AccountLookup": "000090467",
+    "AssessorID": "28P",
+    "DocumentName": ""
+  },
+  {
+    "county": "ADAMS PP",
+    "AccountLookupString": "https://gisapp.adcogov.org/quicksearch/doreport.aspx?pid=0171915107002",
+    "AccountLookup": "0171915107002",
+    "AssessorID": "32P",
+    "DocumentName": ""
+  },
+  {
+    "county": "ADAMS RE",
+    "AccountLookupString": "https://gisapp.adcogov.org/quicksearch/doreport.aspx?pid=0157130321025",
+    "AccountLookup": "0157130321025",
+    "AssessorID": "32R",
+    "DocumentName": ""
   }
 
 
