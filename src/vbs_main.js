@@ -37,7 +37,7 @@ console.error = (...messages) => {
   console.log(`Start Value Backup Scripts - ${getStartTime(startTime)}`)
 
   const availableParcelIDs = [
-    495, 1721, 575, 28, 32
+    495, 1721, 575, 28, 32, 39, 391
   ];
 
   const dbManager = new DatabaseManager();

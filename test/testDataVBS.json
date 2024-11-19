@@ -61,7 +61,33 @@
     "AccountLookup": "0157130321025",
     "AssessorID": "32R",
     "DocumentName": ""
+  },
+  {
+    "county": "JEFFERSON PP",
+    "AccountLookupString": "https://propertysearch.jeffco.us/propertyrecordssearch/pin",
+    "AccountLookup": "300187770",
+    "AssessorID": "39P",
+    "DocumentName": ""
+  },
+  {
+    "county": "JEFFERSON RE",
+    "AccountLookupString": "https://propertysearch.jeffco.us/propertyrecordssearch/pin",
+    "AccountLookup": "300010074",
+    "AssessorID": "39R",
+    "DocumentName": ""
+  },
+  {
+    "county": "DEKALB RE",
+    "AccountLookupString": "https://propertyappraisal.dekalbcountyga.gov/search/CommonSearch.aspx?mode=REALPROP",
+    "AccountLookup": "06 277 01 005",
+    "AssessorID": "391R",
+    "DocumentName": ""
+  },
+  {
+    "county": "DEKALB PP",
+    "AccountLookupString": "https://propertyappraisal.dekalbcountyga.gov/search/CommonSearch.aspx?mode=REALPROP",
+    "AccountLookup": "1644909",
+    "AssessorID": "391P",
+    "DocumentName": ""
   }
-
-
 ]
