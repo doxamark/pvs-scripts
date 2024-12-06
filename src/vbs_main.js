@@ -36,8 +36,12 @@ console.error = (...messages) => {
   const startTime = new Date(); // Start time
   console.log(`Start Value Backup Scripts - ${getStartTime(startTime)}`)
 
+  const availableParcelIDs = [
+    495, 1721, 575, 28, 32, 39, 391
+  ];
+
   const dbManager = new DatabaseManager();
-  const fetchQuery = 'SELECT * FROM tso.ParcelValueBackupNeededScript() WHERE AssessorID in (495, 1721)';
+  const fetchQuery = `SELECT * FROM tso.ParcelValueBackupNeededScript() WHERE AssessorID in (${availableParcelIDs.join(', ')});`;
   let records = [];
   
   try {

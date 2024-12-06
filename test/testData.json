@@ -812,5 +812,26 @@
     "AccountLookup": "1019818",
     "CollectorID": "114R",
     "DocumentName": ""
+  },
+  {
+    "county": "SumnerCountyPP",
+    "AccountLookupString": "https://sumner-tn.mygovonline.com/mod.php?mod=propertytax&mode=public_lookup&action=&title=s",
+    "AccountLookup": "126F H 3.00 P 001",
+    "CollectorID": "331P",
+    "DocumentName": ""
+  },
+  {
+    "county": "SumnerCountyRE",
+    "AccountLookupString": "https://sumner-tn.mygovonline.com/mod.php?mod=propertytax&mode=public_lookup&action=&title=s",
+    "AccountLookup": "126C E 17.00 _ 00",
+    "CollectorID": "331R",
+    "DocumentName": ""
+  },
+  {
+    "county": "BaltimoreCityPP",
+    "AccountLookupString": "https://pay.baltimorecity.gov/PersonalProperty",
+    "AccountLookup": "F04574695",
+    "CollectorID": "1247P",
+    "DocumentName": ""
   }
 ]
