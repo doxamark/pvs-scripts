@@ -89,5 +89,19 @@
     "AccountLookup": "1644909",
     "AssessorID": "391P",
     "DocumentName": ""
+  },
+  {
+    "county": "MecklenburgCountyRE",
+    "AccountLookupString": "https://property.spatialest.com/nc/mecklenburg/#/search/?term=00521210&page=1",
+    "AccountLookup": "00521210",
+    "AssessorID": "206R",
+    "DocumentName": ""
+  },
+  {
+    "county": "MecklenburgCountyPP",
+    "AccountLookupString": "https://taxbill.co.mecklenburg.nc.us/publicwebaccess/PersonalPropertySearch.aspx",
+    "AccountLookup": "0001509367",
+    "AssessorID": "206P",
+    "DocumentName": ""
   }
 ]
