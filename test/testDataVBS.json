@@ -103,5 +103,19 @@
     "AccountLookup": "0001509367",
     "AssessorID": "206P",
     "DocumentName": ""
+  },
+  {
+    "county": "ClarkCountyRE",
+    "AccountLookupString": "https://maps.clarkcountynv.gov/assessor/AssessorParcelDetail/ParcelDetail.aspx?hdnParcel=139-24-610-021",
+    "AccountLookup": "139-24-610-021",
+    "AssessorID": "213R",
+    "DocumentName": ""
+  },
+  {
+    "county": "ClarkCountyPP",
+    "AccountLookupString": "https://aoepay.clarkcountynv.gov/AccountDetail.aspx?Account=099249",
+    "AccountLookup": "099249",
+    "AssessorID": "213P",
+    "DocumentName": ""
   }
 ]

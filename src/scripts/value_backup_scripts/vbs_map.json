@@ -33,5 +33,7 @@
     "13996": "PierceCounty",
     "14118": "ThurstonCounty",
     "300": "KanawhaCounty",
-    "283": "SaltLakeCounty"
+    "283": "SaltLakeCounty",
+    "213R": "ClarkCountyRE",
+    "213P": "ClarkCountyPP"
 }
