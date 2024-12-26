@@ -145,5 +145,7 @@
     "15R": "PulaskiCountyRE",
     "15P": "PulaskiCountyPP",
     "5795P": "GreaterJohnstownSchoolDistrictPP",
-    "4401R": "WilkesBarreAreaSchoolDistrictRE"
+    "4401R": "WilkesBarreAreaSchoolDistrictRE",
+    "378P": "HarrisCountyPP",
+    "378R": "HarrisCountyRE"
 }

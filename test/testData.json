@@ -833,5 +833,19 @@
     "AccountLookup": "F04574695",
     "CollectorID": "1247P",
     "DocumentName": ""
+  },
+  {
+    "county": "HarrisCountyPP",
+    "AccountLookupString": "https://www.hctax.net/Property/PropertyTax",
+    "AccountLookup": "000010500",
+    "CollectorID": "378P",
+    "DocumentName": ""
+  },
+  {
+    "county": "HarrisCountyRE",
+    "AccountLookupString": "https://www.hctax.net/Property/PropertyTax",
+    "AccountLookup": "0291830390002",
+    "CollectorID": "378R",
+    "DocumentName": ""
   }
 ]
