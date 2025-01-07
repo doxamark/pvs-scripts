@@ -147,5 +147,7 @@
     "5795P": "GreaterJohnstownSchoolDistrictPP",
     "4401R": "WilkesBarreAreaSchoolDistrictRE",
     "378P": "HarrisCountyPP",
-    "378R": "HarrisCountyRE"
+    "378R": "HarrisCountyRE",
+    "406P": "SmithCountyPP",
+    "406R": "SmithCountyRE"
 }

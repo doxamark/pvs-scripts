@@ -847,5 +847,19 @@
     "AccountLookup": "0291830390002",
     "CollectorID": "378R",
     "DocumentName": ""
+  },
+  {
+    "county": "SmithCountyRE",
+    "AccountLookupString": "https://publictax.smith-county.com/Accounts/AccountDetails?taxAccountNumber=150000071400035000",
+    "AccountLookup": "150000071400035000",
+    "CollectorID": "406R",
+    "DocumentName": ""
+  },
+  {
+    "county": "SmithCountyPP",
+    "AccountLookupString": "https://publictax.smith-county.com/Accounts/AccountDetails?taxAccountNumber=40090003170000",
+    "AccountLookup": "40090003170000",
+    "CollectorID": "406P",
+    "DocumentName": ""
   }
 ]
