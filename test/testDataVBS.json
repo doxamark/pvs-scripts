@@ -117,5 +117,40 @@
     "AccountLookup": "099249",
     "AssessorID": "213P",
     "DocumentName": ""
+  },
+  {
+    "county": "BuncombeCountyRE",
+    "AccountLookupString": "https://prc-buncombe.spatialest.com/#/property/9608722182C001A/print",
+    "AccountLookup": "9608722182C001A",
+    "AssessorID": "200R",
+    "DocumentName": ""
+  },
+  {
+    "county": "GuilfordCountyRE",
+    "AccountLookupString": "https://lrcpwa.ncptscloud.com/guilford/PropertySummary.aspx?PARCELPK=1808",
+    "AccountLookup": "1808",
+    "AssessorID": "204R",
+    "DocumentName": ""
+  },
+  {
+    "county": "GuilfordCountyPP",
+    "AccountLookupString": "https://bcpwa.ncptscloud.com/guilfordtax/PersonalPropertySearch.aspx",
+    "AccountLookup": "0000068539",
+    "AssessorID": "204P",
+    "DocumentName": ""
+  },
+  {
+    "county": "NewHanoverCountyPP",
+    "AccountLookupString": "https://etax.nhcgov.com/pt/Datalets/PrintDatalet.aspx?pin=B0030B0173&gsp=PP_PROFILEALL&taxyear=2024&jur=NH&ownseq=0&card=1&roll=BP&State=1&item=1&items=-1&all=undefined&ranks=Datalet",
+    "AccountLookup": "B0030B0173",
+    "AssessorID": "207P",
+    "DocumentName": ""
+  },
+  {
+    "county": "NewHanoverCountyRE",
+    "AccountLookupString": "https://etax.nhcgov.com/pt/Datalets/PrintDatalet.aspx?pin=R05000-004-114-000&gsp=PROFILEALL&taxyear=2024&jur=NH&ownseq=0&card=1&roll=RP&State=1&item=1&items=-1&all=0:2:3:4:5:6:7:8:9:10:11:12:13&",
+    "AccountLookup": "R05000-004-114-000",
+    "AssessorID": "207R",
+    "DocumentName": ""
   }
 ]

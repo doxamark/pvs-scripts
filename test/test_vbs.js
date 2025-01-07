@@ -22,7 +22,7 @@ async function runTests(records) {
 
 // Function to run a test for a single record
 async function runTest(record, timestamp) {
-  const year = '2024';
+  const year =  new Date().getFullYear() + '';
   record.DocumentName = `test/test_outputs/${timestamp}/${record.AccountLookup}/${record.AccountLookup}-${year}.pdf`;
 
   const factory = new ScriptFactory('src/scripts/value_backup_scripts/vbs_map.json', 'value_backup_scripts');

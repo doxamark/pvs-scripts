@@ -35,5 +35,10 @@
     "300": "KanawhaCounty",
     "283": "SaltLakeCounty",
     "213R": "ClarkCountyRE",
-    "213P": "ClarkCountyPP"
+    "213P": "ClarkCountyPP",
+    "200R": "BuncombeCountyRE",
+    "204R": "GuilfordCountyRE",
+    "204P": "GuilfordCountyPP",
+    "207P": "NewHanoverCountyPP",
+    "207R": "NewHanoverCountyRE"
 }
