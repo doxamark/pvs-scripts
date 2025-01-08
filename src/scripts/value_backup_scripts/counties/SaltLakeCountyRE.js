@@ -4,6 +4,11 @@ import path from 'path';
 
 class SaltLakeCountyREScript extends BaseScript {
     async performScraping() {
+        
+        if (this.accountLookupString) {
+            this.accountLookupString = this.accountLookupString.replaceAll("-", "")
+        }
+        
         await this.page.goto(this.accountLookupString, { waitUntil: 'networkidle2' });
         console.log(`Navigated to: ${this.page.url()}`);
 
