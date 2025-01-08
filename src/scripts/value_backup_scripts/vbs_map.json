@@ -40,5 +40,8 @@
     "204R": "GuilfordCountyRE",
     "204P": "GuilfordCountyPP",
     "207P": "NewHanoverCountyPP",
-    "207R": "NewHanoverCountyRE"
+    "207R": "NewHanoverCountyRE",
+    "210R": "WakeCountyRE",
+    "210P": "WakeCountyPP",
+    "283R": "SaltLakeCountyRE"
 }

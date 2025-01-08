@@ -152,5 +152,26 @@
     "AccountLookup": "R05000-004-114-000",
     "AssessorID": "207R",
     "DocumentName": ""
+  },
+  {
+    "county": "WakeCountyRE",
+    "AccountLookupString": "https://services.wake.gov/realestate/Account.asp?id=0000004",
+    "AccountLookup": "0000004",
+    "AssessorID": "210R",
+    "DocumentName": ""
+  },
+  {
+    "county": "WakeCountyPP",
+    "AccountLookupString": "https://services.wake.gov/ptax/main/billing/acctsummary.aspx?search=acct&yrs=2&id=0005291429",
+    "AccountLookup": "0005291429",
+    "AssessorID": "210P",
+    "DocumentName": ""
+  },
+  {
+    "county": "SaltlakeCountyRE",
+    "AccountLookupString": "https://slco.org/assessor/new/valuationInfoExpanded.cfm?parcel_id=07352260090000",
+    "AccountLookup": "07352260090000",
+    "AssessorID": "283R",
+    "DocumentName": ""
   }
 ]
