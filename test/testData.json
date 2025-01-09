@@ -861,5 +861,19 @@
     "AccountLookup": "40090003170000",
     "CollectorID": "406P",
     "DocumentName": ""
+  },
+  {
+    "county": "DALLAS PP",
+    "AccountLookupString": "https://www.dallasact.com/act_webdev/dallas/showdetail2.jsp?can=99131221200000000",
+    "AccountLookup": "99131221200000000",
+    "CollectorID": "1477P",
+    "DocumentName": ""
+  },
+  {
+    "county": "DALLAS RE",
+    "AccountLookupString": "https://www.dallasact.com/act_webdev/dallas/showdetail2.jsp?can=24126500030010300",
+    "AccountLookup": "24126500030010300",
+    "CollectorID": "1477R",
+    "DocumentName": ""
   }
 ]
