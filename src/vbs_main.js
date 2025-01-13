@@ -38,7 +38,7 @@ console.error = (...messages) => {
 
   const availableParcelIDs = [
     575, 495, 1721, 28, 32, 39, 391, 206, 213,
-    200, 204, 207, 210, 283
+    200, 204, 207, 210, 283, 564
   ];
 
   const dbManager = new DatabaseManager();

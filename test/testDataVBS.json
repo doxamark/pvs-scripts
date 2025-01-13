@@ -173,5 +173,19 @@
     "AccountLookup": "07352260090000",
     "AssessorID": "283R",
     "DocumentName": ""
+  },
+  {
+    "county": "BERNALILO PP",
+    "AccountLookupString": "https://assessor.bernco.gov/public.access/Datalets/PrintDatalet.aspx?pin=611807&gsp=PROFILEALL&taxyear=2024&jur=02&ownseq=0&card=1&roll=RP&State=1&item=1&items=-1&all=all&ranks=Datalet",
+    "AccountLookup": "611807",
+    "AssessorID": "564P",
+    "DocumentName": ""
+  },
+  {
+    "county": "BERNALILO RE",
+    "AccountLookupString": "https://assessor.bernco.gov/public.access/Datalets/PrintDatalet.aspx?pin=101106035218240623&gsp=PROFILEALL&taxyear=2024&jur=02&ownseq=0&card=1&roll=RP&State=1&item=1&items=-1&all=all&ranks=Datalet",
+    "AccountLookup": "101106035218240623",
+    "AssessorID": "564R",
+    "DocumentName": ""
   }
 ]
