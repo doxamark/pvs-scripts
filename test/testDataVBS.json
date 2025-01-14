@@ -194,5 +194,12 @@
     "AccountLookup": "0108460003",
     "AssessorID": "211R",
     "DocumentName": ""
+  },
+  {
+    "county": "TulsaCountyRE",
+    "AccountLookupString": "https://assessor.tulsacounty.org/Property/Print?accountNo=R07375930602775",
+    "AccountLookup": "R07375930602775",
+    "AssessorID": "229R",
+    "DocumentName": ""
   }
 ]
