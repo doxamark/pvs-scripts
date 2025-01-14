@@ -187,5 +187,12 @@
     "AccountLookup": "101106035218240623",
     "AssessorID": "564R",
     "DocumentName": ""
+  },
+  {
+    "county": "DouglasCountyRE",
+    "AccountLookupString": "https://beacon.schneidercorp.com/Application.aspx?AppID=1221&LayerID=37105&PageTypeID=4&PageID=14212&Q=1459938567&KeyValue=0108460003#",
+    "AccountLookup": "0108460003",
+    "AssessorID": "211R",
+    "DocumentName": ""
   }
 ]
