@@ -201,5 +201,12 @@
     "AccountLookup": "R07375930602775",
     "AssessorID": "229R",
     "DocumentName": ""
+  },
+  {
+    "county": "MaricopaCountyRE",
+    "AccountLookupString": "https://mcassessor.maricopa.gov/mcs/?q=102-01-029A",
+    "AccountLookup": "102-01-029A",
+    "AssessorID": "722R",
+    "DocumentName": ""
   }
 ]
